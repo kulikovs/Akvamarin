@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CEE8F76BF24B38B46825321 /* libPods-Akvamarin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 353B22CF7D74BDFE441972C5 /* libPods-Akvamarin.a */; };
 		C938F9941D2E88DA0081DB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C938F98C1D2E88DA0081DB7D /* Assets.xcassets */; };
 		C938F9951D2E88DA0081DB7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C938F98D1D2E88DA0081DB7D /* LaunchScreen.storyboard */; };
 		C938F9961D2E88DA0081DB7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C938F98F1D2E88DA0081DB7D /* Main.storyboard */; };
@@ -51,6 +52,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17D9BAD509108C25542D7939 /* Pods-Akvamarin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Akvamarin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Akvamarin/Pods-Akvamarin.release.xcconfig"; sourceTree = "<group>"; };
+		353B22CF7D74BDFE441972C5 /* libPods-Akvamarin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Akvamarin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62D6F54CD53AAFC30B3CD6F0 /* Pods-Akvamarin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Akvamarin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Akvamarin/Pods-Akvamarin.debug.xcconfig"; sourceTree = "<group>"; };
 		C938F96E1D2E877C0081DB7D /* Akvamarin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Akvamarin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C938F98C1D2E88DA0081DB7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C938F98E1D2E88DA0081DB7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -140,17 +144,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CEE8F76BF24B38B46825321 /* libPods-Akvamarin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F2B7EBFF154D1E7D9EDE57E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				353B22CF7D74BDFE441972C5 /* libPods-Akvamarin.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51BBF3FA92DDA71CD625BB75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62D6F54CD53AAFC30B3CD6F0 /* Pods-Akvamarin.debug.xcconfig */,
+				17D9BAD509108C25542D7939 /* Pods-Akvamarin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C938F9651D2E877C0081DB7D = {
 			isa = PBXGroup;
 			children = (
 				C938F9701D2E877C0081DB7D /* Akvamarin */,
 				C938F96F1D2E877C0081DB7D /* Products */,
+				51BBF3FA92DDA71CD625BB75 /* Pods */,
+				2F2B7EBFF154D1E7D9EDE57E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -577,9 +601,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C938F9851D2E877C0081DB7D /* Build configuration list for PBXNativeTarget "Akvamarin" */;
 			buildPhases = (
+				F6D984168D0E14581F177716 /* [CP] Check Pods Manifest.lock */,
 				C938F96A1D2E877C0081DB7D /* Sources */,
 				C938F96B1D2E877C0081DB7D /* Frameworks */,
 				C938F96C1D2E877C0081DB7D /* Resources */,
+				F053798EC5B9862D40D501D5 /* [CP] Embed Pods Frameworks */,
+				425745752060B887EDAA270A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -637,6 +664,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		425745752060B887EDAA270A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Akvamarin/Pods-Akvamarin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F053798EC5B9862D40D501D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Akvamarin/Pods-Akvamarin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6D984168D0E14581F177716 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C938F96A1D2E877C0081DB7D /* Sources */ = {
@@ -787,6 +862,7 @@
 		};
 		C938F9861D2E877C0081DB7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62D6F54CD53AAFC30B3CD6F0 /* Pods-Akvamarin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
@@ -800,6 +876,7 @@
 		};
 		C938F9871D2E877C0081DB7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17D9BAD509108C25542D7939 /* Pods-Akvamarin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
