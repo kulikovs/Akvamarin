@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSUserViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="OAx-pV-eaP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="KSUserView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A4J-1N-YvP">
+                    <rect key="frame" x="0.0" y="25" width="375" height="562"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="S0A-AY-SnN"/>
+                        <outlet property="delegate" destination="-1" id="TYh-eE-Pyt"/>
+                    </connections>
+                </tableView>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UHY-2F-viW" userLabel="EditTableSwitch">
+                    <rect key="frame" x="317" y="608" width="48" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="UHY-2F-viW" secondAttribute="height" multiplier="46:29" id="QoP-TJ-9T7"/>
+                    </constraints>
+                    <connections>
+                        <action selector="onEditTable:" destination="-1" eventType="touchUpInside" id="fpl-wR-K9x"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit table" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4a-JR-C2b">
+                    <rect key="frame" x="244" y="607" width="119" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="C4a-JR-C2b" secondAttribute="height" multiplier="119:31" id="n30-3E-ys4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UHY-2F-viW" firstAttribute="top" secondItem="A4J-1N-YvP" secondAttribute="bottom" constant="21" id="1nF-F9-pZt"/>
+                <constraint firstItem="A4J-1N-YvP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BfP-Ce-wHg"/>
+                <constraint firstItem="A4J-1N-YvP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="ByE-4Q-Xo8"/>
+                <constraint firstAttribute="trailing" secondItem="C4a-JR-C2b" secondAttribute="trailing" constant="12" id="Cft-Ru-Vrv"/>
+                <constraint firstAttribute="trailing" secondItem="UHY-2F-viW" secondAttribute="trailing" constant="9" id="GSV-lN-XRQ"/>
+                <constraint firstItem="C4a-JR-C2b" firstAttribute="top" secondItem="A4J-1N-YvP" secondAttribute="bottom" constant="20" id="Lvm-BY-rZt"/>
+                <constraint firstAttribute="bottom" secondItem="A4J-1N-YvP" secondAttribute="bottom" constant="80" id="dsn-st-q2L"/>
+                <constraint firstAttribute="trailing" secondItem="A4J-1N-YvP" secondAttribute="trailing" id="ej9-je-yLT"/>
+                <constraint firstAttribute="bottom" secondItem="C4a-JR-C2b" secondAttribute="bottom" constant="29" id="vtA-Fr-B0v"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="editTableSwitch" destination="UHY-2F-viW" id="ff5-46-bw2"/>
+                <outlet property="tableView" destination="A4J-1N-YvP" id="BLL-FX-pHi"/>
+            </connections>
+            <point key="canvasLocation" x="417.5" y="451.5"/>
+        </view>
+    </objects>
+</document>
