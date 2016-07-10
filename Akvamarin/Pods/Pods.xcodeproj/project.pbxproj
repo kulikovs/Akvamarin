@@ -36,7 +36,6 @@
 		28DEBCEE089D0EE08D3B8383EEE7399D /* UITableView+IDPCellLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A314D959C5BECAA8D0B4EB18E4C249 /* UITableView+IDPCellLoading.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2A8E6B6683F8583ACE841F27D67D64BB /* GTMSessionFetcherService.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0A1E44F933D5A9FD772863EEB23FD7 /* GTMSessionFetcherService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2ADAE51808ECEF2FC232E30E059E7755 /* GTLCalendarColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 765CFFBA3EA1D38C4581CC3E0881A5BF /* GTLCalendarColors.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2AF6EB9DBC8638C3A7C5D7F2AA6024F8 /* GTMOAuth2Authentication.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BA90B65F8098AB5F08617CF954BEDC4 /* GTMOAuth2Authentication.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B32D7C4EC391DF326FFE88C95711985 /* NSObject+IDPExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 58EC5860CCA37668CF28B2119DA72AE5 /* NSObject+IDPExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B52B6072D987CDCBD727F99C8C9FAC1 /* NSManagedObjectContext+IDPExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DF30BC00A91A16D723E0D4B63E5F153 /* NSManagedObjectContext+IDPExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BDE2BAF1F5FAA46640C62EB026428DE /* GTLFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = FD26A70206AFEF68440ED425813907CA /* GTLFramework.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -1244,7 +1243,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AF6EB9DBC8638C3A7C5D7F2AA6024F8 /* GTMOAuth2Authentication.h in Headers */,
 				E99B88128E29AE015F35EB98F6F484A3 /* GTMOAuth2SignIn.h in Headers */,
 				E0E1F562587D43FA7AC920586922CDE4 /* GTMOAuth2ViewControllerTouch.h in Headers */,
 			);

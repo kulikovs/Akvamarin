@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "KSCalendarViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    UIWindow *window = [UIWindow new];
+    self.window = window;
+    
+    KSCalendarViewController *calendarViewController = [KSCalendarViewController new];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc]
+                                                    initWithRootViewController:calendarViewController];
 
+    window.rootViewController = navigationController;
+    [window makeKeyAndVisible];
+    
     return YES;
 }
 
