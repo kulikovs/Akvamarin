@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSCalendarView">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSCalendarViewController">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -14,8 +14,23 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="KSCalendarView">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" scalesPageToFit="YES" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REw-K8-aBC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                </webView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="REw-K8-aBC" secondAttribute="trailing" id="1bR-bh-UL2"/>
+                <constraint firstAttribute="bottom" secondItem="REw-K8-aBC" secondAttribute="bottom" id="BtB-RZ-LdV"/>
+                <constraint firstItem="REw-K8-aBC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Dyu-fF-HoX"/>
+                <constraint firstItem="REw-K8-aBC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Emi-5S-w61"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="webView" destination="REw-K8-aBC" id="nVB-Rk-p3W"/>
+            </connections>
             <point key="canvasLocation" x="248.5" y="309.5"/>
         </view>
     </objects>
