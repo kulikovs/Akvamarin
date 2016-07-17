@@ -6,8 +6,11 @@
 //  Copyright © 2016 KulikovS. All rights reserved.
 //
 
+#import "IDPActiveRecordKit.h"
+
 #import "AppDelegate.h"
 #import "KSCalendarViewController.h"
+#import "KSCoreDataConstants.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [IDPCoreDataManager sharedManagerWithMomName:kKSCoreDataModelName];
     
     UIWindow *window = [UIWindow new];
     self.window = window;

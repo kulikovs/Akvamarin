@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
+    <entity name="KSCalendar" representedClassName="KSCalendar" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="KSEvent" inverseName="calendar" inverseEntity="KSEvent" syncable="YES"/>
+    </entity>
+    <entity name="KSEvent" representedClassName="KSEvent" syncable="YES">
+        <attribute name="endDateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startDateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="calendar" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KSCalendar" inverseName="events" inverseEntity="KSCalendar" syncable="YES"/>
+    </entity>
+    <entity name="KSPhoto" representedClassName="KSPhoto" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="KSCalendar" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="KSEvent" positionX="259" positionY="-171" width="128" height="118"/>
+        <element name="KSPhoto" positionX="126" positionY="-45" width="128" height="75"/>
+    </elements>
+</model>

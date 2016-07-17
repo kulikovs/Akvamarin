@@ -9,6 +9,6 @@
 #import "KSView.h"
 
 @interface KSCalendarView : KSView
-@property (nonatomic, strong) IBOutlet UIWebView *webView;
+
 
 @end

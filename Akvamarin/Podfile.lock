@@ -16,6 +16,7 @@ PODS:
   - GTMSessionFetcher/Core (1.1.4)
   - GTMSessionFetcher/Full (1.1.4):
     - GTMSessionFetcher/Core (= 1.1.4)
+  - MBCalendarKit (3.0.4)
   - UIKit (0.1.1):
     - CommonKit
 
@@ -25,6 +26,7 @@ DEPENDENCIES:
   - DataKit (from `https://github.com/idapgroup/DataKit.git`)
   - GoogleAPIClient/Calendar (~> 1.0.2)
   - GTMOAuth2 (~> 1.1.0)
+  - MBCalendarKit (~> 3.0.4)
   - UIKit (from `https://github.com/idapgroup/UIKit.git`)
 
 EXTERNAL SOURCES:
@@ -58,8 +60,9 @@ SPEC CHECKSUMS:
   GoogleAPIClient: 4dedb6af613eb7d171814c343f8a82ee5411e13b
   GTMOAuth2: bdb12f3e0d2110bfe585f6151230b883beb4d042
   GTMSessionFetcher: 174bc61d5238f81f9ddb807b0b0170420f67de85
+  MBCalendarKit: 2a3a60f902162a03bb4957966a4b795af998211f
   UIKit: 9865090cbc23667672052acd7dc0bca3a32914b9
 
-PODFILE CHECKSUM: 37111ae527480f87627d236472e9355a56c0e548
+PODFILE CHECKSUM: a8cfd12577cfc789f18dc86fd1dc2f7d8eece929
 
 COCOAPODS: 1.0.1

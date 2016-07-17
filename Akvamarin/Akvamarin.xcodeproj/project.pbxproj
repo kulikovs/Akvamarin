@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5CEE8F76BF24B38B46825321 /* libPods-Akvamarin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 353B22CF7D74BDFE441972C5 /* libPods-Akvamarin.a */; };
+		C90F747A1D3B6A7B00F66F10 /* NSDateComponents+KSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F74791D3B6A7B00F66F10 /* NSDateComponents+KSExtensions.m */; };
 		C938F9941D2E88DA0081DB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C938F98C1D2E88DA0081DB7D /* Assets.xcassets */; };
-		C938F9951D2E88DA0081DB7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C938F98D1D2E88DA0081DB7D /* LaunchScreen.storyboard */; };
-		C938F9961D2E88DA0081DB7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C938F98F1D2E88DA0081DB7D /* Main.storyboard */; };
 		C938F9981D2E88DA0081DB7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C938F9921D2E88DA0081DB7D /* main.m */; };
 		C938F99D1D2E8A7B0081DB7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C938F99C1D2E8A7B0081DB7D /* AppDelegate.m */; };
 		C938FA9F1D2EC0C30081DB7D /* CGGeometry+KSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C938FA361D2EC0C30081DB7D /* CGGeometry+KSExtensions.m */; };
@@ -52,16 +51,27 @@
 		C94AEC201D30DB1600C1E4EB /* KSCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C94AEC1F1D30DB1600C1E4EB /* KSCalendarView.m */; };
 		C94AEC241D30DF9400C1E4EB /* KSCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C94AEC221D30DF9400C1E4EB /* KSCalendarViewController.m */; };
 		C94AEC251D30DF9400C1E4EB /* KSCalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C94AEC231D30DF9400C1E4EB /* KSCalendarViewController.xib */; };
+		C94BC18A1D39717700C3E960 /* KSCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C94BC1881D39717700C3E960 /* KSCoreDataModel.xcdatamodeld */; };
+		C94BC1BD1D3976E400C3E960 /* KSCalendar+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C94BC1AC1D3976E400C3E960 /* KSCalendar+CoreDataProperties.m */; };
+		C94BC1BE1D3976E400C3E960 /* KSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = C94BC1AE1D3976E400C3E960 /* KSCalendar.m */; };
+		C94BC1C11D3976E400C3E960 /* KSEvent+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C94BC1B51D3976E400C3E960 /* KSEvent+CoreDataProperties.m */; };
+		C94BC1C21D3976E400C3E960 /* KSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C94BC1B71D3976E400C3E960 /* KSEvent.m */; };
+		C94BC1C31D3976E400C3E960 /* KSPhoto+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C94BC1BA1D3976E400C3E960 /* KSPhoto+CoreDataProperties.m */; };
+		C94BC1C41D3976E400C3E960 /* KSPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = C94BC1BC1D3976E400C3E960 /* KSPhoto.m */; };
+		C94BC1CB1D3978F800C3E960 /* KSManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C94BC1CA1D3978F800C3E960 /* KSManagedObject.m */; };
+		C95A3BDE1D38125F00B7A60C /* KSCalendarContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C95A3BDD1D38125F00B7A60C /* KSCalendarContext.m */; };
+		C95A3BE51D3820A900B7A60C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95A3BE11D3820A900B7A60C /* LaunchScreen.storyboard */; };
+		C95A3BE61D3820A900B7A60C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95A3BE31D3820A900B7A60C /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17D9BAD509108C25542D7939 /* Pods-Akvamarin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Akvamarin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Akvamarin/Pods-Akvamarin.release.xcconfig"; sourceTree = "<group>"; };
 		353B22CF7D74BDFE441972C5 /* libPods-Akvamarin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Akvamarin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D6F54CD53AAFC30B3CD6F0 /* Pods-Akvamarin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Akvamarin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Akvamarin/Pods-Akvamarin.debug.xcconfig"; sourceTree = "<group>"; };
+		C90F74781D3B6A7B00F66F10 /* NSDateComponents+KSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateComponents+KSExtensions.h"; sourceTree = "<group>"; };
+		C90F74791D3B6A7B00F66F10 /* NSDateComponents+KSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateComponents+KSExtensions.m"; sourceTree = "<group>"; };
 		C938F96E1D2E877C0081DB7D /* Akvamarin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Akvamarin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C938F98C1D2E88DA0081DB7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C938F98E1D2E88DA0081DB7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C938F9901D2E88DA0081DB7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C938F9911D2E88DA0081DB7D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C938F9921D2E88DA0081DB7D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C938F99B1D2E8A7B0081DB7D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -144,6 +154,27 @@
 		C94AEC211D30DF9400C1E4EB /* KSCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCalendarViewController.h; sourceTree = "<group>"; };
 		C94AEC221D30DF9400C1E4EB /* KSCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCalendarViewController.m; sourceTree = "<group>"; };
 		C94AEC231D30DF9400C1E4EB /* KSCalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KSCalendarViewController.xib; sourceTree = "<group>"; };
+		C94BC1891D39717700C3E960 /* KSCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KSCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		C94BC1AB1D3976E400C3E960 /* KSCalendar+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KSCalendar+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C94BC1AC1D3976E400C3E960 /* KSCalendar+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KSCalendar+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C94BC1AD1D3976E400C3E960 /* KSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCalendar.h; sourceTree = "<group>"; };
+		C94BC1AE1D3976E400C3E960 /* KSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCalendar.m; sourceTree = "<group>"; };
+		C94BC1B41D3976E400C3E960 /* KSEvent+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KSEvent+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C94BC1B51D3976E400C3E960 /* KSEvent+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KSEvent+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C94BC1B61D3976E400C3E960 /* KSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSEvent.h; sourceTree = "<group>"; };
+		C94BC1B71D3976E400C3E960 /* KSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSEvent.m; sourceTree = "<group>"; };
+		C94BC1B91D3976E400C3E960 /* KSPhoto+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KSPhoto+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C94BC1BA1D3976E400C3E960 /* KSPhoto+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KSPhoto+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C94BC1BB1D3976E400C3E960 /* KSPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhoto.h; sourceTree = "<group>"; };
+		C94BC1BC1D3976E400C3E960 /* KSPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPhoto.m; sourceTree = "<group>"; };
+		C94BC1C61D3977BE00C3E960 /* KSCalendarConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSCalendarConstants.h; sourceTree = "<group>"; };
+		C94BC1C71D3977D400C3E960 /* KSCoreDataConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSCoreDataConstants.h; sourceTree = "<group>"; };
+		C94BC1C91D3978F800C3E960 /* KSManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSManagedObject.h; sourceTree = "<group>"; };
+		C94BC1CA1D3978F800C3E960 /* KSManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSManagedObject.m; sourceTree = "<group>"; };
+		C95A3BDC1D38125F00B7A60C /* KSCalendarContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCalendarContext.h; sourceTree = "<group>"; };
+		C95A3BDD1D38125F00B7A60C /* KSCalendarContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCalendarContext.m; sourceTree = "<group>"; };
+		C95A3BE21D3820A900B7A60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C95A3BE41D3820A900B7A60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +204,15 @@
 				17D9BAD509108C25542D7939 /* Pods-Akvamarin.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C90F74771D3B6A7B00F66F10 /* KSDateComponents+KSExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				C90F74781D3B6A7B00F66F10 /* NSDateComponents+KSExtensions.h */,
+				C90F74791D3B6A7B00F66F10 /* NSDateComponents+KSExtensions.m */,
+			);
+			path = "KSDateComponents+KSExtensions";
 			sourceTree = "<group>";
 		};
 		C938F9651D2E877C0081DB7D = {
@@ -206,10 +246,10 @@
 		C938F9881D2E88DA0081DB7D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C94BC1C51D39778C00C3E960 /* Constants */,
+				C95A3BE01D3820A900B7A60C /* Base.lproj */,
 				C938F99A1D2E8A7B0081DB7D /* AppDelegate */,
 				C938F98C1D2E88DA0081DB7D /* Assets.xcassets */,
-				C938F98D1D2E88DA0081DB7D /* LaunchScreen.storyboard */,
-				C938F98F1D2E88DA0081DB7D /* Main.storyboard */,
 				C938FAC41D2EC12A0081DB7D /* KSProject-Prefix.pch */,
 				C938F9911D2E88DA0081DB7D /* Info.plist */,
 				C938F9921D2E88DA0081DB7D /* main.m */,
@@ -229,6 +269,8 @@
 		C938F99F1D2E8CDD0081DB7D /* Sourse */ = {
 			isa = PBXGroup;
 			children = (
+				C94BC1861D39706E00C3E960 /* Models */,
+				C95A3BDB1D38122F00B7A60C /* Contexts */,
 				C9BA5E221D2EC8FE0055B238 /* UI */,
 			);
 			path = Sourse;
@@ -249,6 +291,7 @@
 		C938FA331D2EC0C30081DB7D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C90F74771D3B6A7B00F66F10 /* KSDateComponents+KSExtensions */,
 				C938FA341D2EC0C30081DB7D /* CGGeometry+KSExtensions */,
 				C938FA371D2EC0C30081DB7D /* NSBundle+KSExtensions */,
 				C938FA3A1D2EC0C30081DB7D /* NSFileManager+KSExtensions */,
@@ -610,6 +653,95 @@
 			path = KSCalendarView;
 			sourceTree = "<group>";
 		};
+		C94BC1861D39706E00C3E960 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C94BC1871D3970C100C3E960 /* KSCoreDataModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C94BC1871D3970C100C3E960 /* KSCoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				C94BC1C81D3978F800C3E960 /* KSManagedObject */,
+				C94BC1AA1D3976E400C3E960 /* KSCalendar */,
+				C94BC1B31D3976E400C3E960 /* KSEvent */,
+				C94BC1B81D3976E400C3E960 /* KSPhoto */,
+				C94BC1881D39717700C3E960 /* KSCoreDataModel.xcdatamodeld */,
+			);
+			path = KSCoreDataModel;
+			sourceTree = "<group>";
+		};
+		C94BC1AA1D3976E400C3E960 /* KSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				C94BC1AB1D3976E400C3E960 /* KSCalendar+CoreDataProperties.h */,
+				C94BC1AC1D3976E400C3E960 /* KSCalendar+CoreDataProperties.m */,
+				C94BC1AD1D3976E400C3E960 /* KSCalendar.h */,
+				C94BC1AE1D3976E400C3E960 /* KSCalendar.m */,
+			);
+			path = KSCalendar;
+			sourceTree = "<group>";
+		};
+		C94BC1B31D3976E400C3E960 /* KSEvent */ = {
+			isa = PBXGroup;
+			children = (
+				C94BC1B41D3976E400C3E960 /* KSEvent+CoreDataProperties.h */,
+				C94BC1B51D3976E400C3E960 /* KSEvent+CoreDataProperties.m */,
+				C94BC1B61D3976E400C3E960 /* KSEvent.h */,
+				C94BC1B71D3976E400C3E960 /* KSEvent.m */,
+			);
+			path = KSEvent;
+			sourceTree = "<group>";
+		};
+		C94BC1B81D3976E400C3E960 /* KSPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				C94BC1B91D3976E400C3E960 /* KSPhoto+CoreDataProperties.h */,
+				C94BC1BA1D3976E400C3E960 /* KSPhoto+CoreDataProperties.m */,
+				C94BC1BB1D3976E400C3E960 /* KSPhoto.h */,
+				C94BC1BC1D3976E400C3E960 /* KSPhoto.m */,
+			);
+			path = KSPhoto;
+			sourceTree = "<group>";
+		};
+		C94BC1C51D39778C00C3E960 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C94BC1C61D3977BE00C3E960 /* KSCalendarConstants.h */,
+				C94BC1C71D3977D400C3E960 /* KSCoreDataConstants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		C94BC1C81D3978F800C3E960 /* KSManagedObject */ = {
+			isa = PBXGroup;
+			children = (
+				C94BC1C91D3978F800C3E960 /* KSManagedObject.h */,
+				C94BC1CA1D3978F800C3E960 /* KSManagedObject.m */,
+			);
+			path = KSManagedObject;
+			sourceTree = "<group>";
+		};
+		C95A3BDB1D38122F00B7A60C /* Contexts */ = {
+			isa = PBXGroup;
+			children = (
+				C95A3BDC1D38125F00B7A60C /* KSCalendarContext.h */,
+				C95A3BDD1D38125F00B7A60C /* KSCalendarContext.m */,
+			);
+			path = Contexts;
+			sourceTree = "<group>";
+		};
+		C95A3BE01D3820A900B7A60C /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				C95A3BE11D3820A900B7A60C /* LaunchScreen.storyboard */,
+				C95A3BE31D3820A900B7A60C /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
 		C9BA5E221D2EC8FE0055B238 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -689,12 +821,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C95A3BE61D3820A900B7A60C /* Main.storyboard in Resources */,
 				C938FABF1D2EC0C30081DB7D /* KSUserViewController.xib in Resources */,
 				C94AEC251D30DF9400C1E4EB /* KSCalendarViewController.xib in Resources */,
-				C938F9961D2E88DA0081DB7D /* Main.storyboard in Resources */,
 				C938F9941D2E88DA0081DB7D /* Assets.xcassets in Resources */,
+				C95A3BE51D3820A900B7A60C /* LaunchScreen.storyboard in Resources */,
 				C938FAC11D2EC0C30081DB7D /* KSLoadingView.xib in Resources */,
-				C938F9951D2E88DA0081DB7D /* LaunchScreen.storyboard in Resources */,
 				C938FABC1D2EC0C30081DB7D /* KSUserViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -761,20 +893,26 @@
 				C938FAB61D2EC0C30081DB7D /* KSObserverObject.m in Sources */,
 				C938FAB21D2EC0C30081DB7D /* KSModel.m in Sources */,
 				C938FA9F1D2EC0C30081DB7D /* CGGeometry+KSExtensions.m in Sources */,
+				C95A3BDE1D38125F00B7A60C /* KSCalendarContext.m in Sources */,
 				C94AEC201D30DB1600C1E4EB /* KSCalendarView.m in Sources */,
+				C94BC1C21D3976E400C3E960 /* KSEvent.m in Sources */,
 				C938FAA71D2EC0C30081DB7D /* UITableView+KSExtensions.m in Sources */,
 				C938FAA31D2EC0C30081DB7D /* NSString+KSExtension.m in Sources */,
 				C938FABA1D2EC0C30081DB7D /* KSImageView.m in Sources */,
 				C94AEC241D30DF9400C1E4EB /* KSCalendarViewController.m in Sources */,
+				C94BC1BD1D3976E400C3E960 /* KSCalendar+CoreDataProperties.m in Sources */,
 				C938FAA81D2EC0C30081DB7D /* UIViewController+KSExtensions.m in Sources */,
 				C938FAAE1D2EC0C30081DB7D /* KSArrayModel.m in Sources */,
+				C94BC18A1D39717700C3E960 /* KSCoreDataModel.xcdatamodeld in Sources */,
 				C938FAA11D2EC0C30081DB7D /* NSFileManager+KSExtensions.m in Sources */,
 				C938FAC01D2EC0C30081DB7D /* KSLoadingView.m in Sources */,
+				C90F747A1D3B6A7B00F66F10 /* NSDateComponents+KSExtensions.m in Sources */,
 				C938FAAB1D2EC0C30081DB7D /* KSAlphabetCluster.m in Sources */,
 				C938FAB51D2EC0C30081DB7D /* KSObserverDictionary.m in Sources */,
 				C938FAB11D2EC0C30081DB7D /* KSDispatch.m in Sources */,
 				C938FAAD1D2EC0C30081DB7D /* KSAlphabetString.m in Sources */,
 				C938FAA91D2EC0C30081DB7D /* UIWindow+KSExtension.m in Sources */,
+				C94BC1C11D3976E400C3E960 /* KSEvent+CoreDataProperties.m in Sources */,
 				C938FAB81D2EC0C30081DB7D /* KSStringModel.m in Sources */,
 				C938FABE1D2EC0C30081DB7D /* KSUserViewController.m in Sources */,
 				C938FAAC1D2EC0C30081DB7D /* KSAlphabetRange.m in Sources */,
@@ -784,31 +922,35 @@
 				C938FAB01D2EC0C30081DB7D /* KSCache.m in Sources */,
 				C938FAA61D2EC0C30081DB7D /* UINib+KSExtensions.m in Sources */,
 				C938FAAF1D2EC0C30081DB7D /* KSArrayModelManager.m in Sources */,
+				C94BC1C41D3976E400C3E960 /* KSPhoto.m in Sources */,
 				C938FAB91D2EC0C30081DB7D /* KSImageModel.m in Sources */,
+				C94BC1C31D3976E400C3E960 /* KSPhoto+CoreDataProperties.m in Sources */,
+				C94BC1CB1D3978F800C3E960 /* KSManagedObject.m in Sources */,
 				C938FAC21D2EC0C30081DB7D /* KSView.m in Sources */,
 				C938FAA51D2EC0C30081DB7D /* UICollectionView+UICollectionView.m in Sources */,
 				C938FAB31D2EC0C30081DB7D /* KSObserver.m in Sources */,
 				C938FAAA1D2EC0C30081DB7D /* KSAlphabet.m in Sources */,
 				C938FAA21D2EC0C30081DB7D /* NSObject+KSExtension.m in Sources */,
 				C938FABD1D2EC0C30081DB7D /* KSUserView.m in Sources */,
+				C94BC1BE1D3976E400C3E960 /* KSCalendar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C938F98D1D2E88DA0081DB7D /* LaunchScreen.storyboard */ = {
+		C95A3BE11D3820A900B7A60C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C938F98E1D2E88DA0081DB7D /* Base */,
+				C95A3BE21D3820A900B7A60C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		C938F98F1D2E88DA0081DB7D /* Main.storyboard */ = {
+		C95A3BE31D3820A900B7A60C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C938F9901D2E88DA0081DB7D /* Base */,
+				C95A3BE41D3820A900B7A60C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -950,6 +1092,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C94BC1881D39717700C3E960 /* KSCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C94BC1891D39717700C3E960 /* KSCoreDataModel.xcdatamodel */,
+			);
+			currentVersion = C94BC1891D39717700C3E960 /* KSCoreDataModel.xcdatamodel */;
+			path = KSCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C938F9661D2E877C0081DB7D /* Project object */;
 }

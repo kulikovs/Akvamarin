@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MBCalendarKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Akvamarin.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -72,17 +77,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>709F0DB10E0183CE81ECC0A5CB0501EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>75DD93DC0202DA207E9B10E89ACEB2EE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8998CFEA72D1399083576D757BF3AF88</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D5F2EA7E0FA58E45BCEDE28E274FC298</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DE6D747F1390EDF4802240B6AB828BEB</key>
+		<key>B87255E6033E16C88EB33732A60CD94A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
