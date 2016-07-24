@@ -161,7 +161,7 @@
     KSWeakifySelf;
     KSDispatchAsyncOnMainThread(^{
         KSStrongifySelfWithClass(KSImageModel);
-        kKSArrayModelState state = self.image ? kKSModelStateLoaded : kKSModelStateFailed;
+        kKSModelState state = self.image ? kKSModelStateLoaded : kKSModelStateFailed;
         [self setState:state withObject:self.image];
     });
 }

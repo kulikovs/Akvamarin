@@ -9,7 +9,7 @@
 #import "IDPActiveRecordKit.h"
 
 #import "AppDelegate.h"
-#import "KSCalendarViewController.h"
+#import "KSStartViewController.h"
 #import "KSCoreDataConstants.h"
 
 @interface AppDelegate ()
@@ -25,10 +25,10 @@
     UIWindow *window = [UIWindow new];
     self.window = window;
     
-    KSCalendarViewController *calendarViewController = [KSCalendarViewController new];
+    KSStartViewController *startViewController = [KSStartViewController new];
     
     UINavigationController *navigationController = [[UINavigationController alloc]
-                                                    initWithRootViewController:calendarViewController];
+                                                    initWithRootViewController:startViewController];
 
     window.rootViewController = navigationController;
     [window makeKeyAndVisible];

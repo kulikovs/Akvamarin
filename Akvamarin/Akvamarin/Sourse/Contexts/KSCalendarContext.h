@@ -15,7 +15,6 @@
 @interface KSCalendarContext : KSModel
 
 - (instancetype)initWithCalendar:(KSCalendar *)calendar;
-- (void)execute;
 - (void)cancel;
 
 @end

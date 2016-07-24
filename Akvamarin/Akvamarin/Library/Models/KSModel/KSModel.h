@@ -8,7 +8,7 @@
 
 #import "KSObserver.h"
 
-typedef NS_ENUM(NSUInteger, kKSArrayModelState) {
+typedef NS_ENUM(NSUInteger, kKSModelState) {
     kKSModelStateUndefined,
     kKSModelStateLoading,
     kKSModelStateChanged,

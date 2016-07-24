@@ -1042,7 +1042,7 @@
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         
         if ([indexPath row] == 1) {
-            [[cell textLabel] setText:NSLocalizedString(@"No Events", @"A label for a table with no events.")];
+            [[cell textLabel] setText:NSLocalizedString(@"Ничего не запланировано", @"A label for a table with no events.")];
         }
         else
         {

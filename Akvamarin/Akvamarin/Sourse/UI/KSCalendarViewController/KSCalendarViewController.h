@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class KSCalendar;
+
 @interface KSCalendarViewController : UIViewController
+@property (nonatomic, strong) KSCalendar  *calendar;
 
 @end

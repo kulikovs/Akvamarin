@@ -18,6 +18,17 @@
 
 @implementation CKCalendarViewController
 
+//- (id)init
+//{
+//    self = [super init];
+//    if (self) {
+//        _calendarViewController = [CKCalendarViewControllerInternal new];
+//        [_calendarViewController setDelegate:self];
+//        [_calendarViewController setDataSource:self];
+//    }
+//    return self;
+//}
+
 - (id)init
 {
     CKCalendarViewControllerInternal *calendarViewController = [CKCalendarViewControllerInternal new];
@@ -30,6 +41,7 @@
     }
     return self;
 }
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

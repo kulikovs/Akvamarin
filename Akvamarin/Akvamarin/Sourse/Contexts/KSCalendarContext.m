@@ -43,17 +43,20 @@
 #pragma mark Private Methods
 
 - (NSString *)titleFromStartDate:(NSDate *)startDate endDate:(NSDate *)endDate {
-    NSDateComponents *startDateComponents = [NSDateComponents componentsWithDate:startDate];
-    NSDateComponents *endDateComponents = [NSDateComponents componentsWithDate:endDate];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:kKSTimeFormateKey];
     
-    NSString *titleString = [NSString stringWithFormat:kKSTitleFormat, startDateComponents.hour,
-                             startDateComponents.minute, endDateComponents.hour, endDateComponents.minute,
-                             kKSStudioBusyKey];
+    NSString *startTime = [dateFormatter stringFromDate:startDate];
+    NSString *endTime = [dateFormatter stringFromDate:endDate];
+    
+    
+    NSString *titleString = [NSString stringWithFormat:kKSTitleFormat, startTime, endTime, kKSStudioBusyKey];
     
     return titleString;
 }
 
 - (void)parseResult:(NSDictionary *)result {
+    @synchronized (self) {
     NSArray *array = [result valueForKeyPath:kKSItemsKey];
     NSMutableArray *events = [NSMutableArray array];
     
@@ -66,19 +69,27 @@
         event.startDateTime = [dayFormatter dateFromString:[dictionary valueForKeyPath:kKSStartDateTimeKey]];
         event.endDateTime = [dayFormatter dateFromString:[dictionary valueForKeyPath:kKSEndDateTimeKey]];
         event.title = [self titleFromStartDate:event.startDateTime endDate:event.endDateTime];
-    
+        
         [events addObject:event];
     }
     
     [self.calendar setEvents:[NSSet setWithArray:events]];
+    }
+}
+
+
+- (void)dump {
+    self.state = kKSModelStateUndefined;
 }
 
 #pragma mark -
 #pragma mark Public Methods
 
-- (void)execute {
-    NSString *calendarUrl = [NSString stringWithFormat:kKSCalendarUrlFormat, kKSCalendarId, kKSApiKey];
+- (void)prepareToLoad {
+    @synchronized (self) {
+    [self dump];
     
+    NSString *calendarUrl = [NSString stringWithFormat:kKSCalendarUrlFormat, kKSCalendarId, kKSApiKey];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:calendarUrl]];
     [request setHTTPMethod:kKSHTTPMethod];
     
@@ -88,12 +99,16 @@
         } else {
             [self parseResult:[NSJSONSerialization JSONObjectWithData:data options:0 error:nil]];
             [self.calendar saveManagedObject];
-            [self setState:kKSModelStateLoaded withObject:nil];
         }};
     
     self.dataTask = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:block];
     
     [self.dataTask resume];
+    }
+}
+
+- (void)finishLoading {
+    [self setState:kKSModelStateLoaded withObject:nil];
 }
 
 - (void)cancel {

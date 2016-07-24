@@ -8,7 +8,10 @@
 
 #import "KSView.h"
 
-@interface KSCalendarView : KSView
+@class CKCalendarView;
 
+@interface KSCalendarView : UIView
+@property (nonatomic, strong) IBOutlet KSView           *subView;
+@property (nonatomic, strong)          CKCalendarView   *calendarView;
 
 @end

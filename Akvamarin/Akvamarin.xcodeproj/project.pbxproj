@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5CEE8F76BF24B38B46825321 /* libPods-Akvamarin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 353B22CF7D74BDFE441972C5 /* libPods-Akvamarin.a */; };
-		C90F747A1D3B6A7B00F66F10 /* NSDateComponents+KSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F74791D3B6A7B00F66F10 /* NSDateComponents+KSExtensions.m */; };
+		C9017C831D44097900F9E6E1 /* NSDateComponents+KSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9017C821D44097900F9E6E1 /* NSDateComponents+KSExtensions.m */; };
+		C9017C871D4409EF00F9E6E1 /* NSDate+KSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C9017C861D4409EF00F9E6E1 /* NSDate+KSExtensions.m */; };
+		C90F74831D3B7B3700F66F10 /* KSStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F74811D3B7B3700F66F10 /* KSStartViewController.m */; };
+		C90F74841D3B7B3700F66F10 /* KSStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90F74821D3B7B3700F66F10 /* KSStartViewController.xib */; };
+		C90F74871D3B7B6700F66F10 /* KSStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F74861D3B7B6700F66F10 /* KSStartView.m */; };
 		C938F9941D2E88DA0081DB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C938F98C1D2E88DA0081DB7D /* Assets.xcassets */; };
 		C938F9981D2E88DA0081DB7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C938F9921D2E88DA0081DB7D /* main.m */; };
 		C938F99D1D2E8A7B0081DB7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C938F99C1D2E8A7B0081DB7D /* AppDelegate.m */; };
@@ -68,8 +72,15 @@
 		17D9BAD509108C25542D7939 /* Pods-Akvamarin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Akvamarin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Akvamarin/Pods-Akvamarin.release.xcconfig"; sourceTree = "<group>"; };
 		353B22CF7D74BDFE441972C5 /* libPods-Akvamarin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Akvamarin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D6F54CD53AAFC30B3CD6F0 /* Pods-Akvamarin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Akvamarin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Akvamarin/Pods-Akvamarin.debug.xcconfig"; sourceTree = "<group>"; };
-		C90F74781D3B6A7B00F66F10 /* NSDateComponents+KSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateComponents+KSExtensions.h"; sourceTree = "<group>"; };
-		C90F74791D3B6A7B00F66F10 /* NSDateComponents+KSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateComponents+KSExtensions.m"; sourceTree = "<group>"; };
+		C9017C811D44097900F9E6E1 /* NSDateComponents+KSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateComponents+KSExtensions.h"; sourceTree = "<group>"; };
+		C9017C821D44097900F9E6E1 /* NSDateComponents+KSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateComponents+KSExtensions.m"; sourceTree = "<group>"; };
+		C9017C851D4409EF00F9E6E1 /* NSDate+KSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+KSExtensions.h"; sourceTree = "<group>"; };
+		C9017C861D4409EF00F9E6E1 /* NSDate+KSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+KSExtensions.m"; sourceTree = "<group>"; };
+		C90F74801D3B7B3700F66F10 /* KSStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSStartViewController.h; sourceTree = "<group>"; };
+		C90F74811D3B7B3700F66F10 /* KSStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSStartViewController.m; sourceTree = "<group>"; };
+		C90F74821D3B7B3700F66F10 /* KSStartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KSStartViewController.xib; sourceTree = "<group>"; };
+		C90F74851D3B7B6700F66F10 /* KSStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSStartView.h; sourceTree = "<group>"; };
+		C90F74861D3B7B6700F66F10 /* KSStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSStartView.m; sourceTree = "<group>"; };
 		C938F96E1D2E877C0081DB7D /* Akvamarin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Akvamarin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C938F98C1D2E88DA0081DB7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C938F9911D2E88DA0081DB7D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -206,13 +217,42 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C90F74771D3B6A7B00F66F10 /* KSDateComponents+KSExtensions */ = {
+		C9017C801D44097900F9E6E1 /* NSDateComponents+KSExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				C90F74781D3B6A7B00F66F10 /* NSDateComponents+KSExtensions.h */,
-				C90F74791D3B6A7B00F66F10 /* NSDateComponents+KSExtensions.m */,
+				C9017C811D44097900F9E6E1 /* NSDateComponents+KSExtensions.h */,
+				C9017C821D44097900F9E6E1 /* NSDateComponents+KSExtensions.m */,
 			);
-			path = "KSDateComponents+KSExtensions";
+			path = "NSDateComponents+KSExtensions";
+			sourceTree = "<group>";
+		};
+		C9017C841D4409A600F9E6E1 /* NSDate+KSExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				C9017C851D4409EF00F9E6E1 /* NSDate+KSExtensions.h */,
+				C9017C861D4409EF00F9E6E1 /* NSDate+KSExtensions.m */,
+			);
+			path = "NSDate+KSExtensions";
+			sourceTree = "<group>";
+		};
+		C90F747B1D3B7A9400F66F10 /* KSStartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C90F747C1D3B7AAD00F66F10 /* KSStartView */,
+				C90F74801D3B7B3700F66F10 /* KSStartViewController.h */,
+				C90F74811D3B7B3700F66F10 /* KSStartViewController.m */,
+				C90F74821D3B7B3700F66F10 /* KSStartViewController.xib */,
+			);
+			path = KSStartViewController;
+			sourceTree = "<group>";
+		};
+		C90F747C1D3B7AAD00F66F10 /* KSStartView */ = {
+			isa = PBXGroup;
+			children = (
+				C90F74851D3B7B6700F66F10 /* KSStartView.h */,
+				C90F74861D3B7B6700F66F10 /* KSStartView.m */,
+			);
+			path = KSStartView;
 			sourceTree = "<group>";
 		};
 		C938F9651D2E877C0081DB7D = {
@@ -291,7 +331,8 @@
 		C938FA331D2EC0C30081DB7D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				C90F74771D3B6A7B00F66F10 /* KSDateComponents+KSExtensions */,
+				C9017C841D4409A600F9E6E1 /* NSDate+KSExtensions */,
+				C9017C801D44097900F9E6E1 /* NSDateComponents+KSExtensions */,
 				C938FA341D2EC0C30081DB7D /* CGGeometry+KSExtensions */,
 				C938FA371D2EC0C30081DB7D /* NSBundle+KSExtensions */,
 				C938FA3A1D2EC0C30081DB7D /* NSFileManager+KSExtensions */,
@@ -745,6 +786,7 @@
 		C9BA5E221D2EC8FE0055B238 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				C90F747B1D3B7A9400F66F10 /* KSStartViewController */,
 				C9BA5E231D2EC9A10055B238 /* KSCalendarViewController */,
 			);
 			path = UI;
@@ -826,6 +868,7 @@
 				C94AEC251D30DF9400C1E4EB /* KSCalendarViewController.xib in Resources */,
 				C938F9941D2E88DA0081DB7D /* Assets.xcassets in Resources */,
 				C95A3BE51D3820A900B7A60C /* LaunchScreen.storyboard in Resources */,
+				C90F74841D3B7B3700F66F10 /* KSStartViewController.xib in Resources */,
 				C938FAC11D2EC0C30081DB7D /* KSLoadingView.xib in Resources */,
 				C938FABC1D2EC0C30081DB7D /* KSUserViewCell.xib in Resources */,
 			);
@@ -893,20 +936,22 @@
 				C938FAB61D2EC0C30081DB7D /* KSObserverObject.m in Sources */,
 				C938FAB21D2EC0C30081DB7D /* KSModel.m in Sources */,
 				C938FA9F1D2EC0C30081DB7D /* CGGeometry+KSExtensions.m in Sources */,
+				C9017C831D44097900F9E6E1 /* NSDateComponents+KSExtensions.m in Sources */,
 				C95A3BDE1D38125F00B7A60C /* KSCalendarContext.m in Sources */,
 				C94AEC201D30DB1600C1E4EB /* KSCalendarView.m in Sources */,
 				C94BC1C21D3976E400C3E960 /* KSEvent.m in Sources */,
 				C938FAA71D2EC0C30081DB7D /* UITableView+KSExtensions.m in Sources */,
 				C938FAA31D2EC0C30081DB7D /* NSString+KSExtension.m in Sources */,
 				C938FABA1D2EC0C30081DB7D /* KSImageView.m in Sources */,
+				C9017C871D4409EF00F9E6E1 /* NSDate+KSExtensions.m in Sources */,
 				C94AEC241D30DF9400C1E4EB /* KSCalendarViewController.m in Sources */,
 				C94BC1BD1D3976E400C3E960 /* KSCalendar+CoreDataProperties.m in Sources */,
 				C938FAA81D2EC0C30081DB7D /* UIViewController+KSExtensions.m in Sources */,
 				C938FAAE1D2EC0C30081DB7D /* KSArrayModel.m in Sources */,
 				C94BC18A1D39717700C3E960 /* KSCoreDataModel.xcdatamodeld in Sources */,
+				C90F74871D3B7B6700F66F10 /* KSStartView.m in Sources */,
 				C938FAA11D2EC0C30081DB7D /* NSFileManager+KSExtensions.m in Sources */,
 				C938FAC01D2EC0C30081DB7D /* KSLoadingView.m in Sources */,
-				C90F747A1D3B6A7B00F66F10 /* NSDateComponents+KSExtensions.m in Sources */,
 				C938FAAB1D2EC0C30081DB7D /* KSAlphabetCluster.m in Sources */,
 				C938FAB51D2EC0C30081DB7D /* KSObserverDictionary.m in Sources */,
 				C938FAB11D2EC0C30081DB7D /* KSDispatch.m in Sources */,
@@ -915,6 +960,7 @@
 				C94BC1C11D3976E400C3E960 /* KSEvent+CoreDataProperties.m in Sources */,
 				C938FAB81D2EC0C30081DB7D /* KSStringModel.m in Sources */,
 				C938FABE1D2EC0C30081DB7D /* KSUserViewController.m in Sources */,
+				C90F74831D3B7B3700F66F10 /* KSStartViewController.m in Sources */,
 				C938FAAC1D2EC0C30081DB7D /* KSAlphabetRange.m in Sources */,
 				C938F99D1D2E8A7B0081DB7D /* AppDelegate.m in Sources */,
 				C938FAA01D2EC0C30081DB7D /* NSBundle+KSExtensions.m in Sources */,
