@@ -10,4 +10,8 @@
 
 @implementation NSDate (KSExtensions)
 
+- (BOOL)currentDateIsAfterDay:(NSDate *)date {
+    return  [[NSDate date] timeIntervalSinceDate:date] < 0;
+}
+
 @end

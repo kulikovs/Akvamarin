@@ -22,5 +22,6 @@
 #import "UIBarButtonItem+KSExtensions.h"
 #import "UICollectionView+UICollectionView.h"
 #import "NSDateComponents+KSExtensions.h"
+#import "NSDate+KSExtensions.h"
 
 #endif /* KSExtentionsLibraryImporting_h */

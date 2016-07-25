@@ -10,4 +10,6 @@
 
 @interface NSDate (KSExtensions)
 
+- (BOOL)currentDateIsAfterDay:(NSDate *)date;
+
 @end

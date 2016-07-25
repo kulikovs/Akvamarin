@@ -10,8 +10,8 @@
 
 @class CKCalendarView;
 
-@interface KSCalendarView : UIView
-@property (nonatomic, strong) IBOutlet KSView           *subView;
+@interface KSCalendarView : KSView
+@property (nonatomic, strong) IBOutlet UIView           *subView;
 @property (nonatomic, strong)          CKCalendarView   *calendarView;
 
 @end

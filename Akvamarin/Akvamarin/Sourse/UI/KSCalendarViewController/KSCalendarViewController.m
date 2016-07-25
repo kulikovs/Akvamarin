@@ -20,8 +20,6 @@
 @interface KSCalendarViewController () <CKCalendarViewDataSource>
 @property (nonatomic, readonly) KSCalendarView      *rootView;
 @property (nonatomic, strong)   KSCalendarContext   *context;
-@property (nonatomic, readonly) KSView              *subView;
-@property (nonatomic, readonly) CKCalendarView      *calendarView;
 
 - (void)addHandlers;
 - (void)contextDidLoad;
@@ -33,8 +31,6 @@
 @implementation KSCalendarViewController
 
 @dynamic rootView;
-@dynamic calendarView;
-@dynamic subView;
 
 #pragma mark -
 #pragma mark Accessors
@@ -63,20 +59,12 @@ KSRootViewAndReturnNilMacro(KSCalendarView);
     return self.rootView.calendarView;
 }
 
-- (KSView *)subView {
-    return self.rootView.subView;
-}
-
 #pragma mark -
 #pragma mark View LifeCycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self loadCalendarView];
-    if (self.context.state == kKSModelStateLoading) {
-        [self.subView showLoadingViewWithDefaultTextAnimated:YES];
-    }
+    [self.rootView showLoadingViewWithDefaultTextAnimated:YES];
 }
 
 #pragma mark -
@@ -86,7 +74,9 @@ KSRootViewAndReturnNilMacro(KSCalendarView);
     KSWeakifySelf;
     [_context addHandler:^(id object) {
         KSStrongifySelfAndReturnIfNil;
-        [strongSelf contextDidLoad];
+        KSDispatchAsyncOnMainThread(^{
+            [strongSelf contextDidLoad];
+        });
     }
                    state:kKSModelStateLoaded
                   object:self];
@@ -102,8 +92,8 @@ KSRootViewAndReturnNilMacro(KSCalendarView);
 }
 
 - (void)contextDidLoad {
-    [self.calendarView reload];
-    [self.subView removeLoadingViewAnimated:NO];
+    [self loadCalendarView];
+    [self.rootView removeLoadingViewAnimated:NO];
 }
 
 - (void)contextLoadFailed {
@@ -114,7 +104,7 @@ KSRootViewAndReturnNilMacro(KSCalendarView);
     CKCalendarView *calendarView = self.calendarView;
     calendarView  = [CKCalendarView new];
     [calendarView setDataSource:self];
-    [self.subView addSubview:calendarView];
+    [self.rootView.subView addSubview:calendarView];
 }
 
 #pragma mark -

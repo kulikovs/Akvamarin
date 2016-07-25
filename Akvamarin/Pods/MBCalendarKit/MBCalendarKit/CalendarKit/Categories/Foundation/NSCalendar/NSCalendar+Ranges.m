@@ -297,5 +297,4 @@
     return [firstDate timeIntervalSinceDate:anotherDate] > 0;
 }
 
-
 @end

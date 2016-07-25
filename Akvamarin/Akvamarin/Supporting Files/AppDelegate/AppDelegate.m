@@ -11,17 +11,28 @@
 #import "AppDelegate.h"
 #import "KSStartViewController.h"
 #import "KSCoreDataConstants.h"
+#import "KSCalendar.h"
+#import "KSEvent.h"
+#import "KSCalendarConstants.h"
+#import "NSCalendar+Ranges.h"
+
 
 @interface AppDelegate ()
+
+- (void)removeOldEvents;
 
 @end
 
 @implementation AppDelegate
 
+#pragma mark -
+#pragma mark AppDelegate Methods
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [IDPCoreDataManager sharedManagerWithMomName:kKSCoreDataModelName];
     
+    [self removeOldEvents];
+
     UIWindow *window = [UIWindow new];
     self.window = window;
     
@@ -55,5 +66,20 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
 
 }
+
+#pragma mark -
+#pragma mark Private Methods
+
+- (void)removeOldEvents {
+    KSCalendar *calendar = [KSCalendar objectWithID:kKSCalendarId];
+    NSArray *events = calendar.events.allObjects;
+    
+    for (KSEvent *event in events) {
+        if ([[NSDate date] timeIntervalSinceDate:event.endDateTime] > 0) {
+            [calendar removeEventsObject:event];
+        }
+    }
+}
+
 
 @end
