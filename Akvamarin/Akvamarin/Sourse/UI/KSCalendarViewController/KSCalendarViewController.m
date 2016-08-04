@@ -16,6 +16,7 @@
 #import "KSCalendarContext.h"
 #import "KSCalendar.h"
 #import "KSEvent.h"
+#import "KSReserveViewController.h"
 
 @interface KSCalendarViewController () <CKCalendarViewDataSource>
 @property (nonatomic, readonly) KSCalendarView      *rootView;
@@ -105,6 +106,14 @@ KSRootViewAndReturnNilMacro(KSCalendarView);
     calendarView  = [CKCalendarView new];
     [calendarView setDataSource:self];
     [self.rootView.subView addSubview:calendarView];
+}
+
+#pragma mark -
+#pragma mark Handling
+
+- (IBAction)onResereButtonClick:(id)sender {
+    KSReserveViewController *reserveController = [KSReserveViewController new];
+    [self.navigationController pushViewController:reserveController animated:YES];
 }
 
 #pragma mark -

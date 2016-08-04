@@ -11,6 +11,7 @@
 #import "AppDelegate.h"
 #import "KSStartViewController.h"
 #import "KSCoreDataConstants.h"
+#import "KSRequestConstants.h"
 #import "KSCalendar.h"
 #import "KSEvent.h"
 #import "KSCalendarConstants.h"
@@ -28,7 +29,7 @@
 #pragma mark -
 #pragma mark AppDelegate Methods
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOption {
     [IDPCoreDataManager sharedManagerWithMomName:kKSCoreDataModelName];
     
     [self removeOldEvents];

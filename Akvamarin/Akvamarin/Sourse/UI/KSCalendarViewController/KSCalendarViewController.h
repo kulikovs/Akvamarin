@@ -13,4 +13,6 @@
 @interface KSCalendarViewController : UIViewController
 @property (nonatomic, strong) KSCalendar  *calendar;
 
+- (IBAction)onResereButtonClick:(id)sender;
+
 @end

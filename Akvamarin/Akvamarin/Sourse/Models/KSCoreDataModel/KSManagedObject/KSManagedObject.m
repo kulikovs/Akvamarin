@@ -48,4 +48,11 @@
     return [[[self class] fetchEntityWithSortDescriptors:nil predicate:predicate prefetchPaths:nil] firstObject];
 }
 
+
++ (NSArray *)findObjectsWithClass:(Class)theClass {
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"self isKindOfClass: %@", [theClass class]];
+    
+    return [[self class] fetchEntityWithSortDescriptors:nil predicate:predicate prefetchPaths:nil];
+}
+
 @end

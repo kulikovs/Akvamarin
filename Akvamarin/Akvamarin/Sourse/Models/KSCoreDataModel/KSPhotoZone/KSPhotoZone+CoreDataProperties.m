@@ -1,5 +1,5 @@
 //
-//  KSPhoto+CoreDataProperties.m
+//  KSPhotoZone+CoreDataProperties.m
 //  Akvamarin
 //
 //  Created by KulikovS on 02.08.16.
@@ -9,11 +9,11 @@
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "KSPhoto+CoreDataProperties.h"
+#import "KSPhotoZone+CoreDataProperties.h"
 
-@implementation KSPhoto (CoreDataProperties)
+@implementation KSPhotoZone (CoreDataProperties)
 
-@dynamic url;
+@dynamic name;
 @dynamic mainPhoto;
 @dynamic photos;
 

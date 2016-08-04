@@ -2,7 +2,7 @@
 //  KSPhoto+CoreDataProperties.h
 //  Akvamarin
 //
-//  Created by KulikovS on 15.07.16.
+//  Created by KulikovS on 02.08.16.
 //  Copyright © 2016 KulikovS. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -13,8 +13,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class KSPhotoZone;
+
 @interface KSPhoto (CoreDataProperties)
-@property (nonatomic, strong) NSString *url;
+
+@property (nullable, nonatomic, copy) NSString *url;
+@property (nullable, nonatomic, retain) KSPhotoZone *mainPhoto;
+@property (nullable, nonatomic, retain) KSPhotoZone *photos;
 
 @end
 

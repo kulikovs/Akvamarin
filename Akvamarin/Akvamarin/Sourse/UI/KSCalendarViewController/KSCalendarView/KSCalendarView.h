@@ -12,6 +12,7 @@
 
 @interface KSCalendarView : KSView
 @property (nonatomic, strong) IBOutlet UIView           *subView;
+@property (nonatomic, strong) IBOutlet UIButton         *reserveButton;
 @property (nonatomic, strong)          CKCalendarView   *calendarView;
 
 @end

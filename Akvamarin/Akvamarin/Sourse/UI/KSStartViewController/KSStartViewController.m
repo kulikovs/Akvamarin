@@ -10,7 +10,10 @@
 #import "KSCalendarViewController.h"
 #import "KSCalendar.h"
 #import "KSCalendarConstants.h"
+#import "KSRequestConstants.h"
 #import "KSStartView.h"
+#import "KSPhotoZoneViewController.h"
+#import "KSPhotoZoneContext.h"
 
 @interface KSStartViewController ()
 @property (nonatomic, readonly) KSStartView      *rootView;
@@ -36,6 +39,11 @@ KSRootViewAndReturnNilMacro(KSStartView);
     [self.navigationController pushViewController:calendarController animated:YES];
 }
 
-
+- (IBAction)onClickPhotoZone:(id)sender {
+    KSPhotoZoneViewController *photoZoneController = [KSPhotoZoneViewController new];
+    photoZoneController.context = [KSPhotoZoneContext new];
+    
+    [self.navigationController pushViewController:photoZoneController animated:YES];
+}
 
 @end

@@ -14,10 +14,19 @@
     <entity name="KSPhoto" representedClassName="KSPhoto" syncable="YES">
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="mainPhoto" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KSPhotoZone" inverseName="mainPhoto" inverseEntity="KSPhotoZone" syncable="YES"/>
+        <relationship name="photos" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KSPhotoZone" inverseName="photos" inverseEntity="KSPhotoZone" syncable="YES"/>
+    </entity>
+    <entity name="KSPhotoZone" representedClassName="KSPhotoZone" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="mainPhoto" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KSPhoto" inverseName="mainPhoto" inverseEntity="KSPhoto" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="KSPhoto" inverseName="photos" inverseEntity="KSPhoto" syncable="YES"/>
     </entity>
     <elements>
-        <element name="KSCalendar" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="KSCalendar" positionX="-65" positionY="-225" width="128" height="73"/>
         <element name="KSEvent" positionX="259" positionY="-171" width="128" height="118"/>
-        <element name="KSPhoto" positionX="126" positionY="-45" width="128" height="75"/>
+        <element name="KSPhoto" positionX="421" positionY="126" width="128" height="105"/>
+        <element name="KSPhotoZone" positionX="9" positionY="3" width="128" height="105"/>
     </elements>
 </model>

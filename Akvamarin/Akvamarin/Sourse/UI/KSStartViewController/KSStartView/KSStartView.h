@@ -9,6 +9,5 @@
 #import "KSView.h"
 
 @interface KSStartView : KSView
-@property (nonatomic, strong) IBOutlet UIButton *calendar;
 
 @end

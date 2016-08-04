@@ -9,6 +9,7 @@
 #import "KSCalendarContext.h"
 #import "KSCalendarConstants.h"
 #import "KSCoreDataConstants.h"
+#import "KSRequestConstants.h"
 #import "KSCalendar.h"
 #import "KSEvent.h"
 #import "NSCalendar+Ranges.h"
@@ -50,7 +51,7 @@
         
         NSString *calendarUrl = [NSString stringWithFormat:kKSCalendarUrlFormat, kKSCalendarId, kKSApiKey];
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:calendarUrl]];
-        [request setHTTPMethod:kKSHTTPMethod];
+        [request setHTTPMethod:kKSGetHTTPMethod];
         
         id block = ^(NSData *data, NSURLResponse *response, NSError *error) {
             if (error) {
@@ -76,7 +77,7 @@
 
 - (NSString *)titleFromStartDate:(NSDate *)startDate endDate:(NSDate *)endDate {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:kKSTimeFormateKey];
+    [dateFormatter setDateFormat:kKSTimeFormatKey];
     
     NSString *startTime = [dateFormatter stringFromDate:startDate];
     NSString *endTime = [dateFormatter stringFromDate:endDate];
@@ -91,15 +92,15 @@
         
         for (NSDictionary *dictionary in array) {
             NSDateFormatter *dayFormatter = [[NSDateFormatter alloc] init];
-            dayFormatter.dateFormat = kKSDateFormatKey;
+            dayFormatter.dateFormat = kKSDateTimeFormatKey;
             NSDate *endDateTime = [dayFormatter dateFromString:
-                                   [dictionary valueForKeyPath:kKSEndDateTimeKey]];
+                                   [dictionary valueForKeyPath:kKSEndDateKey]];
             
             if ([[NSDate date] timeIntervalSinceDate:endDateTime] < 0) {
                 NSString *ID = [dictionary valueForKey:KKSIDKey];
                 KSEvent *event = [KSEvent objectWithID:ID];
                 event.startDateTime = [dayFormatter dateFromString:
-                                       [dictionary valueForKeyPath:kKSStartDateTimeKey]];
+                                       [dictionary valueForKeyPath:kKSStartDateKey]];
                 event.endDateTime = endDateTime;
                 event.title = [self titleFromStartDate:event.startDateTime endDate:event.endDateTime];
                 
