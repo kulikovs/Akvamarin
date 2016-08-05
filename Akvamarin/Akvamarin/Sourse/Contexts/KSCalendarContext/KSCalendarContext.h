@@ -8,13 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-#import "KSModel.h"
+#import "KSContext.h"
 
 @class KSCalendar;
 
-@interface KSCalendarContext : KSModel
+@interface KSCalendarContext : KSContext
 
 - (instancetype)initWithCalendar:(KSCalendar *)calendar;
-- (void)cancel;
+
 
 @end

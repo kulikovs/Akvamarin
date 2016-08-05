@@ -22,6 +22,9 @@
 
 @implementation KSContext
 
+@dynamic requestURL;
+@dynamic headers;
+
 #pragma mark -
 #pragma mark Initializations and Deallocations
 

@@ -15,13 +15,9 @@
 #import "NSCalendar+Ranges.h"
 
 @interface KSCalendarContext ()
-@property (nonatomic, strong) KSCalendar                     *calendar;
-@property (nonatomic, strong) NSURLSession                   *URLSession;
-@property (nonatomic, strong) NSURLSessionDataTask           *dataTask;
+@property (nonatomic, strong) KSCalendar *calendar;
 
 - (NSString *)titleFromStartDate:(NSDate *)startDate endDate:(NSDate *)endDate;
-- (void)parseResult:(NSDictionary *)result;
-- (void)dump;
 
 @end
 
@@ -33,9 +29,6 @@
 - (instancetype)initWithCalendar:(KSCalendar *)calendar {
     self = [super init];
     if (self) {
-        self.URLSession = [NSURLSession sessionWithConfiguration:
-                           [NSURLSessionConfiguration defaultSessionConfiguration]];
-        
         self.calendar = calendar;
     }
     
@@ -43,33 +36,11 @@
 }
 
 #pragma mark -
-#pragma mark Public Methods
+#pragma mark Accessors
 
-- (void)prepareToLoad {
-    @synchronized (self) {
-        [self dump];
-        
-        NSString *calendarUrl = [NSString stringWithFormat:kKSCalendarUrlFormat, kKSCalendarId, kKSApiKey];
-        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:calendarUrl]];
-        [request setHTTPMethod:kKSGetHTTPMethod];
-        
-        id block = ^(NSData *data, NSURLResponse *response, NSError *error) {
-            if (error) {
-                [self setState:kKSModelStateFailed withObject:nil];
-            } else {
-                [self parseResult:[NSJSONSerialization JSONObjectWithData:data options:0 error:nil]];
-                [self.calendar saveManagedObject];
-                [self setState:kKSModelStateLoaded withObject:nil];
-            }};
-        
-        self.dataTask = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:block];
-        
-        [self.dataTask resume];
-    }
-}
-
-- (void)cancel {
-    [self.dataTask cancel];
+- (NSURL *)requestURL {
+    NSString *urlString = [NSString stringWithFormat:kKSCalendarUrlFormat, kKSCalendarId, kKSApiKey];
+    return [NSURL URLWithString:urlString];
 }
 
 #pragma mark -
@@ -109,11 +80,9 @@
         }
         
         [self.calendar setEvents:[NSSet setWithArray:events]];
+        [self.calendar saveManagedObject];
     }
 }
 
-- (void)dump {
-    self.state = kKSModelStateUndefined;
-}
 
 @end
