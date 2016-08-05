@@ -39,11 +39,11 @@
 #pragma mark Accessors
 
 - (NSURL *)requestURL {
-    return [NSURL URLWithString:kKSPhotoZoneUrlString];
+    return nil;
 }
 
 - (NSDictionary *)headers {
-    return  @{kKSAcceptHeaderKey: kKSApplicationHeaderKey, kKSContentHeaderKey:kKSApplicationHeaderKey};
+    return nil;
 }
 
 #pragma mark -

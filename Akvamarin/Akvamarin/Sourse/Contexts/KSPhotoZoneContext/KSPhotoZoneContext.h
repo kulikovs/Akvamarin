@@ -6,10 +6,8 @@
 //  Copyright © 2016 KulikovS. All rights reserved.
 //
 
-#import "KSModel.h"
+#import "KSContext.h"
 
-@interface KSPhotoZoneContext : KSModel
-
-- (void)cancel;
+@interface KSPhotoZoneContext : KSContext
 
 @end

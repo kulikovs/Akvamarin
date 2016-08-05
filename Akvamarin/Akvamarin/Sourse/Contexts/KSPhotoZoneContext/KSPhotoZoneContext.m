@@ -15,12 +15,8 @@
 #import "KSPhotoZoneConstants.h"
 
 @interface KSPhotoZoneContext ()
-@property (nonatomic, strong) NSURLSession                   *URLSession;
-@property (nonatomic, strong) NSURLSessionDataTask           *dataTask;
 @property (nonatomic, strong) NSArray                        *photoZones;
 
-- (void)parseResult:(NSDictionary *)result;
-- (void)dump;
 - (void)updateDataBaseWithParsingResult:(NSArray *)objects;
 - (BOOL)isObjectWithID:(NSString *)IDString fromArray:(NSArray *)array;
 
@@ -34,8 +30,6 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.URLSession = [NSURLSession sessionWithConfiguration:
-                           [NSURLSessionConfiguration defaultSessionConfiguration]];
         self.photoZones = [KSPhotoZone fetchEntityWithSortDescriptors:nil predicate:nil prefetchPaths:nil];
     }
     
@@ -43,36 +37,14 @@
 }
 
 #pragma mark -
-#pragma mark Public Methods
+#pragma mark Accessors
 
-- (void)prepareToLoad {
-    @synchronized (self) {
-        [self dump];
-        
-        NSURL *photoZoneURL = [NSURL URLWithString:kKSPhotoZoneUrlString];
-        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:photoZoneURL];
-        
-        NSDictionary *headers = @{kKSAcceptHeaderKey: kKSApplicationHeaderKey,                                  kKSContentHeaderKey:kKSApplicationHeaderKey};
-        
-        [request setHTTPMethod:kKSGetHTTPMethod];
-        [request setAllHTTPHeaderFields:headers];
-        
-        id block = ^(NSData *data, NSURLResponse *response, NSError *error) {
-            if (error) {
-                [self setState:kKSModelStateFailed withObject:nil];
-            } else {
-                [self parseResult:[NSJSONSerialization JSONObjectWithData:data options:0 error:nil]];
-                [self setState:kKSModelStateLoaded withObject:nil];
-            }};
-        
-        self.dataTask = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:block];
-        
-        [self.dataTask resume];
-    }
+- (NSURL *)requestURL {
+    return [NSURL URLWithString:kKSPhotoZoneUrlString];
 }
 
-- (void)cancel {
-    [self.dataTask cancel];
+- (NSDictionary *)headers {
+    return  @{kKSAcceptHeaderKey: kKSApplicationHeaderKey, kKSContentHeaderKey:kKSApplicationHeaderKey};
 }
 
 #pragma mark -
@@ -101,10 +73,6 @@
         
         [self updateDataBaseWithParsingResult:parsingObjects];
     }
-}
-
-- (void)dump {
-    self.state = kKSModelStateUndefined;
 }
 
 - (void)updateDataBaseWithParsingResult:(NSArray *)objects {
