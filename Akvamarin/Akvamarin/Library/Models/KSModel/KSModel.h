@@ -18,10 +18,14 @@ typedef NS_ENUM(NSUInteger, kKSModelState) {
 
 @interface KSModel : KSObserver
 
+- (void)load;
+
+//these methods are called in subclasses
+//you should never call these method directly from outside subclasses
 - (void)setUpLoading;
 - (void)prepareToLoad;
 - (void)completeLoading;
 - (void)finishLoading;
-- (void)load;
+
 
 @end

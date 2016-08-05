@@ -21,6 +21,8 @@
 
 - (void)parseResult:(NSDictionary *)result;
 - (void)dump;
+- (void)updateDataBaseWithParsingResult:(NSArray *)objects;
+- (BOOL)objectWithID:(NSString *)IDString fromArray:(NSArray *)array;
 
 @end
 
@@ -60,9 +62,6 @@
                 [self setState:kKSModelStateFailed withObject:nil];
             } else {
                 [self parseResult:[NSJSONSerialization JSONObjectWithData:data options:0 error:nil]];
-                self.photoZones = [KSPhotoZone fetchEntityWithSortDescriptors:nil
-                                                                    predicate:nil
-                                                                prefetchPaths:nil];
                 [self setState:kKSModelStateLoaded withObject:nil];
             }};
         
@@ -82,7 +81,7 @@
 - (void)parseResult:(NSDictionary *)result {
     @synchronized (self) {
         NSArray *array = [result valueForKeyPath:kKSDataKey];
-
+        NSMutableArray *parsingObjects = [NSMutableArray array];
         
         for (NSDictionary *category in array) {
             NSNumber *categoryID = [category valueForKeyPath:kKSCategoryIDKey];
@@ -93,30 +92,44 @@
             NSNumber *imageID = [photos[0] valueForKeyPath:KKSIDKey];
             KSPhoto *photo = [KSPhoto objectWithID:imageID.stringValue];
             photo.url = [photos[0] valueForKey:kKSUrlKey];
-            
             photoZone.mainPhoto = photo;
+            
+            [parsingObjects addObject:photoZone];
 
             [photoZone saveManagedObject];
         }
         
-  //      [self removeOldPhotoZones];
+        [self updateDataBaseWithParsingResult:parsingObjects];
     }
 }
 
 - (void)dump {
     self.state = kKSModelStateUndefined;
 }
-//
-//- (void)removeOldPhotoZones {
-//    NSArray *newPhotoZone = [KSPhotoZone fetchEntityWithSortDescriptors:nil predicate:nil prefetchPaths:nil];
-//    
-//    for (KSPhotoZone *photoZone in self.photoZones) {
-//        if ([newPhotoZone indexOfObject:photoZone]) {
-//            NSString *idString = photoZone.ID;
-//            KSPhotoZone *photoZone = [KSPhotoZone objectWithID:idString];
-//            [photoZone deleteManagedObject];
-//        }
-//    }
-//}
+
+- (void)updateDataBaseWithParsingResult:(NSArray *)objects {
+    for (KSPhotoZone *photoZone in self.photoZones) {
+        NSString *photoZoneID = photoZone.ID;
+        if (![self objectWithID:photoZoneID fromArray:objects]) {
+            [photoZone.mainPhoto deleteManagedObject];
+            for (KSPhoto *photo in photoZone.photos) {
+                [photoZone removePhotosObject:photo];
+                [photo deleteManagedObject];
+            }
+            
+            [photoZone deleteManagedObject];
+        }
+    }
+}
+
+- (BOOL)objectWithID:(NSString *)IDString fromArray:(NSArray *)array {
+    for (KSPhotoZone *photoZone in array) {
+        if ([photoZone.ID isEqualToString:IDString]) {
+            return YES;
+        }
+    }
+    
+    return NO;
+}
 
 @end

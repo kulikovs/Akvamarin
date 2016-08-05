@@ -104,6 +104,7 @@ KSRootViewAndReturnNilMacro(KSCalendarView);
 - (void)loadCalendarView {
     CKCalendarView *calendarView = self.calendarView;
     calendarView  = [CKCalendarView new];
+    calendarView.firstWeekDay = 2;
     [calendarView setDataSource:self];
     [self.rootView.subView addSubview:calendarView];
 }

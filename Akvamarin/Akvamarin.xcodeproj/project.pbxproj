@@ -77,6 +77,8 @@
 		C99349621D4E0049008F456E /* KSPhotoZoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = C99349611D4E0049008F456E /* KSPhotoZoneView.m */; };
 		C993496C1D4E1D79008F456E /* KSPhotoZoneViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C993496A1D4E1D79008F456E /* KSPhotoZoneViewCell.m */; };
 		C993496D1D4E1D79008F456E /* KSPhotoZoneViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C993496B1D4E1D79008F456E /* KSPhotoZoneViewCell.xib */; };
+		C9F815221D53BF06007B47FB /* KSCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F815211D53BF06007B47FB /* KSCustomViewController.m */; };
+		C9F815261D53C1D6007B47FB /* KSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F815251D53C1D6007B47FB /* KSContext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -218,6 +220,10 @@
 		C99349691D4E1D79008F456E /* KSPhotoZoneViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoZoneViewCell.h; sourceTree = "<group>"; };
 		C993496A1D4E1D79008F456E /* KSPhotoZoneViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPhotoZoneViewCell.m; sourceTree = "<group>"; };
 		C993496B1D4E1D79008F456E /* KSPhotoZoneViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KSPhotoZoneViewCell.xib; sourceTree = "<group>"; };
+		C9F815201D53BF06007B47FB /* KSCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCustomViewController.h; sourceTree = "<group>"; };
+		C9F815211D53BF06007B47FB /* KSCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCustomViewController.m; sourceTree = "<group>"; };
+		C9F815241D53C1D6007B47FB /* KSContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSContext.h; sourceTree = "<group>"; };
+		C9F815251D53C1D6007B47FB /* KSContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSContext.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -862,6 +868,7 @@
 		C95A3BDB1D38122F00B7A60C /* Contexts */ = {
 			isa = PBXGroup;
 			children = (
+				C9F815231D53C1A2007B47FB /* KSContext */,
 				C9424F1D1D509D420077E1C0 /* KSCalendarContext */,
 				C9424F201D509D420077E1C0 /* KSPhotoZoneContext */,
 			);
@@ -911,6 +918,7 @@
 		C9BA5E221D2EC8FE0055B238 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				C9F8151F1D53BEDA007B47FB /* KSCustomViewController */,
 				C99349591D4DFFF3008F456E /* KSPhotoZoneViewController */,
 				C94D00D91D461B0C00EBA795 /* KSReserveViewController */,
 				C90F747B1D3B7A9400F66F10 /* KSStartViewController */,
@@ -928,6 +936,24 @@
 				C94AEC231D30DF9400C1E4EB /* KSCalendarViewController.xib */,
 			);
 			path = KSCalendarViewController;
+			sourceTree = "<group>";
+		};
+		C9F8151F1D53BEDA007B47FB /* KSCustomViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C9F815201D53BF06007B47FB /* KSCustomViewController.h */,
+				C9F815211D53BF06007B47FB /* KSCustomViewController.m */,
+			);
+			path = KSCustomViewController;
+			sourceTree = "<group>";
+		};
+		C9F815231D53C1A2007B47FB /* KSContext */ = {
+			isa = PBXGroup;
+			children = (
+				C9F815241D53C1D6007B47FB /* KSContext.h */,
+				C9F815251D53C1D6007B47FB /* KSContext.m */,
+			);
+			path = KSContext;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1096,6 +1122,7 @@
 				C9424F3C1D5119CB0077E1C0 /* KSPhotoZone.m in Sources */,
 				C938FABE1D2EC0C30081DB7D /* KSUserViewController.m in Sources */,
 				C993495D1D4E001C008F456E /* KSPhotoZoneViewController.m in Sources */,
+				C9F815261D53C1D6007B47FB /* KSContext.m in Sources */,
 				C9424F3B1D5119CB0077E1C0 /* KSPhotoZone+CoreDataProperties.m in Sources */,
 				C90F74831D3B7B3700F66F10 /* KSStartViewController.m in Sources */,
 				C938FAAC1D2EC0C30081DB7D /* KSAlphabetRange.m in Sources */,
@@ -1115,6 +1142,7 @@
 				C938FAAA1D2EC0C30081DB7D /* KSAlphabet.m in Sources */,
 				C9424F3A1D5119CB0077E1C0 /* KSPhoto.m in Sources */,
 				C938FAA21D2EC0C30081DB7D /* NSObject+KSExtension.m in Sources */,
+				C9F815221D53BF06007B47FB /* KSCustomViewController.m in Sources */,
 				C938FABD1D2EC0C30081DB7D /* KSUserView.m in Sources */,
 				C94BC1BE1D3976E400C3E960 /* KSCalendar.m in Sources */,
 			);

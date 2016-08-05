@@ -14,6 +14,5 @@
 
 + (instancetype)objectWithID:(NSString *)ID;
 + (instancetype)findObjectWithID:(NSString *)ID;
-+ (NSArray *)findObjectsWithClass:(Class)theClass;
 
 @end
