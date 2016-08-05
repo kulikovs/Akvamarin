@@ -15,13 +15,16 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LbH-HK-KmH">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LbH-HK-KmH">
                     <rect key="frame" x="0.0" y="64" width="375" height="558"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zY-Iu-hB2">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zY-Iu-hB2">
                     <rect key="frame" x="0.0" y="630" width="375" height="37"/>
                     <color key="backgroundColor" red="0.07170114666223526" green="0.96212154626846313" blue="0.9453849196434021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="OMx-k9-bMa"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                     <state key="normal" title="Забронировать">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -32,6 +35,15 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3zY-Iu-hB2" firstAttribute="top" secondItem="LbH-HK-KmH" secondAttribute="bottom" constant="8" symbolic="YES" id="Rgh-Hc-7iH"/>
+                <constraint firstItem="LbH-HK-KmH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SrQ-YS-bag"/>
+                <constraint firstItem="LbH-HK-KmH" firstAttribute="leading" secondItem="3zY-Iu-hB2" secondAttribute="leading" id="TNd-Tt-FJB"/>
+                <constraint firstAttribute="bottom" secondItem="3zY-Iu-hB2" secondAttribute="bottom" id="bLq-VU-dgG"/>
+                <constraint firstAttribute="trailing" secondItem="LbH-HK-KmH" secondAttribute="trailing" id="fhK-dU-foJ"/>
+                <constraint firstItem="LbH-HK-KmH" firstAttribute="trailing" secondItem="3zY-Iu-hB2" secondAttribute="trailing" id="oOb-35-QKF"/>
+                <constraint firstItem="LbH-HK-KmH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="yUd-nD-ZIg"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
                 <outlet property="reserveButton" destination="3zY-Iu-hB2" id="MvA-il-wGx"/>

@@ -11,6 +11,5 @@
 @interface KSContext : KSModel
 
 - (void)cancel;
-- (void)execute;
 
 @end

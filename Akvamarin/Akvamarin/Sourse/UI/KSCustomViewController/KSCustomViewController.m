@@ -47,7 +47,7 @@
     if (_context != context) {
         [_context cancel];
         _context = context;
-        [_context execute];
+        [_context load];
         
         [self addHandlers];
     }

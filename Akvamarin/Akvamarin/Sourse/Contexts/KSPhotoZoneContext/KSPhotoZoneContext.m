@@ -22,7 +22,7 @@
 - (void)parseResult:(NSDictionary *)result;
 - (void)dump;
 - (void)updateDataBaseWithParsingResult:(NSArray *)objects;
-- (BOOL)objectWithID:(NSString *)IDString fromArray:(NSArray *)array;
+- (BOOL)isObjectWithID:(NSString *)IDString fromArray:(NSArray *)array;
 
 @end
 
@@ -110,7 +110,7 @@
 - (void)updateDataBaseWithParsingResult:(NSArray *)objects {
     for (KSPhotoZone *photoZone in self.photoZones) {
         NSString *photoZoneID = photoZone.ID;
-        if (![self objectWithID:photoZoneID fromArray:objects]) {
+        if (![self isObjectWithID:photoZoneID fromArray:objects]) {
             [photoZone.mainPhoto deleteManagedObject];
             for (KSPhoto *photo in photoZone.photos) {
                 [photoZone removePhotosObject:photo];
@@ -122,7 +122,7 @@
     }
 }
 
-- (BOOL)objectWithID:(NSString *)IDString fromArray:(NSArray *)array {
+- (BOOL)isObjectWithID:(NSString *)IDString fromArray:(NSArray *)array {
     for (KSPhotoZone *photoZone in array) {
         if ([photoZone.ID isEqualToString:IDString]) {
             return YES;
