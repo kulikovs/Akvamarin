@@ -52,6 +52,7 @@
 		C938FAC01D2EC0C30081DB7D /* KSLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = C938FA9B1D2EC0C30081DB7D /* KSLoadingView.m */; };
 		C938FAC11D2EC0C30081DB7D /* KSLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C938FA9C1D2EC0C30081DB7D /* KSLoadingView.xib */; };
 		C938FAC21D2EC0C30081DB7D /* KSView.m in Sources */ = {isa = PBXBuildFile; fileRef = C938FA9E1D2EC0C30081DB7D /* KSView.m */; };
+		C93B0C5F1D5617B800195A95 /* UIColor+KSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C93B0C5E1D5617B800195A95 /* UIColor+KSExtensions.m */; };
 		C9424F211D509D420077E1C0 /* KSCalendarContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C9424F1F1D509D420077E1C0 /* KSCalendarContext.m */; };
 		C9424F241D509D7A0077E1C0 /* KSPhotoZoneContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C9424F231D509D7A0077E1C0 /* KSPhotoZoneContext.m */; };
 		C9424F391D5119CB0077E1C0 /* KSPhoto+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C9424F311D5119CB0077E1C0 /* KSPhoto+CoreDataProperties.m */; };
@@ -70,6 +71,7 @@
 		C94D00DD1D461B6100EBA795 /* KSReserveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C94D00DB1D461B6100EBA795 /* KSReserveViewController.m */; };
 		C94D00DE1D461B6100EBA795 /* KSReserveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C94D00DC1D461B6100EBA795 /* KSReserveViewController.xib */; };
 		C94D00E21D4693CC00EBA795 /* KSReserveView.m in Sources */ = {isa = PBXBuildFile; fileRef = C94D00E11D4693CC00EBA795 /* KSReserveView.m */; };
+		C95669E11D5A669700005F58 /* KSCheckPhoneNumberModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C95669E01D5A669700005F58 /* KSCheckPhoneNumberModel.m */; };
 		C95A3BE51D3820A900B7A60C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95A3BE11D3820A900B7A60C /* LaunchScreen.storyboard */; };
 		C95A3BE61D3820A900B7A60C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95A3BE31D3820A900B7A60C /* Main.storyboard */; };
 		C993495D1D4E001C008F456E /* KSPhotoZoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C993495B1D4E001C008F456E /* KSPhotoZoneViewController.m */; };
@@ -173,6 +175,8 @@
 		C938FA9D1D2EC0C30081DB7D /* KSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSView.h; sourceTree = "<group>"; };
 		C938FA9E1D2EC0C30081DB7D /* KSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSView.m; sourceTree = "<group>"; };
 		C938FAC41D2EC12A0081DB7D /* KSProject-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KSProject-Prefix.pch"; sourceTree = "<group>"; };
+		C93B0C5D1D5617B800195A95 /* UIColor+KSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+KSExtensions.h"; sourceTree = "<group>"; };
+		C93B0C5E1D5617B800195A95 /* UIColor+KSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KSExtensions.m"; sourceTree = "<group>"; };
 		C9424F1E1D509D420077E1C0 /* KSCalendarContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCalendarContext.h; sourceTree = "<group>"; };
 		C9424F1F1D509D420077E1C0 /* KSCalendarContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCalendarContext.m; sourceTree = "<group>"; };
 		C9424F221D509D7A0077E1C0 /* KSPhotoZoneContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoZoneContext.h; sourceTree = "<group>"; };
@@ -210,6 +214,8 @@
 		C94D00DC1D461B6100EBA795 /* KSReserveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KSReserveViewController.xib; sourceTree = "<group>"; };
 		C94D00E01D4693CC00EBA795 /* KSReserveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSReserveView.h; sourceTree = "<group>"; };
 		C94D00E11D4693CC00EBA795 /* KSReserveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSReserveView.m; sourceTree = "<group>"; };
+		C95669DF1D5A669700005F58 /* KSCheckPhoneNumberModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCheckPhoneNumberModel.h; sourceTree = "<group>"; };
+		C95669E01D5A669700005F58 /* KSCheckPhoneNumberModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCheckPhoneNumberModel.m; sourceTree = "<group>"; };
 		C95A3BE21D3820A900B7A60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C95A3BE41D3820A900B7A60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		C993495A1D4E001C008F456E /* KSPhotoZoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoZoneViewController.h; sourceTree = "<group>"; };
@@ -369,6 +375,7 @@
 		C938FA331D2EC0C30081DB7D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C93B0C5C1D56177B00195A95 /* UIColor+KSExtensions */,
 				C90652B71D454E6C00B15156 /* NSDate+KSExtensions */,
 				C9017C801D44097900F9E6E1 /* NSDateComponents+KSExtensions */,
 				C938FA341D2EC0C30081DB7D /* CGGeometry+KSExtensions */,
@@ -723,11 +730,13 @@
 			path = KSLoadingView;
 			sourceTree = "<group>";
 		};
-		C93DFF7F1D47903300429819 /* KSTimePickerView */ = {
+		C93B0C5C1D56177B00195A95 /* UIColor+KSExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				C93B0C5D1D5617B800195A95 /* UIColor+KSExtensions.h */,
+				C93B0C5E1D5617B800195A95 /* UIColor+KSExtensions.m */,
 			);
-			path = KSTimePickerView;
+			path = "UIColor+KSExtensions";
 			sourceTree = "<group>";
 		};
 		C9424F1D1D509D420077E1C0 /* KSCalendarContext */ = {
@@ -784,6 +793,8 @@
 		C94BC1861D39706E00C3E960 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C95669DD1D5A669700005F58 /* KSCheckEmailModel */,
+				C95669DE1D5A669700005F58 /* KSCheckPhoneNumberModel */,
 				C94BC1871D3970C100C3E960 /* KSCoreDataModel */,
 			);
 			path = Models;
@@ -847,7 +858,6 @@
 		C94D00D91D461B0C00EBA795 /* KSReserveViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C93DFF7F1D47903300429819 /* KSTimePickerView */,
 				C94D00DF1D4693A900EBA795 /* KSReserveView */,
 				C94D00DA1D461B6100EBA795 /* KSReserveViewController.h */,
 				C94D00DB1D461B6100EBA795 /* KSReserveViewController.m */,
@@ -863,6 +873,22 @@
 				C94D00E11D4693CC00EBA795 /* KSReserveView.m */,
 			);
 			path = KSReserveView;
+			sourceTree = "<group>";
+		};
+		C95669DD1D5A669700005F58 /* KSCheckEmailModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = KSCheckEmailModel;
+			sourceTree = "<group>";
+		};
+		C95669DE1D5A669700005F58 /* KSCheckPhoneNumberModel */ = {
+			isa = PBXGroup;
+			children = (
+				C95669DF1D5A669700005F58 /* KSCheckPhoneNumberModel.h */,
+				C95669E01D5A669700005F58 /* KSCheckPhoneNumberModel.m */,
+			);
+			path = KSCheckPhoneNumberModel;
 			sourceTree = "<group>";
 		};
 		C95A3BDB1D38122F00B7A60C /* Contexts */ = {
@@ -1119,6 +1145,7 @@
 				C938FAA91D2EC0C30081DB7D /* UIWindow+KSExtension.m in Sources */,
 				C94BC1C11D3976E400C3E960 /* KSEvent+CoreDataProperties.m in Sources */,
 				C938FAB81D2EC0C30081DB7D /* KSStringModel.m in Sources */,
+				C95669E11D5A669700005F58 /* KSCheckPhoneNumberModel.m in Sources */,
 				C9424F3C1D5119CB0077E1C0 /* KSPhotoZone.m in Sources */,
 				C938FABE1D2EC0C30081DB7D /* KSUserViewController.m in Sources */,
 				C993495D1D4E001C008F456E /* KSPhotoZoneViewController.m in Sources */,
@@ -1144,6 +1171,7 @@
 				C938FAA21D2EC0C30081DB7D /* NSObject+KSExtension.m in Sources */,
 				C9F815221D53BF06007B47FB /* KSCustomViewController.m in Sources */,
 				C938FABD1D2EC0C30081DB7D /* KSUserView.m in Sources */,
+				C93B0C5F1D5617B800195A95 /* UIColor+KSExtensions.m in Sources */,
 				C94BC1BE1D3976E400C3E960 /* KSCalendar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

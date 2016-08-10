@@ -43,9 +43,9 @@
         [_monthTitle setTextColor:kCalendarColorHeaderMonth];
         [_monthTitle setShadowColor:kCalendarColorHeaderMonthShadow];
         [_monthTitle setShadowOffset:CGSizeMake(0, 1)];
-        [_monthTitle setBackgroundColor:[UIColor clearColor]];
+        [_monthTitle setBackgroundColor:[UIColor whiteColor]];
         [_monthTitle setTextAlignment:NSTextAlignmentCenter];
-        [_monthTitle setFont:[UIFont boldSystemFontOfSize:22]];
+        [_monthTitle setFont:[UIFont boldSystemFontOfSize:18]];
         
         _columnTitles = [NSMutableArray new];
         _columnLabels = [NSMutableArray new];
@@ -63,7 +63,7 @@
 {
     [super willMoveToSuperview:newSuperview];
     [self setNeedsLayout];
-    [self setBackgroundColor:kCalendarColorHeaderGradientDark];
+    [self setBackgroundColor:[UIColor whiteColor]];
 }
 
 - (void)layoutSubviews
@@ -183,11 +183,11 @@
 - (UILabel *)_columnLabelWithTitle:(NSString *)title
 {
     UILabel *l = [UILabel new];
-    [l setBackgroundColor:[UIColor clearColor]];
+    [l setBackgroundColor:[UIColor whiteColor]];
     [l setTextColor:kCalendarColorHeaderWeekdayTitle];
     [l setShadowColor:kCalendarColorHeaderWeekdayShadow];
     [l setTextAlignment:NSTextAlignmentCenter];
-    [l setFont:[UIFont boldSystemFontOfSize:10]];
+    [l setFont:[UIFont boldSystemFontOfSize:6]];
     [l setShadowOffset:CGSizeMake(0, 1)];
     [l setText:title];
     

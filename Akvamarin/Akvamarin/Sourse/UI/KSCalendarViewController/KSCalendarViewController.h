@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#import "KSCustomViewController.h"
+
 @class KSCalendar;
 
-@interface KSCalendarViewController : UIViewController
+@interface KSCalendarViewController : KSCustomViewController
 @property (nonatomic, strong) KSCalendar  *calendar;
 
-- (IBAction)onResereButtonClick:(id)sender;
+- (IBAction)onReserveButtonClick:(id)sender;
 
 @end

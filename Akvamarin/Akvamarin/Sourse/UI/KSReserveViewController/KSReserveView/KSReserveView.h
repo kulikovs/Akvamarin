@@ -9,15 +9,17 @@
 #import "KSView.h"
 
 @interface KSReserveView : KSView
-@property (nonatomic, strong) IBOutlet UIDatePicker  *startTime;
-@property (nonatomic, strong) IBOutlet UIDatePicker  *endTime;
-@property (nonatomic, strong) IBOutlet UIDatePicker  *date;
+@property (nonatomic, strong) IBOutlet UIDatePicker  *startTimePicker;
+@property (nonatomic, strong) IBOutlet UIDatePicker  *endTimePicker;
+@property (nonatomic, strong) IBOutlet UIDatePicker  *datePicker;
 
-@property (nonatomic, strong) IBOutlet UITextField   *name;
-@property (nonatomic, strong) IBOutlet UITextField   *telephonNumber;
-@property (nonatomic, strong) IBOutlet UITextField   *email;
+//@property (nonatomic, strong) IBOutlet UITextField   *nameField;
+//@property (nonatomic, strong) IBOutlet UITextField   *phoneNumberField;
+//@property (nonatomic, strong) IBOutlet UITextField   *emailField;
 
-@property (nonatomic, strong) IBOutlet UIButton      *sendMail;
+@property (nonatomic, strong) IBOutletCollection(UITextField) NSArray *textFields;
+
+@property (nonatomic, strong) IBOutlet UIButton      *sendMailButton;
 
 
 

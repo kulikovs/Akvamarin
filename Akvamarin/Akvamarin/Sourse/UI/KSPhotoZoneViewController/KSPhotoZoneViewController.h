@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@class KSPhotoZoneContext;
+#import "KSCustomViewController.h"
 
-@interface KSPhotoZoneViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic, strong)   KSPhotoZoneContext  *context;
+@interface KSPhotoZoneViewController : KSCustomViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

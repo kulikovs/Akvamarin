@@ -23,5 +23,6 @@
 #import "UICollectionView+UICollectionView.h"
 #import "NSDateComponents+KSExtensions.h"
 #import "NSDate+KSExtensions.h"
+#import "UIColor+KSExtensions.h"
 
 #endif /* KSExtentionsLibraryImporting_h */

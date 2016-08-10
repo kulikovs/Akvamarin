@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KSReserveViewController : UIViewController
-- (IBAction)onSendMail:(id)sender;
+#import "KSCustomViewController.h"
+
+@interface KSReserveViewController : KSCustomViewController
+
+- (IBAction)onSendMailButton:(id)sender;
 
 @end

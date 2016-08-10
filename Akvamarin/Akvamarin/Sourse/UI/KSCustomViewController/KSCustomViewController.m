@@ -17,6 +17,10 @@
 
 @end
 
+#define kKSAkvamarinColor [UIColor colorWithRedColor:71 greenColor:178 blueColor:174 alpha:1.0];
+
+static NSString * const kKSLeftBarBattonImageName    = @"backArrow";
+
 @implementation KSCustomViewController
 
 @dynamic navigationItem;
@@ -36,7 +40,7 @@
 }
 
 - (NSString *)imageNameForLeftButton {
-    return nil;
+    return kKSLeftBarBattonImageName;
 }
 
 - (NSString *)imageNameForRightButton {
@@ -59,6 +63,50 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self showCustomNavigationBar];
+}
+
+#pragma mark -
+#pragma mark Public Methods
+
+- (void)contextDidLoad {
+    
+}
+
+- (void)contextLoadFailed {
+    
+}
+
+- (void)showCustomNavigationBar {
+    NSDictionary *titleColor = [NSDictionary dictionaryWithObject:[UIColor whiteColor]
+                                                           forKey:NSForegroundColorAttributeName];
+    
+    UINavigationBar *navigationBar = self.navigationController.navigationBar;
+    navigationBar.barTintColor = kKSAkvamarinColor;
+    navigationBar.titleTextAttributes = titleColor;
+    
+    [self showNavigationBarWithTitle:self.navigationBarTitle
+                 leftButtonImageName:self.imageNameForLeftButton
+                rightButtonImageName:self.imageNameForRightButton];
+}
+
+- (void)showNavigationBarWithTitle:(NSString *)title
+               leftButtonImageName:(NSString *)leftButtonImageName
+              rightButtonImageName:(NSString *)rightButtonImageName
+{
+    self.navigationController.navigationBarHidden = NO;
+    UINavigationItem *navigationItem = self.navigationItem;
+    
+    navigationItem.title = title;
+    
+    navigationItem.leftBarButtonItem = [UIBarButtonItem
+                                        buttonWithImageName:leftButtonImageName
+                                        selector:@selector(leftBarButtonClick)
+                                        target:self];
+    
+    navigationItem.rightBarButtonItem = [UIBarButtonItem
+                                         buttonWithImageName:rightButtonImageName
+                                         selector:@selector(rightBarButtonClick)
+                                         target:self];
 }
 
 #pragma mark -
@@ -91,43 +139,6 @@
 
 - (void)rightBarButtonClick {
     
-}
-
-#pragma mark -
-#pragma mark Public Methods
-
-- (void)contextDidLoad {
-    
-}
-
-- (void)contextLoadFailed {
-    
-}
-
-- (void)showCustomNavigationBar {
-    [self showNavigationBarWithTitle:self.navigationBarTitle
-                 leftButtonImageName:self.imageNameForLeftButton
-                rightButtonImageName:self.imageNameForRightButton];
-}
-
-- (void)showNavigationBarWithTitle:(NSString *)title
-               leftButtonImageName:(NSString *)leftButtonImageName
-              rightButtonImageName:(NSString *)rightButtonImageName
-{
-    self.navigationController.navigationBarHidden = NO;
-    UINavigationItem *navigationItem = self.navigationItem;
-    
-    navigationItem.title = title;
-    
-    navigationItem.leftBarButtonItem = [UIBarButtonItem
-                                        buttonWithImageName:leftButtonImageName
-                                        selector:@selector(leftBarButtonClick)
-                                        target:self];
-    
-    navigationItem.rightBarButtonItem = [UIBarButtonItem
-                                         buttonWithImageName:rightButtonImageName
-                                         selector:@selector(rightBarButtonClick)
-                                         target:self];
 }
 
 @end

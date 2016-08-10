@@ -31,13 +31,13 @@
         _state = CKCalendarMonthCellStateNormal;
         
         //  Normal Cell Colors
-        _normalBackgroundColor = kCalendarColorLightGray;
-        _selectedBackgroundColor = kCalendarColorBlue;
+        _normalBackgroundColor = [UIColor whiteColor];
+        _selectedBackgroundColor = kCalendarColorAkvamarin;
         _inactiveSelectedBackgroundColor = kCalendarColorDarkGray;
         
         //  Today Cell Colors
-        _todayBackgroundColor = kCalendarColorBluishGray;
-        _todaySelectedBackgroundColor = kCalendarColorBlue;
+        _todayBackgroundColor = kCalendarColorTodayAkvamarin;
+        _todaySelectedBackgroundColor = kCalendarColorAkvamarin;
         _todayTextShadowColor = kCalendarColorTodayShadowBlue;
         _todayTextColor = [UIColor whiteColor];
         

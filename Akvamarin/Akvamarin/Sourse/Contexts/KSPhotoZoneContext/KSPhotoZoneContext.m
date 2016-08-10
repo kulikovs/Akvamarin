@@ -15,7 +15,7 @@
 #import "KSPhotoZoneConstants.h"
 
 @interface KSPhotoZoneContext ()
-@property (nonatomic, strong) NSArray                        *photoZones;
+@property (nonatomic, strong) NSArray *photoZones;
 
 - (void)updateDataBaseWithParsingResult:(NSArray *)objects;
 - (BOOL)isObjectWithID:(NSString *)IDString fromArray:(NSArray *)array;

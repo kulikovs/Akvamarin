@@ -30,16 +30,23 @@
 KSRootViewAndReturnNilMacro(KSStartView);
 
 #pragma mark -
+#pragma mark View LifeCycle
+
+- (void)viewWillAppear:(BOOL)animated {
+    self.navigationController.navigationBarHidden = YES;
+}
+
+#pragma mark -
 #pragma mark Handling
 
-- (IBAction)onClickCalendar:(id)sender {
+- (IBAction)onClickCalendarButton:(id)sender {
     KSCalendarViewController *calendarController = [KSCalendarViewController new];
     calendarController.calendar = [KSCalendar objectWithID:kKSCalendarId];
 
     [self.navigationController pushViewController:calendarController animated:YES];
 }
 
-- (IBAction)onClickPhotoZone:(id)sender {
+- (IBAction)onClickPhotoZoneButton:(id)sender {
     KSPhotoZoneViewController *photoZoneController = [KSPhotoZoneViewController new];
     photoZoneController.context = [KSPhotoZoneContext new];
     

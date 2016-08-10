@@ -12,29 +12,25 @@
 #import "KSPhotoZoneContext.h"
 #import "KSPhotoZone.h"
 
+static NSString * const kKSPhotoZoneBarTitle = @"Фотозоны";
+
 @interface KSPhotoZoneViewController ()
 @property (nonatomic, readonly) KSPhotoZoneView     *rootView;
 @property (nonatomic, strong)   NSArray             *photoZones;
 
-- (void)addHandlers;
-
 @end
 
 @implementation KSPhotoZoneViewController
+
+@dynamic rootView;
 
 #pragma mark -
 #pragma mark Accessors
 
 KSRootViewAndReturnNilMacro(KSPhotoZoneView);
 
-- (void)setContext:(KSPhotoZoneContext *)context {
-    if (_context != context) {
-        [_context cancel];
-        _context = context;
-        [_context load];
-        
-        [self addHandlers];
-    }
+- (NSString *)navigationBarTitle {
+    return kKSPhotoZoneBarTitle;
 }
 
 #pragma mark -
@@ -47,27 +43,6 @@ KSRootViewAndReturnNilMacro(KSPhotoZoneView);
 
 #pragma mark -
 #pragma mark Private Methods
-
-- (void)addHandlers {
-    KSWeakifySelf;
-    [_context addHandler:^(id object) {
-        KSStrongifySelfAndReturnIfNil;
-        KSDispatchAsyncOnMainThread(^{
-            [strongSelf contextDidLoad];
-        });
-    }
-                   state:kKSModelStateLoaded
-                  object:self];
-    
-    [_context addHandler:^(id object) {
-        KSStrongifySelfAndReturnIfNil;
-        KSDispatchAsyncOnMainThread(^{
-            [strongSelf contextLoadFailed];
-        });
-    }
-                   state:kKSModelStateFailed
-                  object:self];
-}
 
 - (void)contextDidLoad {
     self.photoZones = [KSPhotoZone fetchEntityWithSortDescriptors:nil predicate:nil prefetchPaths:nil];

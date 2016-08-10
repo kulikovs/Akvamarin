@@ -16,6 +16,7 @@
 #import "NSCalendarCategories.h"
 #import "NSDate+Description.h"
 #import "UIView+AnimatedFrame.h"
+#import "CKCalendarCellColors.h"
 
 #import <QuartzCore/QuartzCore.h>
 
@@ -1038,7 +1039,7 @@
     if (count == 0) {
         UITableViewCell *cell = [[self table] dequeueReusableCellWithIdentifier:@"noDataCell"];
         [[cell textLabel] setTextAlignment:NSTextAlignmentCenter];
-        [[cell textLabel] setTextColor:[UIColor colorWithWhite:0.2 alpha:0.8]];
+        [[cell textLabel] setTextColor:kCalendarColorAkvamarin];
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         
         if ([indexPath row] == 1) {
@@ -1056,7 +1057,7 @@
     CKCalendarEvent *event = [[self events] objectAtIndex:[indexPath row]];
     
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
-    
+    cell.textLabel.textColor = kCalendarColorAkvamarin;
     [[cell textLabel] setText:[event title]];
     
     UIView *colorView = [[UIView alloc] initWithFrame:CGRectMake(3, 6, 20, 20)];

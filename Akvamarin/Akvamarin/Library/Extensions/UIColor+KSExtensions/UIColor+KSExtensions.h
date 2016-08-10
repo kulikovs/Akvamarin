@@ -10,4 +10,8 @@
 
 @interface UIColor (KSExtensions)
 
++ (UIColor *)colorWithRedColor:(CGFloat)red
+                    greenColor:(CGFloat)green
+                     blueColor:(CGFloat)blue
+                    alpha:(CGFloat)alpha;
 @end

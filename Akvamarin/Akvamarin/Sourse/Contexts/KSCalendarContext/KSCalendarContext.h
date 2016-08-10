@@ -16,5 +16,4 @@
 
 - (instancetype)initWithCalendar:(KSCalendar *)calendar;
 
-
 @end

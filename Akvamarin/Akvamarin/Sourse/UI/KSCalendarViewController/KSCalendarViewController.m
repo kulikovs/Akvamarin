@@ -18,14 +18,13 @@
 #import "KSEvent.h"
 #import "KSReserveViewController.h"
 
+static NSString * const kKSCalendarBarTitle = @"Аренда студии";
+
 @interface KSCalendarViewController () <CKCalendarViewDataSource>
 @property (nonatomic, readonly) KSCalendarView      *rootView;
-@property (nonatomic, strong)   KSCalendarContext   *context;
 
-- (void)addHandlers;
-- (void)contextDidLoad;
-- (void)contextLoadFailed;
 - (void)loadCalendarView;
+- (NSArray *)sortedEventsArray:(NSArray *)events;
 
 @end
 
@@ -38,16 +37,6 @@
 
 KSRootViewAndReturnNilMacro(KSCalendarView);
 
-- (void)setContext:(KSCalendarContext *)context {
-    if (_context != context) {
-        [_context cancel];
-        _context = context;
-        [_context load];
-        
-        [self addHandlers];
-    }
-}
-
 - (void)setCalendar:(KSCalendar *)calendar {
     if (_calendar != calendar) {
         _calendar = calendar;
@@ -56,8 +45,8 @@ KSRootViewAndReturnNilMacro(KSCalendarView);
     }
 }
 
-- (CKCalendarView *)calendarView {
-    return self.rootView.calendarView;
+- (NSString *)navigationBarTitle {
+    return kKSCalendarBarTitle;
 }
 
 #pragma mark -
@@ -69,28 +58,7 @@ KSRootViewAndReturnNilMacro(KSCalendarView);
 }
 
 #pragma mark -
-#pragma mark Private Methods
-
-- (void)addHandlers {
-    KSWeakifySelf;
-    [_context addHandler:^(id object) {
-        KSStrongifySelfAndReturnIfNil;
-        KSDispatchAsyncOnMainThread(^{
-            [strongSelf contextDidLoad];
-        });
-    }
-                   state:kKSModelStateLoaded
-                  object:self];
-    
-    [_context addHandler:^(id object) {
-        KSStrongifySelfAndReturnIfNil;
-        KSDispatchAsyncOnMainThread(^{
-            [strongSelf contextLoadFailed];
-        });
-    }
-                   state:kKSModelStateFailed
-                  object:self];
-}
+#pragma mark Public Methods
 
 - (void)contextDidLoad {
     [self loadCalendarView];
@@ -101,18 +69,29 @@ KSRootViewAndReturnNilMacro(KSCalendarView);
     [self contextDidLoad];
 }
 
+#pragma mark -
+#pragma mark Private Methods
+
 - (void)loadCalendarView {
-    CKCalendarView *calendarView = self.calendarView;
+    CKCalendarView *calendarView = self.rootView.calendarView;
     calendarView  = [CKCalendarView new];
     calendarView.firstWeekDay = 2;
     [calendarView setDataSource:self];
     [self.rootView.subView addSubview:calendarView];
 }
 
+- (NSArray *)sortedEventsArray:(NSArray *)events {
+    id comparisonResult = ^NSComparisonResult(KSEvent *event1, KSEvent *event2) {
+        return [event1.startDateTime compare:event2.startDateTime];
+    };
+    
+    return [events sortedArrayUsingComparator:comparisonResult];
+}
+
 #pragma mark -
 #pragma mark Handling
 
-- (IBAction)onResereButtonClick:(id)sender {
+- (IBAction)onReserveButtonClick:(id)sender {
     KSReserveViewController *reserveController = [KSReserveViewController new];
     [self.navigationController pushViewController:reserveController animated:YES];
 }
@@ -121,14 +100,15 @@ KSRootViewAndReturnNilMacro(KSCalendarView);
 #pragma mark CKCalendarViewDataSource
 
 - (NSArray *)calendarView:(CKCalendarView *)calendarView eventsForDate:(NSDate *)date {
-    NSArray *events = self.calendar.events.allObjects;
+    NSArray *sortedEventArray = [self sortedEventsArray:self.calendar.events.allObjects];
     NSMutableArray *dateEvents = [NSMutableArray array];
     NSCalendar *calendar = [NSCalendar currentCalendar];
     
-    for (KSEvent *event in events) {
+    for (KSEvent *event in sortedEventArray) {
         NSDate *startDateTime = event.startDateTime;
         if ([calendar date:date isSameDayAs:startDateTime]) {
-            CKCalendarEvent *ckEvent = [CKCalendarEvent eventWithTitle:event.title andDate:startDateTime andInfo:nil];
+            CKCalendarEvent *ckEvent = [CKCalendarEvent eventWithTitle:event.title
+                                                               andDate:startDateTime andInfo:nil];
             [dateEvents addObject:ckEvent];
         }
     }

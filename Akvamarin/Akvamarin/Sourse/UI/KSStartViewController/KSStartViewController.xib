@@ -17,20 +17,22 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wm-SC-rBL">
                     <rect key="frame" x="63" y="163" width="78" height="30"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="Календарь"/>
                     <connections>
-                        <action selector="onClickCalendar:" destination="-1" eventType="touchUpInside" id="cbZ-Lb-xaI"/>
+                        <action selector="onClickCalendarButton:" destination="-1" eventType="touchUpInside" id="9I0-nG-pgg"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSz-bm-95i">
                     <rect key="frame" x="63" y="201" width="78" height="30"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="Фотозоны"/>
                     <connections>
-                        <action selector="onClickPhotoZone:" destination="-1" eventType="touchUpInside" id="cZ9-Dh-vJo"/>
+                        <action selector="onClickPhotoZoneButton:" destination="-1" eventType="touchUpInside" id="5dZ-4L-sTf"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.27843137254901962" green="0.69803921568627447" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>
