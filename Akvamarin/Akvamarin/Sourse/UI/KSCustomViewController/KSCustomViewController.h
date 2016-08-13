@@ -11,11 +11,7 @@
 @class KSContext;
 
 @interface KSCustomViewController : UIViewController
-@property (nonatomic, readonly) NSString            *navigationBarTitle;
-@property (nonatomic, readonly) NSString            *imageNameForLeftButton;
-@property (nonatomic, readonly) NSString            *imageNameForRightButton;
 @property (nonatomic, strong)   KSContext           *context;
-
 
 - (void)showCustomNavigationBar;
 

@@ -10,16 +10,20 @@
 #import "KSContext.h"
 
 @interface KSCustomViewController ()
-@property (nonatomic, readonly) UINavigationItem  *navigationItem;
+@property (nonatomic, readonly) NSString            *navigationBarTitle;
+@property (nonatomic, readonly) NSString            *imageNameForLeftButton;
+@property (nonatomic, readonly) NSString            *imageNameForRightButton;
+
+@property (nonatomic, readonly) UINavigationItem    *navigationItem;
 
 - (void)leftBarButtonClick;
 - (void)rightBarButtonClick;
 
 @end
 
-#define kKSAkvamarinColor [UIColor colorWithRedColor:71 greenColor:178 blueColor:174 alpha:1.0];
+#define kKSAkvamarinColor [UIColor colorWithRedColor:55 greenColor:170 blueColor:165 alpha:1.0];
 
-static NSString * const kKSLeftBarBattonImageName    = @"backArrow";
+static NSString * const kKSLeftBarBattonImageName   = @"back";
 
 @implementation KSCustomViewController
 
@@ -79,7 +83,6 @@ static NSString * const kKSLeftBarBattonImageName    = @"backArrow";
 - (void)showCustomNavigationBar {
     NSDictionary *titleColor = [NSDictionary dictionaryWithObject:[UIColor whiteColor]
                                                            forKey:NSForegroundColorAttributeName];
-    
     UINavigationBar *navigationBar = self.navigationController.navigationBar;
     navigationBar.barTintColor = kKSAkvamarinColor;
     navigationBar.titleTextAttributes = titleColor;

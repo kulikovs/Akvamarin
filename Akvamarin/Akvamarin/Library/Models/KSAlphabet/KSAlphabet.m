@@ -69,6 +69,14 @@
     return [[self class] alphabetWithCharacterRange:'0' lastValue:'9'];
 }
 
++ (instancetype)lowerUpperCaseLettersAlphabet {
+    KSAlphabet *upperCase = [KSAlphabet alphabetWithCharacterRange:'a' lastValue:'z'];
+    KSAlphabet *lowerCase = [KSAlphabet alphabetWithCharacterRange:'A' lastValue:'Z'];
+    NSArray *alphabets = [NSArray arrayWithObjects:upperCase, lowerCase, nil];
+    return [[self class] alphabetWithAlphabetsArray:alphabets];
+
+}
+
 #pragma mark -
 #pragma mark Accessors
 

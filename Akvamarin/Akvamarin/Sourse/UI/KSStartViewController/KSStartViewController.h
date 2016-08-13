@@ -12,5 +12,6 @@
 
 - (IBAction)onClickCalendarButton:(id)sender;
 - (IBAction)onClickPhotoZoneButton:(id)sender;
+- (IBAction)onClickPriceButton:(id)sender;
 
 @end

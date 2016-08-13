@@ -13,11 +13,9 @@
 @property (nonatomic, strong) IBOutlet UIDatePicker  *endTimePicker;
 @property (nonatomic, strong) IBOutlet UIDatePicker  *datePicker;
 
-//@property (nonatomic, strong) IBOutlet UITextField   *nameField;
-//@property (nonatomic, strong) IBOutlet UITextField   *phoneNumberField;
-//@property (nonatomic, strong) IBOutlet UITextField   *emailField;
-
-@property (nonatomic, strong) IBOutletCollection(UITextField) NSArray *textFields;
+@property (nonatomic, strong) IBOutlet UITextField   *nameField;
+@property (nonatomic, strong) IBOutlet UITextField   *phoneNumberField;
+@property (nonatomic, strong) IBOutlet UITextField   *emailField;
 
 @property (nonatomic, strong) IBOutlet UIButton      *sendMailButton;
 

@@ -21,7 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface KSCalendar (CoreDataGeneratedAccessors)
-
 - (void)addEventsObject:(KSEvent *)value;
 - (void)removeEventsObject:(KSEvent *)value;
 - (void)addEvents:(NSSet<KSEvent *> *)values;

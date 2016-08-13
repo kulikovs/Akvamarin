@@ -12,6 +12,8 @@
 		<dict/>
 		<key>amazonaws.com</key>
 		<string></string>
+		<key>akvamarin.ks.ua</key>
+		<string></string>
 	</dict>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>

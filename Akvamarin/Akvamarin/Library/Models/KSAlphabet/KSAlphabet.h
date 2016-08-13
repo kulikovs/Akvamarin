@@ -20,6 +20,7 @@
 + (instancetype)lowerCaseLettersAlphabet;
 + (instancetype)upperCaseLettersAlphabet;
 + (instancetype)numericLettersAlphabet;
++ (instancetype)lowerUpperCaseLettersAlphabet;
 
 - (instancetype)initWithCharacterRange:(unichar)firstValue lastValue:(unichar)lastValue;
 - (instancetype)initWithString:(NSString *)string;

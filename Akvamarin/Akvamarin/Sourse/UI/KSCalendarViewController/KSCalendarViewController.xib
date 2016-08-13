@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSCalendarViewController">
@@ -22,9 +21,9 @@
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zY-Iu-hB2">
                     <rect key="frame" x="0.0" y="627" width="375" height="40"/>
-                    <color key="backgroundColor" red="0.27843137254901962" green="0.69803921568627447" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.45098036527633667" green="0.69411766529083252" blue="0.67843133211135864" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="3zY-Iu-hB2" secondAttribute="height" multiplier="75:8" id="rUh-ie-pfW"/>
+                        <constraint firstAttribute="height" constant="40" id="AUz-WE-qmW"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                     <state key="normal" title="Забронировать">
@@ -37,13 +36,13 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="LbH-HK-KmH" secondAttribute="bottom" constant="39" id="1Xy-cV-tIp"/>
-                <constraint firstItem="LbH-HK-KmH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9gI-UF-2y7"/>
-                <constraint firstAttribute="bottom" secondItem="3zY-Iu-hB2" secondAttribute="bottom" id="KH3-Of-rha"/>
-                <constraint firstItem="LbH-HK-KmH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Thz-To-Oba"/>
-                <constraint firstItem="LbH-HK-KmH" firstAttribute="trailing" secondItem="3zY-Iu-hB2" secondAttribute="trailing" id="YRS-BI-FYB"/>
-                <constraint firstItem="LbH-HK-KmH" firstAttribute="leading" secondItem="3zY-Iu-hB2" secondAttribute="leading" id="mYU-YC-Tgw"/>
-                <constraint firstAttribute="trailing" secondItem="LbH-HK-KmH" secondAttribute="trailing" id="u9v-Fs-UuK"/>
+                <constraint firstItem="LbH-HK-KmH" firstAttribute="leading" secondItem="3zY-Iu-hB2" secondAttribute="leading" id="Atv-Uk-P98"/>
+                <constraint firstItem="LbH-HK-KmH" firstAttribute="trailing" secondItem="3zY-Iu-hB2" secondAttribute="trailing" id="Hr7-7s-Qx9"/>
+                <constraint firstItem="LbH-HK-KmH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JT9-MP-DcG"/>
+                <constraint firstAttribute="bottom" secondItem="LbH-HK-KmH" secondAttribute="bottom" constant="39" id="VIe-yb-1V5"/>
+                <constraint firstItem="LbH-HK-KmH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="ea3-V1-OX3"/>
+                <constraint firstAttribute="trailing" secondItem="LbH-HK-KmH" secondAttribute="trailing" id="fu0-C0-kCW"/>
+                <constraint firstAttribute="bottom" secondItem="3zY-Iu-hB2" secondAttribute="bottom" id="kcj-ob-m14"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>

@@ -69,12 +69,4 @@ KSRootViewAndReturnNilMacro(KSPhotoZoneView);
     return cell;
 }
 
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
- //   [tableView deselectRowAtIndexPath:indexPath animated:YES];
-//    
-//    KSFriendDetailViewController * controller = [KSFriendDetailViewController new];
-//    controller.user = self.userFriends[indexPath.row];
-//    
-//    [self.navigationController pushViewController:controller animated:YES];
-//}
 @end

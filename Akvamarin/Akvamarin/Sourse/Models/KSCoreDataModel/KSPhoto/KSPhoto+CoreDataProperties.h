@@ -16,10 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 @class KSPhotoZone;
 
 @interface KSPhoto (CoreDataProperties)
-
-@property (nullable, nonatomic, copy) NSString *url;
-@property (nullable, nonatomic, retain) KSPhotoZone *mainPhoto;
-@property (nullable, nonatomic, retain) KSPhotoZone *photos;
+@property (nonatomic, copy)     NSString        *url;
+@property (nonatomic, strong)   KSPhotoZone     *mainPhoto;
+@property (nonatomic, strong)   KSPhotoZone     *photos;
 
 @end
 

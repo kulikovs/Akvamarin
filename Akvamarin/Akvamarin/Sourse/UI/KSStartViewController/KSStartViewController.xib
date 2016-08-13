@@ -3,6 +3,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSStartViewController">
@@ -15,25 +18,95 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wm-SC-rBL">
-                    <rect key="frame" x="63" y="163" width="78" height="30"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_home" translatesAutoresizingMaskIntoConstraints="NO" id="DfL-di-k8P">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukC-JS-VCy">
+                    <rect key="frame" x="186" y="215" width="170" height="170"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ukC-JS-VCy" secondAttribute="height" multiplier="1:1" id="olD-sj-Olv"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="-100" minY="135" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Стоимость" image="mani">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="mani_action"/>
+                    <connections>
+                        <action selector="onClickPriceButton:" destination="-1" eventType="touchUpInside" id="uqb-fq-0Ge"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wm-SC-rBL">
+                    <rect key="frame" x="15" y="386" width="170" height="170"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1Wm-SC-rBL" secondAttribute="height" multiplier="1:1" id="g5z-AS-ycO"/>
+                    </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="Календарь"/>
+                    <inset key="titleEdgeInsets" minX="-90" minY="135" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Аренда" image="arenda"/>
+                    <state key="selected" image="arenda_action"/>
                     <connections>
                         <action selector="onClickCalendarButton:" destination="-1" eventType="touchUpInside" id="9I0-nG-pgg"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSz-bm-95i">
-                    <rect key="frame" x="63" y="201" width="78" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSz-bm-95i">
+                    <rect key="frame" x="15" y="215" width="170" height="170"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="KSz-bm-95i" secondAttribute="height" multiplier="1:1" id="aiE-yp-Ugo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="Фотозоны"/>
+                    <inset key="titleEdgeInsets" minX="-100" minY="135" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Фотозоны" image="fotozona"/>
+                    <state key="selected" image="fotozona_action"/>
                     <connections>
                         <action selector="onClickPhotoZoneButton:" destination="-1" eventType="touchUpInside" id="5dZ-4L-sTf"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ouz-JY-Zyr">
+                    <rect key="frame" x="186" y="386" width="170" height="170"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Ouz-JY-Zyr" secondAttribute="height" multiplier="1:1" id="qjo-xv-BBB"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="-90" minY="135" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Контакты" image="contact">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="contact_action"/>
+                </button>
             </subviews>
-            <color key="backgroundColor" red="0.27843137254901962" green="0.69803921568627447" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KSz-bm-95i" firstAttribute="baseline" secondItem="ukC-JS-VCy" secondAttribute="firstBaseline" id="03A-rZ-jn3"/>
+                <constraint firstItem="KSz-bm-95i" firstAttribute="top" secondItem="ukC-JS-VCy" secondAttribute="top" id="18j-EL-Uc4"/>
+                <constraint firstItem="ukC-JS-VCy" firstAttribute="baseline" secondItem="KSz-bm-95i" secondAttribute="firstBaseline" id="2BE-Bn-KWX"/>
+                <constraint firstItem="Ouz-JY-Zyr" firstAttribute="baseline" secondItem="1Wm-SC-rBL" secondAttribute="firstBaseline" id="4Wi-Q1-X6x"/>
+                <constraint firstItem="KSz-bm-95i" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="215" id="FMi-IO-hs2"/>
+                <constraint firstItem="1Wm-SC-rBL" firstAttribute="top" secondItem="KSz-bm-95i" secondAttribute="bottom" constant="1" id="TSi-Al-bEq"/>
+                <constraint firstItem="DfL-di-k8P" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wcr-ag-AsF"/>
+                <constraint firstAttribute="bottom" secondItem="DfL-di-k8P" secondAttribute="bottom" id="biD-dB-geB"/>
+                <constraint firstItem="1Wm-SC-rBL" firstAttribute="top" secondItem="Ouz-JY-Zyr" secondAttribute="top" id="dcs-qh-MHF"/>
+                <constraint firstItem="ukC-JS-VCy" firstAttribute="leading" secondItem="KSz-bm-95i" secondAttribute="trailing" constant="1" id="jLG-0G-dMd"/>
+                <constraint firstItem="KSz-bm-95i" firstAttribute="trailing" secondItem="1Wm-SC-rBL" secondAttribute="trailing" id="kpY-6g-W3k"/>
+                <constraint firstItem="KSz-bm-95i" firstAttribute="leading" secondItem="1Wm-SC-rBL" secondAttribute="leading" id="kyX-FK-4bz"/>
+                <constraint firstItem="DfL-di-k8P" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nKp-iT-DTR"/>
+                <constraint firstAttribute="trailing" secondItem="DfL-di-k8P" secondAttribute="trailing" id="pQX-R2-IkF"/>
+                <constraint firstAttribute="trailing" secondItem="ukC-JS-VCy" secondAttribute="trailing" constant="19" id="qic-5A-4d0"/>
+                <constraint firstItem="1Wm-SC-rBL" firstAttribute="baseline" secondItem="Ouz-JY-Zyr" secondAttribute="firstBaseline" id="qy9-WD-N9P"/>
+                <constraint firstItem="ukC-JS-VCy" firstAttribute="trailing" secondItem="Ouz-JY-Zyr" secondAttribute="trailing" id="soi-n1-zDO"/>
+                <constraint firstItem="ukC-JS-VCy" firstAttribute="leading" secondItem="Ouz-JY-Zyr" secondAttribute="leading" id="uqi-pt-fYy"/>
+                <constraint firstItem="KSz-bm-95i" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="wOu-oG-16f"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>
+    <resources>
+        <image name="arenda" width="130" height="120"/>
+        <image name="arenda_action" width="130" height="120"/>
+        <image name="bg_home" width="320" height="568"/>
+        <image name="contact" width="130" height="120"/>
+        <image name="contact_action" width="130" height="120"/>
+        <image name="fotozona" width="130" height="120"/>
+        <image name="fotozona_action" width="130" height="120"/>
+        <image name="mani" width="130" height="120"/>
+        <image name="mani_action" width="130" height="120"/>
+    </resources>
 </document>

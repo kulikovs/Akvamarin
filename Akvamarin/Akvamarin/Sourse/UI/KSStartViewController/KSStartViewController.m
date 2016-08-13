@@ -14,6 +14,7 @@
 #import "KSStartView.h"
 #import "KSPhotoZoneViewController.h"
 #import "KSPhotoZoneContext.h"
+#import "KSPriceViewController.h"
 
 @interface KSStartViewController ()
 @property (nonatomic, readonly) KSStartView      *rootView;
@@ -51,6 +52,11 @@ KSRootViewAndReturnNilMacro(KSStartView);
     photoZoneController.context = [KSPhotoZoneContext new];
     
     [self.navigationController pushViewController:photoZoneController animated:YES];
+}
+
+- (IBAction)onClickPriceButton:(id)sender {
+    KSPriceViewController *priceViewController = [KSPriceViewController new];
+    [self.navigationController pushViewController:priceViewController animated:YES];
 }
 
 @end

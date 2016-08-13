@@ -19,7 +19,7 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpC-nQ-OAs">
                     <rect key="frame" x="0.0" y="628" width="375" height="40"/>
-                    <color key="backgroundColor" red="0.27843137254901962" green="0.69803921568627447" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.45098039215686275" green="0.69411764705882351" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="W8D-vx-PX4"/>
                     </constraints>
@@ -105,7 +105,7 @@
                         <constraint firstAttribute="height" constant="30" id="LCv-iN-ycu"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" keyboardType="namePhonePad" returnKeyType="next"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="next"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="dYm-cJ-RZr"/>
                     </connections>
@@ -204,12 +204,12 @@
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
                 <outlet property="datePicker" destination="HOs-s8-rtm" id="dNN-FN-cKO"/>
+                <outlet property="emailField" destination="QK5-rA-Sad" id="35c-KQ-uzo"/>
                 <outlet property="endTimePicker" destination="nGI-DG-6gF" id="aov-XY-LfF"/>
+                <outlet property="nameField" destination="s2o-RX-P3N" id="QDH-Gz-pE2"/>
+                <outlet property="phoneNumberField" destination="ZqP-nS-pL7" id="geb-6F-DSd"/>
                 <outlet property="sendMailButton" destination="UpC-nQ-OAs" id="6l9-zZ-IIY"/>
                 <outlet property="startTimePicker" destination="gQ6-Xy-Uj7" id="0J4-SH-vMI"/>
-                <outletCollection property="textFields" destination="s2o-RX-P3N" id="PpJ-jS-9vd"/>
-                <outletCollection property="textFields" destination="ZqP-nS-pL7" id="S8Y-2R-nj6"/>
-                <outletCollection property="textFields" destination="QK5-rA-Sad" id="iAg-qL-3MI"/>
             </connections>
             <point key="canvasLocation" x="253.5" y="438.5"/>
         </view>

@@ -13,8 +13,5 @@
 - (void)test {
 }
 
-//UIPickerView *picker = [UIPickerView ]
-//    
-//}
 
 @end

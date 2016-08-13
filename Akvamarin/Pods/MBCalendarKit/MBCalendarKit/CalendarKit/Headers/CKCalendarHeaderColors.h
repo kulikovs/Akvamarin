@@ -14,7 +14,7 @@
 #define kCalendarColorHeaderWeekdayTitle    [@"#545454" toColor]
 #define kCalendarColorHeaderWeekdayShadow   [@"#f3f3f4" toColor]
 
-#define kCalendarColorHeaderMonth           [@"#47b2ae" toColor]
+#define kCalendarColorHeaderMonth           [@"#37aaa5" toColor]
 #define kCalendarColorHeaderMonthShadow     [@"#f6f6f7" toColor]
 
 #define kCalendarColorHeaderGradientLight   [@"#f4f4f5" toColor]
