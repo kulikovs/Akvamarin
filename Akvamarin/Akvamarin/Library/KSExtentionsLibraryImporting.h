@@ -24,5 +24,6 @@
 #import "NSDateComponents+KSExtensions.h"
 #import "NSDate+KSExtensions.h"
 #import "UIColor+KSExtensions.h"
+#import "NSDateFormatter+KSExtensions.h"
 
 #endif /* KSExtentionsLibraryImporting_h */

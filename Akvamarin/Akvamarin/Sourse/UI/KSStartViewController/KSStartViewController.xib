@@ -32,7 +32,7 @@
                     </state>
                     <state key="selected" image="mani_action"/>
                     <connections>
-                        <action selector="onClickPriceButton:" destination="-1" eventType="touchUpInside" id="uqb-fq-0Ge"/>
+                        <action selector="onPriceButtonClick:" destination="-1" eventType="touchUpInside" id="fYx-bl-9Ht"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wm-SC-rBL">
@@ -45,7 +45,7 @@
                     <state key="normal" title="Аренда" image="arenda"/>
                     <state key="selected" image="arenda_action"/>
                     <connections>
-                        <action selector="onClickCalendarButton:" destination="-1" eventType="touchUpInside" id="9I0-nG-pgg"/>
+                        <action selector="onCalendarButtonClick:" destination="-1" eventType="touchUpInside" id="u96-za-LE7"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSz-bm-95i">
@@ -59,7 +59,7 @@
                     <state key="normal" title="Фотозоны" image="fotozona"/>
                     <state key="selected" image="fotozona_action"/>
                     <connections>
-                        <action selector="onClickPhotoZoneButton:" destination="-1" eventType="touchUpInside" id="5dZ-4L-sTf"/>
+                        <action selector="onPhotoZoneButtonClick:" destination="-1" eventType="touchUpInside" id="sTr-nq-yaW"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ouz-JY-Zyr">

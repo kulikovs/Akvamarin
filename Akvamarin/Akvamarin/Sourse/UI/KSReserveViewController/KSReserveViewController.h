@@ -12,6 +12,6 @@
 
 @interface KSReserveViewController : KSCustomViewController
 
-- (IBAction)onSendMailButton:(id)sender;
+- (IBAction)onSendDataButtonClick:(id)sender;
 
 @end

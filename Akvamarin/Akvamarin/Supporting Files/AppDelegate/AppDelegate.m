@@ -20,7 +20,7 @@
 
 @interface AppDelegate ()
 
-- (void)removeOldEvents;
+//- (void)removeOldEvents;
 
 @end
 
@@ -32,7 +32,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOption {
     [IDPCoreDataManager sharedManagerWithMomName:kKSCoreDataModelName];
     
-    [self removeOldEvents];
+ //   [self removeOldEvents];
 
     UIWindow *window = [UIWindow new];
     self.window = window;
@@ -71,16 +71,16 @@
 #pragma mark -
 #pragma mark Private Methods
 
-- (void)removeOldEvents {
-    KSCalendar *calendar = [KSCalendar objectWithID:kKSCalendarId];
-    NSArray *events = calendar.events.allObjects;
-    
-    for (KSEvent *event in events) {
-        if ([[NSDate date] timeIntervalSinceDate:event.endDateTime] > 0) {
-            [calendar removeEventsObject:event];
-        }
-    }
-}
+//- (void)removeOldEvents {
+//    KSCalendar *calendar = [KSCalendar objectWithID:kKSCalendarId];
+//    NSArray *events = calendar.events.allObjects;
+//    
+//    for (KSEvent *event in events) {
+//        if ([[NSDate new] currentDateIsAfterDay:event.endDateTime]) {
+//            [calendar removeEventsObject:event];
+//        }
+//    }
+//}
 
 
 @end

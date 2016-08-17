@@ -13,6 +13,8 @@
 		C90F74831D3B7B3700F66F10 /* KSStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F74811D3B7B3700F66F10 /* KSStartViewController.m */; };
 		C90F74841D3B7B3700F66F10 /* KSStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90F74821D3B7B3700F66F10 /* KSStartViewController.xib */; };
 		C90F74871D3B7B6700F66F10 /* KSStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F74861D3B7B6700F66F10 /* KSStartView.m */; };
+		C933E3BF1D62E920007AFCAB /* KSReserveContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C933E3BE1D62E920007AFCAB /* KSReserveContext.m */; };
+		C933E3C71D6347A3007AFCAB /* NSDateFormatter+KSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C933E3C61D6347A3007AFCAB /* NSDateFormatter+KSExtensions.m */; };
 		C938F9941D2E88DA0081DB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C938F98C1D2E88DA0081DB7D /* Assets.xcassets */; };
 		C938F9981D2E88DA0081DB7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C938F9921D2E88DA0081DB7D /* main.m */; };
 		C938F99D1D2E8A7B0081DB7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C938F99C1D2E8A7B0081DB7D /* AppDelegate.m */; };
@@ -92,6 +94,11 @@
 		C90F74821D3B7B3700F66F10 /* KSStartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KSStartViewController.xib; sourceTree = "<group>"; };
 		C90F74851D3B7B6700F66F10 /* KSStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSStartView.h; sourceTree = "<group>"; };
 		C90F74861D3B7B6700F66F10 /* KSStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSStartView.m; sourceTree = "<group>"; };
+		C933E3BD1D62E920007AFCAB /* KSReserveContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSReserveContext.h; sourceTree = "<group>"; };
+		C933E3BE1D62E920007AFCAB /* KSReserveContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSReserveContext.m; sourceTree = "<group>"; };
+		C933E3C51D6347A3007AFCAB /* NSDateFormatter+KSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+KSExtensions.h"; sourceTree = "<group>"; };
+		C933E3C61D6347A3007AFCAB /* NSDateFormatter+KSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+KSExtensions.m"; sourceTree = "<group>"; };
+		C933E3C81D634FE6007AFCAB /* KSAlertViewConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSAlertViewConstants.h; sourceTree = "<group>"; };
 		C938F96E1D2E877C0081DB7D /* Akvamarin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Akvamarin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C938F98C1D2E88DA0081DB7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C938F9911D2E88DA0081DB7D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -288,6 +295,24 @@
 			path = KSStartView;
 			sourceTree = "<group>";
 		};
+		C933E3BC1D62E920007AFCAB /* KSReserveContext */ = {
+			isa = PBXGroup;
+			children = (
+				C933E3BD1D62E920007AFCAB /* KSReserveContext.h */,
+				C933E3BE1D62E920007AFCAB /* KSReserveContext.m */,
+			);
+			path = KSReserveContext;
+			sourceTree = "<group>";
+		};
+		C933E3C41D63476E007AFCAB /* NSDateFormatter+KSExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				C933E3C51D6347A3007AFCAB /* NSDateFormatter+KSExtensions.h */,
+				C933E3C61D6347A3007AFCAB /* NSDateFormatter+KSExtensions.m */,
+			);
+			path = "NSDateFormatter+KSExtensions";
+			sourceTree = "<group>";
+		};
 		C938F9651D2E877C0081DB7D = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +389,7 @@
 		C938FA331D2EC0C30081DB7D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C933E3C41D63476E007AFCAB /* NSDateFormatter+KSExtensions */,
 				C93B0C5C1D56177B00195A95 /* UIColor+KSExtensions */,
 				C90652B71D454E6C00B15156 /* NSDate+KSExtensions */,
 				C9017C801D44097900F9E6E1 /* NSDateComponents+KSExtensions */,
@@ -769,6 +795,7 @@
 				C94BC1C71D3977D400C3E960 /* KSCoreDataConstants.h */,
 				C9424F251D50E5DF0077E1C0 /* KSRequestConstants.h */,
 				C9424F3D1D5130AC0077E1C0 /* KSPhotoZoneConstants.h */,
+				C933E3C81D634FE6007AFCAB /* KSAlertViewConstants.h */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -805,6 +832,7 @@
 		C95A3BDB1D38122F00B7A60C /* Contexts */ = {
 			isa = PBXGroup;
 			children = (
+				C933E3BC1D62E920007AFCAB /* KSReserveContext */,
 				C9F815231D53C1A2007B47FB /* KSContext */,
 				C9424F1D1D509D420077E1C0 /* KSCalendarContext */,
 				C9424F201D509D420077E1C0 /* KSPhotoZoneContext */,
@@ -1061,6 +1089,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C938FAB71D2EC0C30081DB7D /* KSStateModel.m in Sources */,
+				C933E3C71D6347A3007AFCAB /* NSDateFormatter+KSExtensions.m in Sources */,
 				C938FAA41D2EC0C30081DB7D /* UIBarButtonItem+KSExtensions.m in Sources */,
 				C938FAB41D2EC0C30081DB7D /* KSObserverArray.m in Sources */,
 				C97199911D5F6E1F00FC618D /* KSPriceViewController.m in Sources */,
@@ -1104,6 +1133,7 @@
 				C971995A1D5E5D3C00FC618D /* KSPhoneNumberModel.m in Sources */,
 				C938F9981D2E88DA0081DB7D /* main.m in Sources */,
 				C938FAB01D2EC0C30081DB7D /* KSCache.m in Sources */,
+				C933E3BF1D62E920007AFCAB /* KSReserveContext.m in Sources */,
 				C938FAA61D2EC0C30081DB7D /* UINib+KSExtensions.m in Sources */,
 				C9424F211D509D420077E1C0 /* KSCalendarContext.m in Sources */,
 				C938FAB91D2EC0C30081DB7D /* KSImageModel.m in Sources */,

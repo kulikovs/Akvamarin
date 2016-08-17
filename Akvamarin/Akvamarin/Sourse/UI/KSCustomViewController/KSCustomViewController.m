@@ -8,6 +8,11 @@
 
 #import "KSCustomViewController.h"
 #import "KSContext.h"
+#import "KSAlertViewConstants.h"
+
+#define kKSAkvamarinColor [UIColor colorWithRedColor:55 greenColor:170 blueColor:165 alpha:1.0];
+
+static NSString * const kKSLeftBarBattonImageName   = @"back";
 
 @interface KSCustomViewController ()
 @property (nonatomic, readonly) NSString            *navigationBarTitle;
@@ -20,10 +25,6 @@
 - (void)rightBarButtonClick;
 
 @end
-
-#define kKSAkvamarinColor [UIColor colorWithRedColor:55 greenColor:170 blueColor:165 alpha:1.0];
-
-static NSString * const kKSLeftBarBattonImageName   = @"back";
 
 @implementation KSCustomViewController
 
@@ -110,6 +111,19 @@ static NSString * const kKSLeftBarBattonImageName   = @"back";
                                          buttonWithImageName:rightButtonImageName
                                          selector:@selector(rightBarButtonClick)
                                          target:self];
+}
+
+
+- (void)showAlertViewWithTitle:(NSString *)title message:(NSString *)message actionHandler:(KSActionHandler)handler; {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title
+                                                                   message:message
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+
+    UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:kKSAlertActionTitle
+                                                            style:UIAlertActionStyleDefault
+                                                          handler:handler];
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 #pragma mark -

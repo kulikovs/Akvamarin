@@ -10,8 +10,6 @@
 #import "KSRequestConstants.h"
 
 @interface KSContext ()
-@property (nonatomic, strong)   NSURLSession                   *URLSession;
-@property (nonatomic, strong)   NSURLSessionDataTask           *dataTask;
 @property (nonatomic, readonly) NSURL                          *requestURL;
 @property (nonatomic, readonly) NSDictionary                   *headers;
 
@@ -57,10 +55,12 @@
         [self dump];
         
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:self.requestURL];
-        [request setHTTPMethod:kKSGetHTTPMethod];
+        [request setHTTPMethod:kKSHTTPMethodGET];
         [request setAllHTTPHeaderFields:self.headers];
         
+        KSWeakifySelf
         id block = ^(NSData *data, NSURLResponse *response, NSError *error) {
+            KSStrongifySelfAndReturnIfNil
             if (error) {
                 [self setState:kKSModelStateFailed withObject:nil];
             } else {
@@ -78,15 +78,15 @@
     [self.dataTask cancel];
 }
 
+- (void)dump {
+    self.state = kKSModelStateUndefined;
+}
+
 #pragma mark -
 #pragma mark Private Methods
 
 - (void)parseResult:(NSDictionary *)result {
 
-}
-
-- (void)dump {
-    self.state = kKSModelStateUndefined;
 }
 
 @end

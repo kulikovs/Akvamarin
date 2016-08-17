@@ -9,5 +9,11 @@
 #import "NSDateFormatter+KSExtensions.h"
 
 @implementation NSDateFormatter (KSExtensions)
++ (NSDateFormatter *)dateFormatterWithFormatKey:(NSString *)formatKey {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:formatKey];
+    
+    return dateFormatter;
+}
 
 @end

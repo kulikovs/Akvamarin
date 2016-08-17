@@ -10,8 +10,8 @@
 
 @interface KSStartViewController : UIViewController
 
-- (IBAction)onClickCalendarButton:(id)sender;
-- (IBAction)onClickPhotoZoneButton:(id)sender;
-- (IBAction)onClickPriceButton:(id)sender;
+- (IBAction)onCalendarButtonClick:(id)sender;
+- (IBAction)onPhotoZoneButtonClick:(id)sender;
+- (IBAction)onPriceButtonClick:(id)sender;
 
 @end

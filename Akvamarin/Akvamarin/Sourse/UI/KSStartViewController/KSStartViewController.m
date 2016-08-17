@@ -40,21 +40,21 @@ KSRootViewAndReturnNilMacro(KSStartView);
 #pragma mark -
 #pragma mark Handling
 
-- (IBAction)onClickCalendarButton:(id)sender {
+- (IBAction)onCalendarButtonClick:(id)sender {
     KSCalendarViewController *calendarController = [KSCalendarViewController new];
     calendarController.calendar = [KSCalendar objectWithID:kKSCalendarId];
 
     [self.navigationController pushViewController:calendarController animated:YES];
 }
 
-- (IBAction)onClickPhotoZoneButton:(id)sender {
+- (IBAction)onPhotoZoneButtonClick:(id)sender {
     KSPhotoZoneViewController *photoZoneController = [KSPhotoZoneViewController new];
     photoZoneController.context = [KSPhotoZoneContext new];
     
     [self.navigationController pushViewController:photoZoneController animated:YES];
 }
 
-- (IBAction)onClickPriceButton:(id)sender {
+- (IBAction)onPriceButtonClick:(id)sender {
     KSPriceViewController *priceViewController = [KSPriceViewController new];
     [self.navigationController pushViewController:priceViewController animated:YES];
 }

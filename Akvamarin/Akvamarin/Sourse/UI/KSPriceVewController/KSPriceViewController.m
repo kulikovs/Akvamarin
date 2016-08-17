@@ -8,11 +8,9 @@
 
 #import "KSPriceViewController.h"
 #import "KSPriceView.h"
+#import "KSAlertViewConstants.h"
 
 static NSString * const kKSPriceBarTitle            = @"Стоимость";
-static NSString * const kKSAlertControllerTitle     = @"Ошибка загрузки";
-static NSString * const kKSAlertControllerMessage   = @"Проверьте подключение к Интернету";
-static NSString * const kKSAlertActionTitle         = @"ОК";
 
 static NSString * const kKSPriceURL = @"http://www.akvamarin.ks.ua/uslovija-raboty-v-studii";
 
@@ -20,7 +18,6 @@ static NSString * const kKSPriceURL = @"http://www.akvamarin.ks.ua/uslovija-rabo
 @property (nonatomic, readonly) KSPriceView *rootView;
 
 - (void)loadWebView;
-- (void)showAlertView;
 
 @end
 
@@ -52,20 +49,6 @@ KSRootViewAndReturnNilMacro(KSPriceView);
 - (void)loadWebView {
     NSURL *URL = [NSURL URLWithString:kKSPriceURL];
     [self.rootView.webView loadRequest:[NSURLRequest requestWithURL:URL]];
-    
-}
-
-- (void)showAlertView {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:kKSAlertControllerTitle
-                                                                   message:kKSAlertControllerMessage
-                                                            preferredStyle:UIAlertControllerStyleAlert];
-    
-    UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:kKSAlertActionTitle
-                                                            style:UIAlertActionStyleDefault
-                                                          handler:^(UIAlertAction * action) {
-                                                          }];
-    [alert addAction:defaultAction];
-    [self presentViewController:alert animated:YES completion:nil];
 }
 
 #pragma mark -
@@ -73,7 +56,12 @@ KSRootViewAndReturnNilMacro(KSPriceView);
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(nullable NSError *)error {
     if ([error code] != NSURLErrorCancelled) {
-        [self showAlertView];
+        KSWeakifySelf
+        KSActionHandler action = ^(UIAlertAction * action) {
+            KSStrongifySelfAndReturnIfNil
+            [self.navigationController popToRootViewControllerAnimated:YES];
+        };
+        [self showAlertViewWithTitle:kKSLoadingErrorTitle message:kKSCheckInternetMessage actionHandler:action];
     }
 }
 

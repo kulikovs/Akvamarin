@@ -1,21 +1,36 @@
 //
-//  KSSendMailContext.m
+//  KSReserveContext.m
 //  Akvamarin
 //
 //  Created by KulikovS on 13.08.16.
 //  Copyright © 2016 KulikovS. All rights reserved.
 //
 
-#import "KSSendMailContext.h"
+#import "KSReserveContext.h"
 #import "KSRequestConstants.h"
 
-@interface KSSendMailContext ()
-@property (nonatomic, strong) NSURLSessionDataTask *dataTask;
+@interface KSReserveContext ()
+@property (nonatomic, strong) NSDictionary *reserveData;
 
 @end
 
+@implementation KSReserveContext
 
-@implementation KSSendMailContext
+#pragma mark -
+#pragma mark Initializations and Deallocations
+
+- (instancetype)init {
+    return [[[self class] alloc] initWithReserveData:nil];
+}
+
+- (instancetype)initWithReserveData:(NSDictionary *)data {
+    self = [super init];
+    if (self) {
+        self.reserveData = data;
+    }
+    
+    return self;
+}
 
 #pragma mark -
 #pragma mark Accessors
@@ -36,32 +51,26 @@
         [self dump];
         
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:self.requestURL];
-        [request setHTTPMethod:kKSGetHTTPMethod];
-        [request setAllHTTPHeaderFields:self.headers];
-        
- //   Ex: {"user": {"start_time": "11.30", "end_time": "12.30", "date": "11.08.2016", "name": "Name", "email": "1@ex.com", "phone": "12345678"} }
-
-//        
-//        NSDictionary *tmp = [[NSDictionary alloc] initWithObjectsAndKeys:
-//                             email, @"Email",
-//                             fname, @"FirstName",
-//                             nil];
-        
-        NSDictionary *data = [NSDictionary dictionary];
         NSError *error;
-        NSData *postdata = [NSJSONSerialization dataWithJSONObject:data options:0 error:&error];
+        NSData *postdata = [NSJSONSerialization dataWithJSONObject:self.reserveData
+                                                           options:0
+                                                             error:&error];
+        [request setHTTPMethod:kKSHTTPMethodPOST];
+        [request setAllHTTPHeaderFields:self.headers];
         [request setHTTPBody:postdata];
         
+        KSWeakifySelf
         id block = ^(NSData *data, NSURLResponse *response, NSError *error) {
+            KSStrongifySelfAndReturnIfNil
             if (error) {
                 [self setState:kKSModelStateFailed withObject:nil];
             } else {
                 [self setState:kKSModelStateLoaded withObject:nil];
             }};
 
-
-        self.dataTask = [[NSURLSession sharedSession] uploadTaskWithRequest:request fromData:postdata completionHandler:block];
-        
+        self.dataTask = [[NSURLSession sharedSession] uploadTaskWithRequest:request
+                                                                   fromData:postdata
+                                                          completionHandler:block];
         [self.dataTask resume];
     }
 }

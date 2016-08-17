@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KSEmailModel : UIViewController
+@interface KSEmailModel : NSObject
 
 - (NSString *)formattedEmailAdressWithAdress:(UITextField *)emailAdress
                                        range:(NSRange)range

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KSPhoneNumberModel : UIViewController
+@interface KSPhoneNumberModel : NSObject
 
 - (NSString *)formattedPhoneNumberWithNumber:(UITextField *)number
                                        range:(NSRange)range

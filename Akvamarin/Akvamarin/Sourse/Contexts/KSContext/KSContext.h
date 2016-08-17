@@ -9,7 +9,10 @@
 #import "KSModel.h"
 
 @interface KSContext : KSModel
+@property (nonatomic, strong)   NSURLSession                   *URLSession;
+@property (nonatomic, strong)   NSURLSessionDataTask           *dataTask;
 
 - (void)cancel;
+- (void)dump;
 
 @end

@@ -11,13 +11,20 @@
 #import "KSCalendarConstants.h"
 #import "KSPhoneNumberModel.h"
 #import "KSEmailModel.h"
+#import "KSRequestConstants.h"
+#import "KSReserveContext.h"
+#import "KSAlertViewConstants.h"
 
 static NSString * const kKSPhotoZoneBarTitle = @"Бронирование";
+static NSString * const kKSDataSendingString = @"Идет отправка данных...";
 
 @interface KSReserveViewController () <UITextFieldDelegate>
 @property (nonatomic, readonly) KSReserveView           *rootView;
 @property (nonatomic, strong)   KSPhoneNumberModel      *phoneNumberModel;
 @property (nonatomic, strong)   KSEmailModel            *emailModel;
+
+- (NSDictionary *)reserveData;
+- (BOOL)isValidPhoneNumber:(NSString *)phoneNumber emailAdress:(NSString *)emailAdress;
 
 @end
 
@@ -47,40 +54,66 @@ KSRootViewAndReturnNilMacro(KSReserveView)
     return kKSPhotoZoneBarTitle;
 }
 
+#pragma mark -
+#pragma mark Private Methods
 
+- (BOOL)isValidPhoneNumber:(NSString *)phoneNumber emailAdress:(NSString *)emailAdress {
+    BOOL validPhoneNumber = [self.phoneNumberModel isValidPhoneNumber:phoneNumber];
+    BOOL validEmail = [self.emailModel isValidEmailAdress:emailAdress];
 
-
-
-
-
-
-
-- (void)test {
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:kKSDateFormatKey];
-    
-    NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
-    [timeFormatter setDateFormat:kKSTimeFormatKey];
-    
-    NSString *startTime = [timeFormatter stringFromDate:self.rootView.startTimePicker];
-    NSString *endTime = [timeFormatter stringFromDate:self.rootView.endTimePicker];
-    NSString *date = [dateFormatter stringFromDate:self.rootView.datePicker];
-    
-//    UITextField *nameField = [self.rootView.textFields objectAtIndex:0];
-//        UITextField *phoneNumberField = [self.rootView.textFields objectAtIndex:1];
-//    UITextField *emailField = [self.rootView.textFields objectAtIndex:2];
-//    NSString *name = nameField.text;
-//    NSString *email = emailField.text;
-//    NSString *phoneNumber = phoneNumberField.text;
-//    
-//    BOOL validEmail = [self.emailModel isValidEmailAdress:email];
-//    BOOL validPhoneNumber = [self.phoneNumberModel isValidPhoneNumber:phoneNumber];
-
-    NSLog(@"");
+    return (validEmail && validPhoneNumber);
 }
 
-- (void)onSendMailButton:(id)sender {
-    [self test];
+- (NSDictionary *)reserveData {
+    NSDateFormatter *dateFormatter = [NSDateFormatter dateFormatterWithFormatKey:kKSDateFormatKey];
+    NSDateFormatter *timeFormatter = [NSDateFormatter dateFormatterWithFormatKey:kKSTimeFormatKey];
+    
+    KSReserveView *view = self.rootView;
+    NSString *startTime = [timeFormatter stringFromDate:view.startTimePicker.date];
+    NSString *endTime = [timeFormatter stringFromDate:view.endTimePicker.date];
+    NSString *date = [dateFormatter stringFromDate:view.datePicker.date];
+    
+    NSDictionary *data = @{kKSUserKey: @{kKSStartTimeKey: startTime,
+                                           kKSEndTimeKey: endTime,
+                                              kKSDateKey: date,
+                                              kKSNameKey: view.nameField.text,
+                                             kKSEmailKey: view.emailField.text,
+                                             kKSPhoneKey: view.phoneNumberField.text
+                                         }
+                           };
+    return data;
+}
+
+- (void)contextDidLoad {
+    [self.rootView removeLoadingViewAnimated:YES];
+    
+    KSWeakifySelf
+    KSActionHandler action = ^(UIAlertAction *action) {
+        KSStrongifySelfAndReturnIfNil
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    };
+    [self showAlertViewWithTitle:kKSThankYouString message:kKSWaitingAdminString actionHandler:action];
+}
+
+- (void)contextLoadFailed {
+    [self.rootView removeLoadingView];
+    [self showAlertViewWithTitle:kKSDataSendingErrorString message:kKSCheckInternetMessage actionHandler:nil];
+}
+
+#pragma mark -
+#pragma mark Handling
+
+- (void)onSendDataButtonClick:(id)sender {
+    KSReserveView *view = self.rootView;
+    NSString *email = view.emailField.text;
+    NSString *phoneNumber = view.phoneNumberField.text;
+    
+    if ([self isValidPhoneNumber:phoneNumber emailAdress:email]) {
+        self.context = [[KSReserveContext alloc] initWithReserveData:[self reserveData]];
+        [view showLoadingViewWithText:kKSDataSendingString];
+    } else {
+        [self showAlertViewWithTitle:kKSDataEntryErrorTitle message:kKSCheckPhoneEmailMessage actionHandler:nil];
+    }
 }
 
 #pragma mark -

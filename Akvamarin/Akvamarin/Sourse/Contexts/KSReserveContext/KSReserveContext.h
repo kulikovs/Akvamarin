@@ -1,5 +1,5 @@
 //
-//  KSSendMailContext.h
+//  KSReserveContext.h
 //  Akvamarin
 //
 //  Created by KulikovS on 13.08.16.
@@ -8,6 +8,8 @@
 
 #import "KSContext.h"
 
-@interface KSSendMailContext : KSContext
+@interface KSReserveContext : KSContext
+
+- (instancetype)initWithReserveData:(NSDictionary *)data;
 
 @end

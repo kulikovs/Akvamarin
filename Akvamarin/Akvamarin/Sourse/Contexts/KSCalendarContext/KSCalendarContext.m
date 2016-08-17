@@ -18,6 +18,7 @@
 @property (nonatomic, strong) KSCalendar *calendar;
 
 - (NSString *)titleFromStartDate:(NSDate *)startDate endDate:(NSDate *)endDate;
+- (void)removeOldEvents;
 
 @end
 
@@ -47,8 +48,7 @@
 #pragma mark Private Methods
 
 - (NSString *)titleFromStartDate:(NSDate *)startDate endDate:(NSDate *)endDate {
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:kKSTimeFormatKey];
+    NSDateFormatter *dateFormatter = [NSDateFormatter dateFormatterWithFormatKey:kKSTimeFormatKey];
     
     NSString *startTime = [dateFormatter stringFromDate:startDate];
     NSString *endTime = [dateFormatter stringFromDate:endDate];
@@ -58,16 +58,15 @@
 
 - (void)parseResult:(NSDictionary *)result {
     @synchronized (self) {
+        [self removeOldEvents];
         NSArray *array = [result valueForKeyPath:kKSItemsKey];
         NSMutableArray *events = [NSMutableArray array];
         
         for (NSDictionary *dictionary in array) {
-            NSDateFormatter *dayFormatter = [[NSDateFormatter alloc] init];
-            dayFormatter.dateFormat = kKSDateTimeFormatKey;
+            NSDateFormatter *dayFormatter = [NSDateFormatter dateFormatterWithFormatKey:kKSDateTimeFormatKey];
             NSDate *endDateTime = [dayFormatter dateFromString:
                                    [dictionary valueForKeyPath:kKSEndDateKey]];
-            
-            if ([[NSDate date] timeIntervalSinceDate:endDateTime] < 0) {
+            if ([[NSDate date] currentDateIsBeforeDay:endDateTime]) {
                 NSString *ID = [dictionary valueForKey:KKSIDKey];
                 KSEvent *event = [KSEvent objectWithID:ID];
                 event.startDateTime = [dayFormatter dateFromString:
@@ -83,6 +82,16 @@
         [self.calendar saveManagedObject];
     }
 }
+
+- (void)removeOldEvents {
+    KSCalendar *calendar = self.calendar;
+    for (KSEvent *event in calendar.events.allObjects) {
+        if ([[NSDate new] currentDateIsAfterDay:event.endDateTime]) {
+            [calendar removeEventsObject:event];
+        }
+    }
+}
+
 
 
 @end

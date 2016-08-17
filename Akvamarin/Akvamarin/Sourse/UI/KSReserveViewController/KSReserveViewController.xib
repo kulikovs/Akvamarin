@@ -28,7 +28,7 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="onSendMailButton:" destination="-1" eventType="touchUpInside" id="lj1-Nq-6Hg"/>
+                        <action selector="onSendDataButtonClick:" destination="-1" eventType="touchUpInside" id="gYJ-eZ-k7k"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ed6-Cv-gJ4">
@@ -49,33 +49,20 @@
                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="gQ6-Xy-Uj7">
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="30" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQ6-Xy-Uj7">
                     <rect key="frame" x="8" y="94" width="165" height="45"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="165" id="Gr2-jg-5H4"/>
                     </constraints>
-                    <date key="date" timeIntervalSinceReferenceDate="491165453.65187001">
-                        <!--2016-07-25 18:50:53 +0000-->
+                    <date key="date" timeIntervalSinceReferenceDate="473292000.65187001">
+                        <!--2015-12-31 22:00:00 +0000-->
                     </date>
                     <locale key="locale" localeIdentifier="ru_UA"/>
                 </datePicker>
-                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="HOs-s8-rtm">
-                    <rect key="frame" x="8" y="172" width="359" height="42"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="42" id="G3T-z7-5gJ"/>
-                    </constraints>
-                    <date key="date" timeIntervalSinceReferenceDate="491165453.65187001">
-                        <!--2016-07-25 18:50:53 +0000-->
-                    </date>
-                    <date key="minimumDate" timeIntervalSinceReferenceDate="473342400">
-                        <!--2016-01-01 12:00:00 +0000-->
-                    </date>
-                    <locale key="locale" localeIdentifier="ru_UA"/>
-                </datePicker>
-                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="nGI-DG-6gF">
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="30" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGI-DG-6gF">
                     <rect key="frame" x="204" y="94" width="165" height="45"/>
-                    <date key="date" timeIntervalSinceReferenceDate="491166047.92368698">
-                        <!--2016-07-25 19:00:47 +0000-->
+                    <date key="date" timeIntervalSinceReferenceDate="473292000.92368698">
+                        <!--2015-12-31 22:00:00 +0000-->
                     </date>
                     <locale key="locale" localeIdentifier="ru_UA"/>
                 </datePicker>
@@ -158,6 +145,19 @@
                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="HOs-s8-rtm">
+                    <rect key="frame" x="8" y="172" width="359" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="G3T-z7-5gJ"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="491165453.65187001">
+                        <!--2016-07-25 18:50:53 +0000-->
+                    </date>
+                    <date key="minimumDate" timeIntervalSinceReferenceDate="473342400">
+                        <!--2016-01-01 12:00:00 +0000-->
+                    </date>
+                    <locale key="locale" localeIdentifier="ru_UA"/>
+                </datePicker>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>

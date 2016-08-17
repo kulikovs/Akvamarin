@@ -11,5 +11,6 @@
 @interface NSDate (KSExtensions)
 
 - (BOOL)currentDateIsAfterDay:(NSDate *)date;
+- (BOOL)currentDateIsBeforeDay:(NSDate *)date;
 
 @end

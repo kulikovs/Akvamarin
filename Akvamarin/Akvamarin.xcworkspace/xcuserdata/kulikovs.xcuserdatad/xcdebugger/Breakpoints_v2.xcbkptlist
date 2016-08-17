@@ -39,22 +39,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Akvamarin/Sourse/Contexts/KSCalendarContext/KSCalendarContext.h"
-            timestampString = "492114105.341577"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "-initWithCalendar:"
-            landmarkType = "4">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Akvamarin/Sourse/Models/KSValidationPhoneNumberModel/KSValidationPhoneNumberModel.m"
             timestampString = "492463025.799706"
             startingColumnNumber = "9223372036854775807"
@@ -78,6 +62,22 @@
             startingLineNumber = "42"
             endingLineNumber = "42"
             landmarkName = "-validationPhoneNumberWithNumber:range:replacementString:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Akvamarin/Sourse/Contexts/KSSendMailContext/KSSendMailContext.m"
+            timestampString = "492811179.773078"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "-prepareToLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
