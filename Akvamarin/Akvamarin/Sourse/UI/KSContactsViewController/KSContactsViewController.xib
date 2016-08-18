@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSContactsViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="KSContactsView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="pIq-Io-RRd">
+                    <rect key="frame" x="0.0" y="64" width="320" height="266"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pIq-Io-RRd" secondAttribute="height" multiplier="125:104" id="GsN-cc-Fkh"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sna-Uw-o9X">
+                    <rect key="frame" x="19" y="370" width="240" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Sna-Uw-o9X" secondAttribute="height" multiplier="8:1" id="oRh-AM-I3S"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="068-159-85-57" image="call">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickCallPhoneButton:" destination="-1" eventType="touchUpInside" id="iOF-Yi-MNe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6T8-h2-2Y5">
+                    <rect key="frame" x="19" y="333" width="240" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="6T8-h2-2Y5" secondAttribute="height" multiplier="240:29" id="Vo1-bu-UwY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title=" Украина, Херсон" image="location_">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPF-FI-Ki4">
+                    <rect key="frame" x="19" y="446" width="240" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="cPF-FI-Ki4" secondAttribute="height" multiplier="8:1" id="fVU-o4-eSB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="www.vk.com/akvamarin_ks" image="vk">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickOpenVKButton:" destination="-1" eventType="touchUpInside" id="Lpn-pN-B3m"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzb-2h-4Xc">
+                    <rect key="frame" x="0.0" y="479" width="320" height="89"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Студия работает ежедневно" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jfw-DY-T2i">
+                            <rect key="frame" x="8" y="21" width="301" height="26"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" с 9-00 до 20-00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNd-Re-4vh">
+                            <rect key="frame" x="8" y="41" width="301" height="26"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ТОЛЬКО ПО ПРЕДВАРИТЕЛЬНОЙ ЗАПИСИ!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZ3-Aw-Rhz">
+                            <rect key="frame" x="15" y="68" width="297" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="8T9-2s-kyO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.45098039215686275" green="0.69411764705882351" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="РЕЖИМ РАБОТЫ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlR-Lx-Opd">
+                            <rect key="frame" x="77" y="4" width="163" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Sqi-LW-eNW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.45098039215686275" green="0.69411764705882351" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="oNd-Re-4vh" secondAttribute="height" multiplier="25:2" constant="-5" id="0fr-mt-csB"/>
+                        <constraint firstItem="oNd-Re-4vh" firstAttribute="top" secondItem="WlR-Lx-Opd" secondAttribute="bottom" constant="16" id="7Ap-KD-zRs"/>
+                        <constraint firstAttribute="trailing" secondItem="Jfw-DY-T2i" secondAttribute="trailing" constant="11" id="7az-u9-ZZI"/>
+                        <constraint firstItem="WlR-Lx-Opd" firstAttribute="top" secondItem="uzb-2h-4Xc" secondAttribute="top" constant="4" id="9he-ny-Sh2"/>
+                        <constraint firstItem="WlR-Lx-Opd" firstAttribute="centerX" secondItem="Jfw-DY-T2i" secondAttribute="centerX" id="ClX-U0-lBs"/>
+                        <constraint firstItem="FZ3-Aw-Rhz" firstAttribute="leading" secondItem="uzb-2h-4Xc" secondAttribute="leading" constant="15" id="HSN-XG-bMa"/>
+                        <constraint firstItem="Jfw-DY-T2i" firstAttribute="top" secondItem="uzb-2h-4Xc" secondAttribute="top" constant="21" id="LZj-A0-B2n"/>
+                        <constraint firstAttribute="bottom" secondItem="FZ3-Aw-Rhz" secondAttribute="bottom" id="QcD-Qu-tL0"/>
+                        <constraint firstItem="FZ3-Aw-Rhz" firstAttribute="trailing" secondItem="uzb-2h-4Xc" secondAttribute="trailingMargin" id="Sqg-6K-28x"/>
+                        <constraint firstItem="Jfw-DY-T2i" firstAttribute="trailing" secondItem="oNd-Re-4vh" secondAttribute="trailing" id="UlD-aj-KIg"/>
+                        <constraint firstItem="Jfw-DY-T2i" firstAttribute="leading" secondItem="oNd-Re-4vh" secondAttribute="leading" id="f2s-ID-olq"/>
+                        <constraint firstItem="FZ3-Aw-Rhz" firstAttribute="top" secondItem="Jfw-DY-T2i" secondAttribute="bottom" constant="21" id="iHk-ga-SPX"/>
+                        <constraint firstItem="FZ3-Aw-Rhz" firstAttribute="top" secondItem="oNd-Re-4vh" secondAttribute="bottom" constant="1" id="oM7-X1-VoF"/>
+                        <constraint firstItem="Jfw-DY-T2i" firstAttribute="leading" secondItem="uzb-2h-4Xc" secondAttribute="leadingMargin" id="q7F-vX-97j"/>
+                        <constraint firstItem="WlR-Lx-Opd" firstAttribute="leading" secondItem="uzb-2h-4Xc" secondAttribute="leading" constant="77" id="zCr-Uc-eIm"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wH2-c5-dz6">
+                    <rect key="frame" x="19" y="408" width="240" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="wH2-c5-dz6" secondAttribute="height" multiplier="8:1" id="2ik-4d-KN0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="www.akvamarin.ks.ua" image="web">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickOpenSiteButton:" destination="-1" eventType="touchUpInside" id="9DJ-vR-2c2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pIq-Io-RRd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="ASb-rx-hbV"/>
+                <constraint firstItem="wH2-c5-dz6" firstAttribute="trailing" secondItem="cPF-FI-Ki4" secondAttribute="trailing" id="DfX-dc-LAH"/>
+                <constraint firstItem="wH2-c5-dz6" firstAttribute="top" secondItem="Sna-Uw-o9X" secondAttribute="bottom" constant="8" symbolic="YES" id="FjL-6a-7Xd"/>
+                <constraint firstItem="Sna-Uw-o9X" firstAttribute="trailing" secondItem="wH2-c5-dz6" secondAttribute="trailing" id="GTM-pr-UNa"/>
+                <constraint firstItem="pIq-Io-RRd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JFc-CR-YtM"/>
+                <constraint firstItem="cPF-FI-Ki4" firstAttribute="top" secondItem="wH2-c5-dz6" secondAttribute="bottom" constant="8" symbolic="YES" id="OLB-Nt-Rf4"/>
+                <constraint firstAttribute="trailing" secondItem="6T8-h2-2Y5" secondAttribute="trailing" constant="61" id="OzH-4Y-hrI"/>
+                <constraint firstItem="Sna-Uw-o9X" firstAttribute="top" secondItem="6T8-h2-2Y5" secondAttribute="bottom" constant="8" symbolic="YES" id="PGy-z8-e2Z"/>
+                <constraint firstItem="Sna-Uw-o9X" firstAttribute="leading" secondItem="wH2-c5-dz6" secondAttribute="leading" id="PZx-Rc-RqZ"/>
+                <constraint firstItem="6T8-h2-2Y5" firstAttribute="leading" secondItem="Sna-Uw-o9X" secondAttribute="leading" id="Wia-qC-Tu1"/>
+                <constraint firstItem="6T8-h2-2Y5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="gZ9-0F-T2o"/>
+                <constraint firstItem="pIq-Io-RRd" firstAttribute="trailing" secondItem="uzb-2h-4Xc" secondAttribute="trailing" id="iXx-TU-mTo"/>
+                <constraint firstItem="wH2-c5-dz6" firstAttribute="leading" secondItem="cPF-FI-Ki4" secondAttribute="leading" id="jR8-Y0-MMZ"/>
+                <constraint firstItem="pIq-Io-RRd" firstAttribute="leading" secondItem="uzb-2h-4Xc" secondAttribute="leading" id="oG7-wS-AUg"/>
+                <constraint firstItem="6T8-h2-2Y5" firstAttribute="trailing" secondItem="Sna-Uw-o9X" secondAttribute="trailing" id="pgG-D2-wEn"/>
+                <constraint firstAttribute="trailing" secondItem="pIq-Io-RRd" secondAttribute="trailing" id="wrI-EX-I5W"/>
+                <constraint firstItem="6T8-h2-2Y5" firstAttribute="top" secondItem="pIq-Io-RRd" secondAttribute="bottom" constant="3" id="ywF-0c-HCq"/>
+                <constraint firstAttribute="bottom" secondItem="uzb-2h-4Xc" secondAttribute="bottom" id="zda-NM-8GM"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="240" y="373"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="call" width="30" height="30"/>
+        <image name="location_" width="30" height="30"/>
+        <image name="map" width="313" height="262"/>
+        <image name="vk" width="30" height="30"/>
+        <image name="web" width="30" height="30"/>
+    </resources>
+</document>

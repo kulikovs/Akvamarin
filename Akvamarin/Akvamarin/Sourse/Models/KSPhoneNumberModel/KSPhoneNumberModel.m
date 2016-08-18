@@ -61,7 +61,6 @@ static NSString * const kKSSeparator            =   @"";
         NSUInteger numberMaxLenght = kKSLocalNumberMaxLength + kKSAreaCodeMaxLength + kKSCountryCodeMaxLength;
         if (tempPhoneNumber.length <= numberMaxLenght) {
             [self.resultNumber setString:[self formattedLocalNumberWithPhoneNumber:tempPhoneNumber]];
-            
             if (tempPhoneNumber.length > kKSLocalNumberMaxLength) {
                 [self.resultNumber insertString:[self formattedAreaCodeWithPhoneNumber:tempPhoneNumber]
                                         atIndex:0];
@@ -92,7 +91,7 @@ static NSString * const kKSSeparator            =   @"";
     NSCharacterSet *validationSet = [[NSCharacterSet decimalDigitCharacterSet] invertedSet];
     NSArray *components = [string componentsSeparatedByCharactersInSet:validationSet];
     NSString *tempPhoneNumber = [number.text stringByReplacingCharactersInRange:range
-                                                                          withString:string];
+                                                                     withString:string];
     
     NSArray *validComponents = [tempPhoneNumber componentsSeparatedByCharactersInSet:validationSet];
     
@@ -118,7 +117,7 @@ static NSString * const kKSSeparator            =   @"";
     NSUInteger areaLength = MIN(areaLengthMin, kKSAreaCodeMaxLength);
     NSUInteger areaLocation = numberLength - kKSLocalNumberMaxLength - areaLength;
     NSRange areaRange = NSMakeRange(areaLocation, areaLength);
-
+    
     return [self formattedCodeWithPhoneNumber:phoneNumber
                                         range:areaRange
                                 codeFormatter:kKSAreaCodeFormatter];

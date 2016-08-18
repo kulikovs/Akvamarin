@@ -14,7 +14,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KSPhotoZone (CoreDataProperties)
-@property (nonatomic, strong) NSString                  *name;
+@property (nonatomic, copy)   NSString                  *name;
 @property (nonatomic, strong) KSPhoto                   *mainPhoto;
 @property (nonatomic, strong) NSSet     <KSPhoto *>     *photos;
 

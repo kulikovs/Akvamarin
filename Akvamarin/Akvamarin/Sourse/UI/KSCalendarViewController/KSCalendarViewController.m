@@ -17,11 +17,12 @@
 #import "KSCalendar.h"
 #import "KSEvent.h"
 #import "KSReserveViewController.h"
+#import "KSAlertViewConstants.h"
 
 static NSString * const kKSCalendarBarTitle = @"Аренда студии";
 
 @interface KSCalendarViewController () <CKCalendarViewDataSource>
-@property (nonatomic, readonly) KSCalendarView      *rootView;
+@property (nonatomic, readonly) KSCalendarView *rootView;
 
 - (void)loadCalendarView;
 - (NSArray *)sortedEventsArray:(NSArray *)events;
@@ -66,6 +67,7 @@ KSRootViewAndReturnNilMacro(KSCalendarView);
 }
 
 - (void)contextLoadFailed {
+    [self showAlertViewWithTitle:kKSLoadingErrorTitle message:kKSCalendarNotUpdateString actionHandler:nil];
     [self contextDidLoad];
 }
 
@@ -91,7 +93,7 @@ KSRootViewAndReturnNilMacro(KSCalendarView);
 #pragma mark -
 #pragma mark Handling
 
-- (IBAction)onReserveButtonClick:(id)sender {
+- (IBAction)onClickReserveButton:(id)sender {
     KSReserveViewController *reserveController = [KSReserveViewController new];
     [self.navigationController pushViewController:reserveController animated:YES];
 }

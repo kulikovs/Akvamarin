@@ -16,7 +16,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KSEvent (CoreDataProperties)
-@property (nonatomic, strong) NSString      *title;
+@property (nonatomic, copy)   NSString      *title;
 @property (nonatomic, strong) NSDate        *startDateTime;
 @property (nonatomic, strong) NSDate        *endDateTime;
 @property (nonatomic, strong) KSCalendar    *calendar;

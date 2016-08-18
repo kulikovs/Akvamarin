@@ -12,6 +12,7 @@
 
 @interface KSReserveViewController : KSCustomViewController
 
-- (IBAction)onSendDataButtonClick:(id)sender;
+- (IBAction)onClickSendDataButton:(id)sender;
+- (IBAction)touchFieldsView:(id)sender;
 
 @end

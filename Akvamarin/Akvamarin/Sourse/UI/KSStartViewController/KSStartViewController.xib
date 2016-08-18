@@ -32,7 +32,7 @@
                     </state>
                     <state key="selected" image="mani_action"/>
                     <connections>
-                        <action selector="onPriceButtonClick:" destination="-1" eventType="touchUpInside" id="fYx-bl-9Ht"/>
+                        <action selector="onClickPriceButton:" destination="-1" eventType="touchUpInside" id="4Ny-SG-h86"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wm-SC-rBL">
@@ -45,7 +45,7 @@
                     <state key="normal" title="Аренда" image="arenda"/>
                     <state key="selected" image="arenda_action"/>
                     <connections>
-                        <action selector="onCalendarButtonClick:" destination="-1" eventType="touchUpInside" id="u96-za-LE7"/>
+                        <action selector="onClickCalendarButton:" destination="-1" eventType="touchUpInside" id="m47-2J-bJh"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSz-bm-95i">
@@ -59,7 +59,7 @@
                     <state key="normal" title="Фотозоны" image="fotozona"/>
                     <state key="selected" image="fotozona_action"/>
                     <connections>
-                        <action selector="onPhotoZoneButtonClick:" destination="-1" eventType="touchUpInside" id="sTr-nq-yaW"/>
+                        <action selector="onClickPhotoZoneButton:" destination="-1" eventType="touchUpInside" id="AK7-ub-9fp"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ouz-JY-Zyr">
@@ -72,6 +72,9 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="selected" image="contact_action"/>
+                    <connections>
+                        <action selector="onClickContactsButton:" destination="-1" eventType="touchUpInside" id="lOn-i5-8ld"/>
+                    </connections>
                 </button>
             </subviews>
             <constraints>
@@ -79,10 +82,10 @@
                 <constraint firstItem="KSz-bm-95i" firstAttribute="top" secondItem="ukC-JS-VCy" secondAttribute="top" id="18j-EL-Uc4"/>
                 <constraint firstItem="ukC-JS-VCy" firstAttribute="baseline" secondItem="KSz-bm-95i" secondAttribute="firstBaseline" id="2BE-Bn-KWX"/>
                 <constraint firstItem="Ouz-JY-Zyr" firstAttribute="baseline" secondItem="1Wm-SC-rBL" secondAttribute="firstBaseline" id="4Wi-Q1-X6x"/>
-                <constraint firstItem="KSz-bm-95i" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="215" id="FMi-IO-hs2"/>
                 <constraint firstItem="1Wm-SC-rBL" firstAttribute="top" secondItem="KSz-bm-95i" secondAttribute="bottom" constant="1" id="TSi-Al-bEq"/>
                 <constraint firstItem="DfL-di-k8P" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wcr-ag-AsF"/>
                 <constraint firstAttribute="bottom" secondItem="DfL-di-k8P" secondAttribute="bottom" id="biD-dB-geB"/>
+                <constraint firstItem="KSz-bm-95i" firstAttribute="centerY" secondItem="DfL-di-k8P" secondAttribute="centerY" constant="-33.5" id="dFY-MU-2xg"/>
                 <constraint firstItem="1Wm-SC-rBL" firstAttribute="top" secondItem="Ouz-JY-Zyr" secondAttribute="top" id="dcs-qh-MHF"/>
                 <constraint firstItem="ukC-JS-VCy" firstAttribute="leading" secondItem="KSz-bm-95i" secondAttribute="trailing" constant="1" id="jLG-0G-dMd"/>
                 <constraint firstItem="KSz-bm-95i" firstAttribute="trailing" secondItem="1Wm-SC-rBL" secondAttribute="trailing" id="kpY-6g-W3k"/>
@@ -95,6 +98,7 @@
                 <constraint firstItem="ukC-JS-VCy" firstAttribute="leading" secondItem="Ouz-JY-Zyr" secondAttribute="leading" id="uqi-pt-fYy"/>
                 <constraint firstItem="KSz-bm-95i" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="wOu-oG-16f"/>
             </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>

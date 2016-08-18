@@ -31,6 +31,7 @@
                 <constraint firstItem="NIz-9A-jAc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kCa-Bq-jLW"/>
                 <constraint firstAttribute="trailing" secondItem="NIz-9A-jAc" secondAttribute="trailing" id="kaW-vE-WEn"/>
             </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
                 <outlet property="tableView" destination="NIz-9A-jAc" id="f67-Ms-XFI"/>

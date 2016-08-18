@@ -14,7 +14,6 @@
 @property (nonatomic, readonly) NSDictionary                   *headers;
 
 - (void)parseResult:(NSDictionary *)result;
-- (void)dump;
 
 @end
 
@@ -86,7 +85,7 @@
 #pragma mark Private Methods
 
 - (void)parseResult:(NSDictionary *)result {
-
+    
 }
 
 @end

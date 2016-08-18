@@ -16,6 +16,7 @@ static NSString * const kKSCheckPhoneEmailMessage   = @"Проверьте вв�
 static NSString * const kKSDataEntryErrorTitle      = @"Ошибка ввода данных";
 static NSString * const kKSDataSendingErrorString   = @"Ошибка отправки данных";
 static NSString * const kKSThankYouString           = @"Спасибо за то что Вы с нами!";
+static NSString * const kKSCalendarNotUpdateString  = @"Данные календаря не обновлены и могут быть неактуальны из-за отсутсвия сети Интернет";
 static NSString * const kKSWaitingAdminString       = @"В ближайшее время с Вами свяжется администратор студии и уточнит детали";
 
 #endif /* KSAlertViewConstants_h */

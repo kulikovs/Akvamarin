@@ -114,11 +114,14 @@ static NSString * const kKSLeftBarBattonImageName   = @"back";
 }
 
 
-- (void)showAlertViewWithTitle:(NSString *)title message:(NSString *)message actionHandler:(KSActionHandler)handler; {
+- (void)showAlertViewWithTitle:(NSString *)title
+                       message:(NSString *)message
+                 actionHandler:(KSActionHandler)handler
+{
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title
                                                                    message:message
                                                             preferredStyle:UIAlertControllerStyleAlert];
-
+    
     UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:kKSAlertActionTitle
                                                             style:UIAlertActionStyleDefault
                                                           handler:handler];

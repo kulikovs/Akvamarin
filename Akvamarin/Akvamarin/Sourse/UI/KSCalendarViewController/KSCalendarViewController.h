@@ -15,6 +15,6 @@
 @interface KSCalendarViewController : KSCustomViewController
 @property (nonatomic, strong) KSCalendar  *calendar;
 
-- (IBAction)onReserveButtonClick:(id)sender;
+- (IBAction)onClickReserveButton:(id)sender;
 
 @end

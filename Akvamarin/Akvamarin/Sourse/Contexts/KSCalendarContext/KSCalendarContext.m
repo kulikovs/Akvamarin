@@ -12,7 +12,6 @@
 #import "KSRequestConstants.h"
 #import "KSCalendar.h"
 #import "KSEvent.h"
-#import "NSCalendar+Ranges.h"
 
 @interface KSCalendarContext ()
 @property (nonatomic, strong) KSCalendar *calendar;

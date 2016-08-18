@@ -30,7 +30,7 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="onReserveButtonClick:" destination="-1" eventType="touchUpInside" id="1Oz-Bw-cpj"/>
+                        <action selector="onClickReserveButton:" destination="-1" eventType="touchUpInside" id="3Ig-2N-yHw"/>
                     </connections>
                 </button>
             </subviews>
@@ -44,6 +44,7 @@
                 <constraint firstAttribute="trailing" secondItem="LbH-HK-KmH" secondAttribute="trailing" id="fu0-C0-kCW"/>
                 <constraint firstAttribute="bottom" secondItem="3zY-Iu-hB2" secondAttribute="bottom" id="kcj-ob-m14"/>
             </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
                 <outlet property="reserveButton" destination="3zY-Iu-hB2" id="MvA-il-wGx"/>

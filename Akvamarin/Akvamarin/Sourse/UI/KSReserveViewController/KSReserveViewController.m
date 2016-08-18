@@ -23,8 +23,12 @@ static NSString * const kKSDataSendingString = @"Идет отправка да�
 @property (nonatomic, strong)   KSPhoneNumberModel      *phoneNumberModel;
 @property (nonatomic, strong)   KSEmailModel            *emailModel;
 
+- (void)addObserverWithKey:(NSString *)key selector:(SEL)selector;
+- (void)removeObserverWithKey:(NSString *)key;
 - (NSDictionary *)reserveData;
 - (BOOL)isValidPhoneNumber:(NSString *)phoneNumber emailAdress:(NSString *)emailAdress;
+- (void)keyboardWasShown:(NSNotification *)aNotification;
+- (void)keyboardWillBeHidden:(NSNotification *)aNotification;
 
 @end
 
@@ -35,11 +39,21 @@ static NSString * const kKSDataSendingString = @"Идет отправка да�
 #pragma mark -
 #pragma mark Initializations and Deallocations
 
+- (void)dealloc {
+    [self removeObserverWithKey:UIKeyboardDidShowNotification];
+    [self removeObserverWithKey:UIKeyboardWillHideNotification];
+}
+
 - (instancetype)init {
     self = [super init];
     if (self) {
         self.phoneNumberModel = [KSPhoneNumberModel new];
         self.emailModel = [KSEmailModel new];
+        
+        [self addObserverWithKey:UIKeyboardDidShowNotification
+                        selector:@selector(keyboardWasShown:)];
+        [self addObserverWithKey:UIKeyboardWillHideNotification
+                        selector:@selector(keyboardWillBeHidden:)];
     }
     
     return self;
@@ -57,10 +71,21 @@ KSRootViewAndReturnNilMacro(KSReserveView)
 #pragma mark -
 #pragma mark Private Methods
 
+- (void)addObserverWithKey:(NSString *)key selector:(SEL)selector {
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:selector
+                                                 name:key
+                                               object:nil];
+}
+
+- (void)removeObserverWithKey:(NSString *)key {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:key object:nil];
+}
+
 - (BOOL)isValidPhoneNumber:(NSString *)phoneNumber emailAdress:(NSString *)emailAdress {
     BOOL validPhoneNumber = [self.phoneNumberModel isValidPhoneNumber:phoneNumber];
     BOOL validEmail = [self.emailModel isValidEmailAdress:emailAdress];
-
+    
     return (validEmail && validPhoneNumber);
 }
 
@@ -97,13 +122,40 @@ KSRootViewAndReturnNilMacro(KSReserveView)
 
 - (void)contextLoadFailed {
     [self.rootView removeLoadingView];
-    [self showAlertViewWithTitle:kKSDataSendingErrorString message:kKSCheckInternetMessage actionHandler:nil];
+    [self showAlertViewWithTitle:kKSDataSendingErrorString
+                         message:kKSCheckInternetMessage
+                   actionHandler:nil];
+}
+
+- (void)keyboardWasShown:(NSNotification *)aNotification {
+    UIScrollView *scrollView = self.rootView.scrollView;
+    CGSize keyboardSize = [[[aNotification userInfo]
+                            objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+    
+    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardSize.height, 0.0);
+    scrollView.contentInset = contentInsets;
+    scrollView.scrollIndicatorInsets = contentInsets;
+    
+    CGRect frameView = self.view.frame;
+    CGRect frameField = self.rootView.activeField.frame;
+    frameView.size.height -= keyboardSize.height;
+    
+    if (!CGRectContainsPoint(frameView, frameField.origin) ) {
+        [self.rootView.scrollView scrollRectToVisible:frameField animated:YES];
+    }
+}
+
+- (void)keyboardWillBeHidden:(NSNotification *)aNotification {
+    UIScrollView *scrollView= self.rootView.scrollView;
+    UIEdgeInsets contentInsets = UIEdgeInsetsZero;
+    scrollView.contentInset = contentInsets;
+    scrollView.scrollIndicatorInsets = contentInsets;
 }
 
 #pragma mark -
 #pragma mark Handling
 
-- (void)onSendDataButtonClick:(id)sender {
+- (IBAction)onClickSendDataButton:(id)sender {
     KSReserveView *view = self.rootView;
     NSString *email = view.emailField.text;
     NSString *phoneNumber = view.phoneNumberField.text;
@@ -116,8 +168,22 @@ KSRootViewAndReturnNilMacro(KSReserveView)
     }
 }
 
+- (IBAction)touchFieldsView:(id)sender {
+    UITextField *activeField = self.rootView.activeField;
+    if(activeField)
+        [activeField resignFirstResponder];
+}
+
 #pragma mark -
 #pragma mark UITextFieldDelegate
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    self.rootView.activeField = textField;
+}
+
+-(void)textFieldDidEndEditing:(UITextField *)textField {
+    self.rootView.activeField = nil;
+}
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     KSReserveView *view = self.rootView;
@@ -149,11 +215,10 @@ KSRootViewAndReturnNilMacro(KSReserveView)
     if (textField == view.emailField) {
         textField.text = [self.emailModel formattedEmailAdressWithAdress:textField
                                                                    range:range
-                                                       replacementString:string];        
+                                                       replacementString:string];
     }
     
     return NO;
 }
-
 
 @end

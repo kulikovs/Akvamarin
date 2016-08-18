@@ -10,8 +10,4 @@
 
 @implementation KSReserveView
 
-- (void)test {
-}
-
-
 @end

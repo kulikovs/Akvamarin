@@ -10,7 +10,7 @@
 #import "KSPriceView.h"
 #import "KSAlertViewConstants.h"
 
-static NSString * const kKSPriceBarTitle            = @"Стоимость";
+static NSString * const kKSPriceBarTitle = @"Стоимость";
 
 static NSString * const kKSPriceURL = @"http://www.akvamarin.ks.ua/uslovija-raboty-v-studii";
 
@@ -47,8 +47,7 @@ KSRootViewAndReturnNilMacro(KSPriceView);
 #pragma mark Private Methods
 
 - (void)loadWebView {
-    NSURL *URL = [NSURL URLWithString:kKSPriceURL];
-    [self.rootView.webView loadRequest:[NSURLRequest requestWithURL:URL]];
+    [self.rootView.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:kKSPriceURL]]];
 }
 
 #pragma mark -

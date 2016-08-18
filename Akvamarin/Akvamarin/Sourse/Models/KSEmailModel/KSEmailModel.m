@@ -51,7 +51,7 @@ static NSString * const kKSSelfMathesString = @"SELF MATCHES %@";
     NSString *email = [self validEmailAdressWithAdress:emailAdress range:range string:string];
     if (email) {
         [self.resultEmail setString:email];
-
+        
     }
     
     return self.resultEmail;
@@ -79,7 +79,7 @@ static NSString * const kKSSelfMathesString = @"SELF MATCHES %@";
     
     NSString *email = [emailAdress.text stringByReplacingCharactersInRange:range withString:string];
     NSArray *charactersAt = [email componentsSeparatedByString:kKSCharacterAt];
-
+    
     return (components.count > 1 || charactersAt.count > 2) ? nil : email;
 }
 

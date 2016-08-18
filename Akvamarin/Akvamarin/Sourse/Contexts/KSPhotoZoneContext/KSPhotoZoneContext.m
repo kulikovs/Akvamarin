@@ -67,7 +67,6 @@
             photoZone.mainPhoto = photo;
             
             [parsingObjects addObject:photoZone];
-
             [photoZone saveManagedObject];
         }
         

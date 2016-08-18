@@ -15,6 +15,7 @@
 #import "KSPhotoZoneViewController.h"
 #import "KSPhotoZoneContext.h"
 #import "KSPriceViewController.h"
+#import "KSContactsViewController.h"
 
 @interface KSStartViewController ()
 @property (nonatomic, readonly) KSStartView      *rootView;
@@ -40,23 +41,28 @@ KSRootViewAndReturnNilMacro(KSStartView);
 #pragma mark -
 #pragma mark Handling
 
-- (IBAction)onCalendarButtonClick:(id)sender {
+- (IBAction)onClickCalendarButton:(id)sender {
     KSCalendarViewController *calendarController = [KSCalendarViewController new];
     calendarController.calendar = [KSCalendar objectWithID:kKSCalendarId];
-
+    
     [self.navigationController pushViewController:calendarController animated:YES];
 }
 
-- (IBAction)onPhotoZoneButtonClick:(id)sender {
+- (IBAction)onClickPhotoZoneButton:(id)sender {
     KSPhotoZoneViewController *photoZoneController = [KSPhotoZoneViewController new];
     photoZoneController.context = [KSPhotoZoneContext new];
     
     [self.navigationController pushViewController:photoZoneController animated:YES];
 }
 
-- (IBAction)onPriceButtonClick:(id)sender {
+- (IBAction)onClickPriceButton:(id)sender {
     KSPriceViewController *priceViewController = [KSPriceViewController new];
     [self.navigationController pushViewController:priceViewController animated:YES];
+}
+
+- (IBAction)onClickContactsButton:(id)sender {
+    KSContactsViewController *contactsViewController = [KSContactsViewController new];
+    [self.navigationController pushViewController:contactsViewController animated:YES];
 }
 
 @end

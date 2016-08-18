@@ -65,6 +65,9 @@
 		C94D00DD1D461B6100EBA795 /* KSReserveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C94D00DB1D461B6100EBA795 /* KSReserveViewController.m */; };
 		C94D00DE1D461B6100EBA795 /* KSReserveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C94D00DC1D461B6100EBA795 /* KSReserveViewController.xib */; };
 		C94D00E21D4693CC00EBA795 /* KSReserveView.m in Sources */ = {isa = PBXBuildFile; fileRef = C94D00E11D4693CC00EBA795 /* KSReserveView.m */; };
+		C94FF4661D65EC6900D81620 /* KSContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C94FF4641D65EC6900D81620 /* KSContactsViewController.m */; };
+		C94FF4671D65EC6900D81620 /* KSContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C94FF4651D65EC6900D81620 /* KSContactsViewController.xib */; };
+		C94FF46B1D65ECA000D81620 /* KSContactsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C94FF46A1D65ECA000D81620 /* KSContactsView.m */; };
 		C95A3BE51D3820A900B7A60C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95A3BE11D3820A900B7A60C /* LaunchScreen.storyboard */; };
 		C95A3BE61D3820A900B7A60C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95A3BE31D3820A900B7A60C /* Main.storyboard */; };
 		C97199561D5E5CF000FC618D /* KSEmailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C97199551D5E5CF000FC618D /* KSEmailModel.m */; };
@@ -203,6 +206,11 @@
 		C94D00DC1D461B6100EBA795 /* KSReserveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KSReserveViewController.xib; sourceTree = "<group>"; };
 		C94D00E01D4693CC00EBA795 /* KSReserveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSReserveView.h; sourceTree = "<group>"; };
 		C94D00E11D4693CC00EBA795 /* KSReserveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSReserveView.m; sourceTree = "<group>"; };
+		C94FF4631D65EC6900D81620 /* KSContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSContactsViewController.h; sourceTree = "<group>"; };
+		C94FF4641D65EC6900D81620 /* KSContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSContactsViewController.m; sourceTree = "<group>"; };
+		C94FF4651D65EC6900D81620 /* KSContactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KSContactsViewController.xib; sourceTree = "<group>"; };
+		C94FF4691D65ECA000D81620 /* KSContactsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSContactsView.h; sourceTree = "<group>"; };
+		C94FF46A1D65ECA000D81620 /* KSContactsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSContactsView.m; sourceTree = "<group>"; };
 		C95A3BE21D3820A900B7A60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C95A3BE41D3820A900B7A60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		C97199541D5E5CF000FC618D /* KSEmailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSEmailModel.h; sourceTree = "<group>"; };
@@ -829,6 +837,26 @@
 			path = KSReserveView;
 			sourceTree = "<group>";
 		};
+		C94FF4621D65EC4D00D81620 /* KSContactsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C94FF4681D65EC8700D81620 /* KSContactsView */,
+				C94FF4631D65EC6900D81620 /* KSContactsViewController.h */,
+				C94FF4641D65EC6900D81620 /* KSContactsViewController.m */,
+				C94FF4651D65EC6900D81620 /* KSContactsViewController.xib */,
+			);
+			path = KSContactsViewController;
+			sourceTree = "<group>";
+		};
+		C94FF4681D65EC8700D81620 /* KSContactsView */ = {
+			isa = PBXGroup;
+			children = (
+				C94FF4691D65ECA000D81620 /* KSContactsView.h */,
+				C94FF46A1D65ECA000D81620 /* KSContactsView.m */,
+			);
+			path = KSContactsView;
+			sourceTree = "<group>";
+		};
 		C95A3BDB1D38122F00B7A60C /* Contexts */ = {
 			isa = PBXGroup;
 			children = (
@@ -921,6 +949,7 @@
 		C9BA5E221D2EC8FE0055B238 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				C94FF4621D65EC4D00D81620 /* KSContactsViewController */,
 				C97199891D5F6DCC00FC618D /* KSPriceVewController */,
 				C9F8151F1D53BEDA007B47FB /* KSCustomViewController */,
 				C99349591D4DFFF3008F456E /* KSPhotoZoneViewController */,
@@ -1027,6 +1056,7 @@
 				C95A3BE51D3820A900B7A60C /* LaunchScreen.storyboard in Resources */,
 				C94D00DE1D461B6100EBA795 /* KSReserveViewController.xib in Resources */,
 				C993496D1D4E1D79008F456E /* KSPhotoZoneViewCell.xib in Resources */,
+				C94FF4671D65EC6900D81620 /* KSContactsViewController.xib in Resources */,
 				C90F74841D3B7B3700F66F10 /* KSStartViewController.xib in Resources */,
 				C993495E1D4E001C008F456E /* KSPhotoZoneViewController.xib in Resources */,
 				C938FAC11D2EC0C30081DB7D /* KSLoadingView.xib in Resources */,
@@ -1097,6 +1127,7 @@
 				C938FAB21D2EC0C30081DB7D /* KSModel.m in Sources */,
 				C938FA9F1D2EC0C30081DB7D /* CGGeometry+KSExtensions.m in Sources */,
 				C9017C831D44097900F9E6E1 /* NSDateComponents+KSExtensions.m in Sources */,
+				C94FF4661D65EC6900D81620 /* KSContactsViewController.m in Sources */,
 				C94D00DD1D461B6100EBA795 /* KSReserveViewController.m in Sources */,
 				C97199561D5E5CF000FC618D /* KSEmailModel.m in Sources */,
 				C94AEC201D30DB1600C1E4EB /* KSCalendarView.m in Sources */,
@@ -1118,6 +1149,7 @@
 				C938FAB51D2EC0C30081DB7D /* KSObserverDictionary.m in Sources */,
 				C938FAB11D2EC0C30081DB7D /* KSDispatch.m in Sources */,
 				C993496C1D4E1D79008F456E /* KSPhotoZoneViewCell.m in Sources */,
+				C94FF46B1D65ECA000D81620 /* KSContactsView.m in Sources */,
 				C94D00E21D4693CC00EBA795 /* KSReserveView.m in Sources */,
 				C938FAAD1D2EC0C30081DB7D /* KSAlphabetString.m in Sources */,
 				C938FAA91D2EC0C30081DB7D /* UIWindow+KSExtension.m in Sources */,

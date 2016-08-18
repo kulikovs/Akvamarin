@@ -67,13 +67,12 @@
             } else {
                 [self setState:kKSModelStateLoaded withObject:nil];
             }};
-
+        
         self.dataTask = [[NSURLSession sharedSession] uploadTaskWithRequest:request
                                                                    fromData:postdata
                                                           completionHandler:block];
         [self.dataTask resume];
     }
 }
-
 
 @end
