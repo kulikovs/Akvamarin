@@ -17,7 +17,7 @@ static NSString * const kKSVkontakteURLString       = @"http://vk.com/akvamarin_
 @interface KSContactsViewController ()
 @property (nonatomic, readonly) KSContactsView *rootView;
 
-- (BOOL)applicationWithString:(NSString *)string;
+- (BOOL)applicationWithURLString:(NSString *)URLString;
 
 @end
 
@@ -37,23 +37,23 @@ KSRootViewAndReturnNilMacro(KSContactsView);
 #pragma mark -
 #pragma mark Private Methods
 
-- (BOOL)applicationWithString:(NSString *)string {
-    return [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string]];
+- (BOOL)applicationWithURLString:(NSString *)URLString {
+    return [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URLString]];
 }
 
 #pragma mark -
 #pragma mark Handling
 
 - (IBAction)onClickCallPhoneButton:(id)sender {
-    [self applicationWithString:kKSCallPhoneNumberString];
+    [self applicationWithURLString:kKSCallPhoneNumberString];
 }
 
 - (IBAction)onClickOpenSiteButton:(id)sender {
-    [self applicationWithString:kKSSiteURLString];
+    [self applicationWithURLString:kKSSiteURLString];
 }
 
 - (IBAction)onClickOpenVKButton:(id)sender {
-    [self applicationWithString:kKSVkontakteURLString];
+    [self applicationWithURLString:kKSVkontakteURLString];
 }
 
 @end
