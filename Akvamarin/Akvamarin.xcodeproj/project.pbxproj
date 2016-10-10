@@ -33,7 +33,6 @@
 		C938FAAB1D2EC0C30081DB7D /* KSAlphabetCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = C938FA5F1D2EC0C30081DB7D /* KSAlphabetCluster.m */; };
 		C938FAAC1D2EC0C30081DB7D /* KSAlphabetRange.m in Sources */ = {isa = PBXBuildFile; fileRef = C938FA611D2EC0C30081DB7D /* KSAlphabetRange.m */; };
 		C938FAAD1D2EC0C30081DB7D /* KSAlphabetString.m in Sources */ = {isa = PBXBuildFile; fileRef = C938FA631D2EC0C30081DB7D /* KSAlphabetString.m */; };
-		C938FAB01D2EC0C30081DB7D /* KSCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C938FA6C1D2EC0C30081DB7D /* KSCache.m */; };
 		C938FAB11D2EC0C30081DB7D /* KSDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = C938FA6F1D2EC0C30081DB7D /* KSDispatch.m */; };
 		C938FAB21D2EC0C30081DB7D /* KSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C938FA721D2EC0C30081DB7D /* KSModel.m */; };
 		C938FAB31D2EC0C30081DB7D /* KSObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = C938FA751D2EC0C30081DB7D /* KSObserver.m */; };
@@ -70,6 +69,7 @@
 		C94FF46B1D65ECA000D81620 /* KSContactsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C94FF46A1D65ECA000D81620 /* KSContactsView.m */; };
 		C95A3BE51D3820A900B7A60C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95A3BE11D3820A900B7A60C /* LaunchScreen.storyboard */; };
 		C95A3BE61D3820A900B7A60C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95A3BE31D3820A900B7A60C /* Main.storyboard */; };
+		C96610121D7A0DBD008875E6 /* KSCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C96610111D7A0DBD008875E6 /* KSCache.m */; };
 		C97199561D5E5CF000FC618D /* KSEmailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C97199551D5E5CF000FC618D /* KSEmailModel.m */; };
 		C971995A1D5E5D3C00FC618D /* KSPhoneNumberModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C97199591D5E5D3C00FC618D /* KSPhoneNumberModel.m */; };
 		C971998D1D5F6DF800FC618D /* KSPriceView.m in Sources */ = {isa = PBXBuildFile; fileRef = C971998C1D5F6DF800FC618D /* KSPriceView.m */; };
@@ -141,8 +141,6 @@
 		C938FA611D2EC0C30081DB7D /* KSAlphabetRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSAlphabetRange.m; sourceTree = "<group>"; };
 		C938FA621D2EC0C30081DB7D /* KSAlphabetString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSAlphabetString.h; sourceTree = "<group>"; };
 		C938FA631D2EC0C30081DB7D /* KSAlphabetString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSAlphabetString.m; sourceTree = "<group>"; };
-		C938FA6B1D2EC0C30081DB7D /* KSCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCache.h; sourceTree = "<group>"; };
-		C938FA6C1D2EC0C30081DB7D /* KSCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCache.m; sourceTree = "<group>"; };
 		C938FA6E1D2EC0C30081DB7D /* KSDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSDispatch.h; sourceTree = "<group>"; };
 		C938FA6F1D2EC0C30081DB7D /* KSDispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSDispatch.m; sourceTree = "<group>"; };
 		C938FA711D2EC0C30081DB7D /* KSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSModel.h; sourceTree = "<group>"; };
@@ -213,6 +211,8 @@
 		C94FF46A1D65ECA000D81620 /* KSContactsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSContactsView.m; sourceTree = "<group>"; };
 		C95A3BE21D3820A900B7A60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C95A3BE41D3820A900B7A60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		C96610101D7A0DBD008875E6 /* KSCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCache.h; sourceTree = "<group>"; };
+		C96610111D7A0DBD008875E6 /* KSCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCache.m; sourceTree = "<group>"; };
 		C97199541D5E5CF000FC618D /* KSEmailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSEmailModel.h; sourceTree = "<group>"; };
 		C97199551D5E5CF000FC618D /* KSEmailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSEmailModel.m; sourceTree = "<group>"; };
 		C97199581D5E5D3C00FC618D /* KSPhoneNumberModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhoneNumberModel.h; sourceTree = "<group>"; };
@@ -527,8 +527,8 @@
 		C938FA591D2EC0C30081DB7D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C966100F1D7A0DBD008875E6 /* KSCache */,
 				C938FA5A1D2EC0C30081DB7D /* KSAlphabet */,
-				C938FA6A1D2EC0C30081DB7D /* KSCache */,
 				C938FA6D1D2EC0C30081DB7D /* KSDispatch */,
 				C938FA701D2EC0C30081DB7D /* KSModel */,
 				C938FA731D2EC0C30081DB7D /* KSObserver */,
@@ -558,15 +558,6 @@
 				C938FA631D2EC0C30081DB7D /* KSAlphabetString.m */,
 			);
 			path = Private;
-			sourceTree = "<group>";
-		};
-		C938FA6A1D2EC0C30081DB7D /* KSCache */ = {
-			isa = PBXGroup;
-			children = (
-				C938FA6B1D2EC0C30081DB7D /* KSCache.h */,
-				C938FA6C1D2EC0C30081DB7D /* KSCache.m */,
-			);
-			path = KSCache;
 			sourceTree = "<group>";
 		};
 		C938FA6D1D2EC0C30081DB7D /* KSDispatch */ = {
@@ -877,6 +868,15 @@
 			path = Base.lproj;
 			sourceTree = "<group>";
 		};
+		C966100F1D7A0DBD008875E6 /* KSCache */ = {
+			isa = PBXGroup;
+			children = (
+				C96610101D7A0DBD008875E6 /* KSCache.h */,
+				C96610111D7A0DBD008875E6 /* KSCache.m */,
+			);
+			path = KSCache;
+			sourceTree = "<group>";
+		};
 		C97199531D5E5CF000FC618D /* KSEmailModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -1127,6 +1127,7 @@
 				C938FAB21D2EC0C30081DB7D /* KSModel.m in Sources */,
 				C938FA9F1D2EC0C30081DB7D /* CGGeometry+KSExtensions.m in Sources */,
 				C9017C831D44097900F9E6E1 /* NSDateComponents+KSExtensions.m in Sources */,
+				C96610121D7A0DBD008875E6 /* KSCache.m in Sources */,
 				C94FF4661D65EC6900D81620 /* KSContactsViewController.m in Sources */,
 				C94D00DD1D461B6100EBA795 /* KSReserveViewController.m in Sources */,
 				C97199561D5E5CF000FC618D /* KSEmailModel.m in Sources */,
@@ -1164,7 +1165,6 @@
 				C938FAA01D2EC0C30081DB7D /* NSBundle+KSExtensions.m in Sources */,
 				C971995A1D5E5D3C00FC618D /* KSPhoneNumberModel.m in Sources */,
 				C938F9981D2E88DA0081DB7D /* main.m in Sources */,
-				C938FAB01D2EC0C30081DB7D /* KSCache.m in Sources */,
 				C933E3BF1D62E920007AFCAB /* KSReserveContext.m in Sources */,
 				C938FAA61D2EC0C30081DB7D /* UINib+KSExtensions.m in Sources */,
 				C9424F211D509D420077E1C0 /* KSCalendarContext.m in Sources */,
@@ -1243,7 +1243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1281,7 +1281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1296,7 +1296,7 @@
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Akvamarin/Supporting Files/KSProject-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Akvamarin/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KS.Akvamarin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1311,7 +1311,7 @@
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Akvamarin/Supporting Files/KSProject-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Akvamarin/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KS.Akvamarin;
 				PRODUCT_NAME = "$(TARGET_NAME)";

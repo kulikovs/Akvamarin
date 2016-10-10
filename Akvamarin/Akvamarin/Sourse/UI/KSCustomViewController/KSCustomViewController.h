@@ -18,8 +18,12 @@ typedef void(^KSActionHandler)(UIAlertAction *);
 - (void)showNavigationBarWithTitle:(NSString *)title
                leftButtonImageName:(NSString *)leftButtonImageName
               rightButtonImageName:(NSString *)rightButtonImageName;
+
 - (void)showCustomNavigationBar;
-- (void)showAlertViewWithTitle:(NSString *)title message:(NSString *)message actionHandler:(KSActionHandler)handler;
+
+- (void)showAlertViewWithTitle:(NSString *)title
+                       message:(NSString *)message
+                 actionHandler:(KSActionHandler)handler;
 
 //these methods are called in subclasses
 //you should never call these method directly from outside subclasses

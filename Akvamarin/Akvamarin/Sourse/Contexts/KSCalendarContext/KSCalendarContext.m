@@ -39,7 +39,8 @@
 #pragma mark Accessors
 
 - (NSURL *)requestURL {
-    NSString *urlString = [NSString stringWithFormat:kKSCalendarUrlFormat, kKSCalendarId, kKSApiKey];
+        NSDateComponents *components = [NSDateComponents componentsWithDate:[NSDate date]];
+    NSString *urlString = [NSString stringWithFormat:kKSCalendarUrlFormat, kKSCalendarId, kKSMaxResult, (long)components.year, kKSApiKey];
     return [NSURL URLWithString:urlString];
 }
 

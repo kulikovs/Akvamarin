@@ -9,6 +9,5 @@
 #import "KSView.h"
 
 @interface KSPriceView : KSView
-@property (nonatomic, strong) IBOutlet UIWebView *webView;
 
 @end

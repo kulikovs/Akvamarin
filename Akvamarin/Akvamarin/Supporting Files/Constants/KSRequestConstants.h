@@ -19,9 +19,10 @@ static NSString * const kKSContentHeaderKey      = @"content-type";
 static NSString * const kKSApplicationHeaderKey  = @"application/json";
 
 //requests for calendar
-static NSString * const kKSCalendarId            = @"ubvnm5gta74qgg9vrfclv99nl4@group.calendar.google.com";
+static NSString * const kKSMaxResult             = @"2500";
+static NSString * const kKSCalendarId            = @"q962o107vv3t9t3pfmkrkuj6is@group.calendar.google.com";
 static NSString * const kKSApiKey                = @"AIzaSyDtYcy1F9oeUXwjREGM5YnlndEGn0d_luM";
-static NSString * const kKSCalendarUrlFormat     = @"https://www.googleapis.com/calendar/v3/calendars/%@/events?key=%@&fields=items(id,start,end,summary,status)";
+static NSString * const kKSCalendarUrlFormat     = @"https://www.googleapis.com/calendar/v3/calendars/%@/events?maxResults=%@&timeMin=%ld-01-01T10:00:00Z&key=%@&fields=items(id,start,end,summary,status)";
 
 //requests for sending e-mail
 static NSString * const kKSSendMailUrlString     = @"http://test-self-app.herokuapp.com/send_email";

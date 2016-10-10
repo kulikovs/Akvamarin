@@ -12,12 +12,8 @@
 
 static NSString * const kKSPriceBarTitle = @"Стоимость";
 
-static NSString * const kKSPriceURL = @"http://www.akvamarin.ks.ua/uslovija-raboty-v-studii";
-
 @interface KSPriceViewController ()
 @property (nonatomic, readonly) KSPriceView *rootView;
-
-- (void)loadWebView;
 
 @end
 
@@ -32,40 +28,6 @@ KSRootViewAndReturnNilMacro(KSPriceView);
 
 - (NSString *)navigationBarTitle {
     return kKSPriceBarTitle;
-}
-
-#pragma mark -
-#pragma mark View LifeCycle
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self loadWebView];
-    [self.rootView showLoadingViewWithDefaultTextAnimated:YES];
-}
-
-#pragma mark -
-#pragma mark Private Methods
-
-- (void)loadWebView {
-    [self.rootView.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:kKSPriceURL]]];
-}
-
-#pragma mark -
-#pragma mark UIWebViewDelegate
-
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(nullable NSError *)error {
-    if ([error code] != NSURLErrorCancelled) {
-        KSWeakifySelf
-        KSActionHandler action = ^(UIAlertAction * action) {
-            KSStrongifySelfAndReturnIfNil
-            [self.navigationController popToRootViewControllerAnimated:YES];
-        };
-        [self showAlertViewWithTitle:kKSLoadingErrorTitle message:kKSCheckInternetMessage actionHandler:action];
-    }
-}
-
-- (void)webViewDidFinishLoad:(UIWebView *)webView {
-    [self.rootView removeLoadingViewAnimated:YES];
 }
 
 @end

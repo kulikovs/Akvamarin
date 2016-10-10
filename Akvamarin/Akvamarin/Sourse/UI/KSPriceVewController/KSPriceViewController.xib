@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -12,30 +12,886 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="KSPriceView">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eab-Zo-JC4">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                    <connections>
-                        <outlet property="delegate" destination="-1" id="VNd-Q8-QfI"/>
-                    </connections>
-                </webView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZbA-6T-ofi">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <attributedString key="attributedText">
+                        <fragment content="СТОИМОСТЬ ПОСЕЩЕНИЯ ">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.45098039215686275" green="0.69411764705882351" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">•	</string>
+                            <attributes>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Стоимость посещения с 01.11.15 - 300 грн. в час">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica-Bold"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=". Mинимальный заказ 1 час. ">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.38039215686274508" green="0.33333333333333331" blue="0.29803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">	•	</string>
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="В случае, если в зале одновременно находится от 5-ти до 10-ти человек, - доплата 50грн/час к сумме.">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica-Bold"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="11" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Для нахождения в студии допускается не более 10-ти человек! ">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Аренда до 9 утра и после 20-00 - 350 грн в час. ">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica-Bold"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="11" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.38039215686274508" green="0.33333333333333331" blue="0.29803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">	•	</string>
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Студия предоставляется для проведения мастер-классов">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica-Bold"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="(цена оговаривается в каждом отдельном случае, в зависимости от условий, времени.) ">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="left" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.38039215686274508" green="0.33333333333333331" blue="0.29803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="УСЛОВИЯ НАХОЖДЕНИЯ В ФОТОСТУДИИ">
+                            <attributes>
+                                <color key="NSColor" red="0.45098039215686275" green="0.69411764705882351" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops>
+                                        <textTab alignment="left" location="28">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.38039215686274508" green="0.33333333333333331" blue="0.29803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops>
+                                        <textTab alignment="left" location="28">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.38039215686274508" green="0.33333333333333331" blue="0.29803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+CQ
+</string>
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops>
+                                        <textTab alignment="left" location="28">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="•">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops>
+                                        <textTab alignment="left" location="28">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+CQ
+</string>
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica-Bold"/>
+                                <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops>
+                                        <textTab alignment="left" location="28">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="В студии ОБЯЗАТЕЛЬНО использование сменной обуви ">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica-Bold"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops>
+                                        <textTab alignment="left" location="28">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.38039215686274508" green="0.33333333333333331" blue="0.29803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops>
+                                        <textTab alignment="left" location="28">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.38039215686274508" green="0.33333333333333331" blue="0.29803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">	•	</string>
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Время посещения начинается с момента заявленной брони">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica-Bold"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">(а не с момента прихода в студию или начала съемки). Съемочное время заканчивается за 5 минут до окончания забронированного времени,для того чтобы навести порядок в зале и вернуть весь реквизит и оборудование на места.</string>
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.38039215686274508" green="0.33333333333333331" blue="0.29803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.38039215686274508" green="0.33333333333333331" blue="0.29803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">	•	</string>
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Курение и распитие спиртных напитков в помещениях студии категорически запрещено">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica-Bold"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" и допускается лишь в крайних случаях для постановочных кадров по согласованию с администрацией студии. ">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.38039215686274508" green="0.33333333333333331" blue="0.29803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.38039215686274508" green="0.33333333333333331" blue="0.29803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">	•	</string>
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Возможны съемки с животными">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica-Bold"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="(по предварительной договоренности)">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.38039215686274508" green="0.33333333333333331" blue="0.29803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.38039215686274508" green="0.33333333333333331" blue="0.29803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">	•	</string>
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="За поломку реквизита и оборудования клиент несет полную материальную ответственность.">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica-Bold"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.38039215686274508" green="0.33333333333333331" blue="0.29803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.38039215686274508" green="0.33333333333333331" blue="0.29803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">	•	</string>
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="В помещении находится ОДИН фотограф с моделью (моделями)">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica-Bold"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=", оба зала принадлежат Вам на протяжении всего забронированного времени">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.38039215686274508" green="0.33333333333333331" blue="0.29803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="14" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops>
+                                        <textTab alignment="left" location="11">
+                                            <options/>
+                                        </textTab>
+                                        <textTab alignment="natural" location="36">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="0.38039215686274508" green="0.33333333333333331" blue="0.29803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="eab-Zo-JC4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7o1-Cu-det"/>
-                <constraint firstAttribute="bottom" secondItem="eab-Zo-JC4" secondAttribute="bottom" id="Ita-ac-tke"/>
-                <constraint firstItem="eab-Zo-JC4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Xhm-Fr-Dwc"/>
-                <constraint firstAttribute="trailing" secondItem="eab-Zo-JC4" secondAttribute="trailing" id="dyD-Ps-RMw"/>
+                <constraint firstAttribute="bottom" secondItem="ZbA-6T-ofi" secondAttribute="bottom" id="HAl-jg-UDC"/>
+                <constraint firstAttribute="trailing" secondItem="ZbA-6T-ofi" secondAttribute="trailing" id="fAW-ip-2MH"/>
+                <constraint firstItem="ZbA-6T-ofi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="hgY-zp-l0J"/>
+                <constraint firstItem="ZbA-6T-ofi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sqc-al-jNz"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <connections>
-                <outlet property="webView" destination="eab-Zo-JC4" id="4Tf-19-Hgk"/>
-            </connections>
-            <point key="canvasLocation" x="240.5" y="355.5"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="240" y="355"/>
         </view>
     </objects>
 </document>
