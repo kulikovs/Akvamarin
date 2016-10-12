@@ -19,21 +19,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>GTMOAuth2.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>GTMSessionFetcher.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>GoogleAPIClient.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>MBCalendarKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,32 +47,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1FBB9DE419DC2AAD9291B08CA50FEABA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3EC508E2AD93A8B7862551E8450FF1A8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>514771033D0C341F0ABDA1831E7132B8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>709F0DB10E0183CE81ECC0A5CB0501EF</key>
+		<key>86FCC21AF1C1B6250E80F97EF8F8BFE1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>75DD93DC0202DA207E9B10E89ACEB2EE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8998CFEA72D1399083576D757BF3AF88</key>
+		<key>9E6CDB6035F6D5406DC949B7212F2CFE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
