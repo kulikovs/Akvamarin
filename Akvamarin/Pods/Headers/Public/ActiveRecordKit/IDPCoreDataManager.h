@@ -1,1 +1,0 @@
-../../../ActiveRecordKit/Module/IDPCoreDataManager.h

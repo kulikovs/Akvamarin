@@ -6,11 +6,12 @@
 //  Copyright © 2016 KulikovS. All rights reserved.
 //
 
+#import <MagicalRecord/MagicalRecord.h>
 #import "CalendarKit.h"
+
 #import "NSCalendarCategories.h"
 #import "NSDate+Components.h"
 #import "NSCalendar+DateComparison.h"
-
 #import "KSCalendarViewController.h"
 #import "KSCalendarView.h"
 #import "KSCalendarContext.h"
@@ -38,14 +39,6 @@ static NSString * const kKSCalendarBarTitle = @"Аренда студии";
 
 KSRootViewAndReturnNilMacro(KSCalendarView);
 
-- (void)setCalendar:(KSCalendar *)calendar {
-    if (_calendar != calendar) {
-        _calendar = calendar;
-        
-        self.context = [[KSCalendarContext alloc] initWithCalendar:calendar];
-    }
-}
-
 - (NSString *)navigationBarTitle {
     return kKSCalendarBarTitle;
 }
@@ -62,6 +55,7 @@ KSRootViewAndReturnNilMacro(KSCalendarView);
 #pragma mark Public Methods
 
 - (void)contextDidLoad {
+    self.calendar = [KSCalendar MR_findFirst];
     [self loadCalendarView];
     [self.rootView removeLoadingViewAnimated:NO];
 }
@@ -76,7 +70,7 @@ KSRootViewAndReturnNilMacro(KSCalendarView);
 
 - (void)loadCalendarView {
     CKCalendarView *calendarView = self.rootView.calendarView;
-    calendarView  = [CKCalendarView new];
+    calendarView = [CKCalendarView new];
     calendarView.firstWeekDay = 2;
     [calendarView setDataSource:self];
     [self.rootView.subView addSubview:calendarView];

@@ -10,6 +10,6 @@
 #define KSCoreDataConstants_h
 
 static NSString * const kKSCoreDataModelName    = @"KSCoreDataModel";
-static NSString * const KKSIDKey                = @"id";
+static NSString * const kKSIDKey                = @"id";
 
 #endif /* KSCoreDataConstants_h */

@@ -16,6 +16,8 @@
 #import "KSPhotoZoneContext.h"
 #import "KSPriceViewController.h"
 #import "KSContactsViewController.h"
+#import "KSCoreDataConstants.h"
+#import "KSCalendarContext.h"
 
 @interface KSStartViewController ()
 @property (nonatomic, readonly) KSStartView      *rootView;
@@ -43,7 +45,7 @@ KSRootViewAndReturnNilMacro(KSStartView);
 
 - (IBAction)onClickCalendarButton:(id)sender {
     KSCalendarViewController *calendarController = [KSCalendarViewController new];
-    calendarController.calendar = [KSCalendar objectWithID:kKSCalendarId];
+    calendarController.context = [KSCalendarContext new];
     
     [self.navigationController pushViewController:calendarController animated:YES];
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2016 KulikovS. All rights reserved.
 //
 
-#import "IDPActiveRecordKit.h"
+#import <MagicalRecord/MagicalRecord.h>
 
 #import "AppDelegate.h"
 #import "KSStartViewController.h"
@@ -20,8 +20,6 @@
 
 @interface AppDelegate ()
 
-//- (void)removeOldEvents;
-
 @end
 
 @implementation AppDelegate
@@ -30,9 +28,8 @@
 #pragma mark AppDelegate Methods
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOption {
-    [IDPCoreDataManager sharedManagerWithMomName:kKSCoreDataModelName];
     
- //   [self removeOldEvents];
+    [MagicalRecord setupCoreDataStackWithStoreNamed:kKSCoreDataModelName];
 
     UIWindow *window = [UIWindow new];
     self.window = window;
@@ -67,20 +64,5 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
 
 }
-
-#pragma mark -
-#pragma mark Private Methods
-
-//- (void)removeOldEvents {
-//    KSCalendar *calendar = [KSCalendar objectWithID:kKSCalendarId];
-//    NSArray *events = calendar.events.allObjects;
-//    
-//    for (KSEvent *event in events) {
-//        if ([[NSDate new] currentDateIsAfterDay:event.endDateTime]) {
-//            [calendar removeEventsObject:event];
-//        }
-//    }
-//}
-
 
 @end

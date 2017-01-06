@@ -6,6 +6,8 @@
 //  Copyright © 2016 KulikovS. All rights reserved.
 //
 
+#import <MagicalRecord/MagicalRecord.h>
+
 #import "KSManagedObject.h"
 #import "KSCoreDataConstants.h"
 
@@ -17,35 +19,23 @@
 #pragma mark Initializations and Deallocations
 
 + (instancetype)objectWithID:(NSString *)ID {
-    KSManagedObject *object = [self findObjectWithID:ID];
-    if (object) {
-        return object;
-    }
-    
-    object = [self managedObject];
-    object.ID = ID;
-    
-    return object;
+    return [self MR_findFirstOrCreateByAttribute:kKSIDKey withValue:ID];
+}
+
++ (instancetype)objectWithID:(NSString *)ID context:(NSManagedObjectContext *)context {
+    return [self MR_findFirstOrCreateByAttribute:kKSIDKey withValue:ID inContext:context];
 }
 
 #pragma mark -
 #pragma mark Accessors
 
 - (void)setID:(NSString *)ID {
-    [self setCustomValue:ID forKey:KKSIDKey];
+    [self setValue:ID forKey:kKSIDKey];
 }
 
 - (NSString *)ID {
-    return [self customValueForKey:KKSIDKey];
+    return [self valueForKey:kKSIDKey];
 }
 
-#pragma mark -
-#pragma mark Public Methods
-
-+ (instancetype)findObjectWithID:(NSString *)ID {
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"%K = %@",KKSIDKey, ID];
-    
-    return [[[self class] fetchEntityWithSortDescriptors:nil predicate:predicate prefetchPaths:nil] firstObject];
-}
 
 @end

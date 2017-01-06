@@ -14,6 +14,4 @@
 
 @interface KSCalendarContext : KSContext
 
-- (instancetype)initWithCalendar:(KSCalendar *)calendar;
-
 @end

@@ -64,7 +64,6 @@
                 [self setState:kKSModelStateFailed withObject:nil];
             } else {
                 [self parseResult:[NSJSONSerialization JSONObjectWithData:data options:0 error:nil]];
-                [self setState:kKSModelStateLoaded withObject:nil];
             }};
         
         self.dataTask = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:block];

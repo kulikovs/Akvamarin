@@ -7,360 +7,266 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		002A3803CDC6740245E4EA625789F54E /* NSCalendar+Ranges.h in Headers */ = {isa = PBXBuildFile; fileRef = ED3826F6502DC5F19C46A929B004A01B /* NSCalendar+Ranges.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04A29A4021B7179722B9DE17F03F3E19 /* CKCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC8C2E63B47C0E3E7D9A18C480CCFBF /* CKCalendarCell.m */; };
-		04C3A37266FB57C79915948308A3DDE9 /* MagicalRecord+Options.h in Headers */ = {isa = PBXBuildFile; fileRef = FFC166B2B28C5DA5A790DE224D3E0FA2 /* MagicalRecord+Options.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0689F94EB00BABD2AB25007BD65EF152 /* MBPolygonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C7223AA80EBE3C64CE76B5DEB92057 /* MBPolygonView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07AFB081C36CA95D0EEE623D41E9A13B /* MagicalRecord+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 07411694BA38422FF10AB349526F01A7 /* MagicalRecord+iCloud.m */; };
-		07BBC2F29764A6C606E4EB5E7CBF354B /* MagicalImportFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 35EA2E569157BB09955968F7FA02D73B /* MagicalImportFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08ED648F2CFDF94BC2B57C4029A63B29 /* NSString+IDPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA6BC7534DF23468ECAC7173E24383F /* NSString+IDPExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		0BE65C7E618A4E3E3985FB3F091EF672 /* NSManagedObject+MagicalAggregation.m in Sources */ = {isa = PBXBuildFile; fileRef = 130AFA6E249F0104BC3304643FDF2807 /* NSManagedObject+MagicalAggregation.m */; };
-		0C98DCF46C92A1237745FCADC0612781 /* NSManagedObject+MagicalFinders.m in Sources */ = {isa = PBXBuildFile; fileRef = 670F6C9979C5F27CB7D6E2C99878D6B8 /* NSManagedObject+MagicalFinders.m */; };
-		0E8D09827EE70619FA672E83CF643287 /* IDPSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 265E461B5367B663A89ED371F0A4DA9B /* IDPSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		102FE6FB7E107520BAE436B64D34DFC3 /* NSManagedObjectContext+MagicalObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2ABBC4AA3352E6761E7D86091013BD /* NSManagedObjectContext+MagicalObserving.m */; };
-		1270845BEB11944C29C4288A16745D95 /* IDPCommonKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D3FBD7BDD7E22EAADABC6BA497B77D1 /* IDPCommonKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		133BA9ECA849AF1521451AEE97F0559B /* NSString+IDPExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFFE3A1BFE773A44F38CCBD9BDD9D13 /* NSString+IDPExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		18740FD9DFA556391A7EF8C459C97C00 /* NSManagedObject+MagicalRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEFC718D8B024A10FE2DB31E4BCEBCD /* NSManagedObject+MagicalRequests.m */; };
+		002A3803CDC6740245E4EA625789F54E /* NSCalendar+Ranges.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E6BE8F7E52E7426CC6E1EA73E9383BC /* NSCalendar+Ranges.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04A29A4021B7179722B9DE17F03F3E19 /* CKCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB32FF97B2AC1FC6CF873F22D0E0AB62 /* CKCalendarCell.m */; };
+		04C3A37266FB57C79915948308A3DDE9 /* MagicalRecord+Options.h in Headers */ = {isa = PBXBuildFile; fileRef = 95E56EEB22626615D7801E3355116107 /* MagicalRecord+Options.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0689F94EB00BABD2AB25007BD65EF152 /* MBPolygonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A9FDF38B312A6087AE80B0DEA02E4BD /* MBPolygonView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07AFB081C36CA95D0EEE623D41E9A13B /* MagicalRecord+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = DE80305B9358E4436E0E76494522005A /* MagicalRecord+iCloud.m */; };
+		07BBC2F29764A6C606E4EB5E7CBF354B /* MagicalImportFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = E94FEC0DF4A3B4DC1397957694A464DD /* MagicalImportFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BE65C7E618A4E3E3985FB3F091EF672 /* NSManagedObject+MagicalAggregation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A8BE07AE18AD56E279256A42BE19D /* NSManagedObject+MagicalAggregation.m */; };
+		0C98DCF46C92A1237745FCADC0612781 /* NSManagedObject+MagicalFinders.m in Sources */ = {isa = PBXBuildFile; fileRef = 4870ABB58695947174A9B3ABC81FF70F /* NSManagedObject+MagicalFinders.m */; };
+		102FE6FB7E107520BAE436B64D34DFC3 /* NSManagedObjectContext+MagicalObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = AF62A8EC7E09AE6DCDFF147425DF705A /* NSManagedObjectContext+MagicalObserving.m */; };
+		18740FD9DFA556391A7EF8C459C97C00 /* NSManagedObject+MagicalRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = A48EB0C55AF3329297A326FBCC796770 /* NSManagedObject+MagicalRequests.m */; };
 		1D6F493BD76026683AF293055E0097F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75448063EE23EB05E04723DCFDD32EC8 /* Foundation.framework */; };
-		1DE5FE824666C8DC9B21ABB324846178 /* NSManagedObjectContext+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 70BDFEEF86382D26BFFDD2D66EC33792 /* NSManagedObjectContext+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E73B4523047751CC3853D4824CA1B2C /* CKCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F4DA81A078B0BCA20AA069C4C1720 /* CKCalendarViewController.m */; };
-		21C097BE3FE0C8F1E625610DB51310DB /* CKTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B92AAB3F78F38E8EFF9CEF5CF5AF7C7D /* CKTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22649FE5700984C024BD78437703F4BC /* NSManagedObject+MagicalFinders.h in Headers */ = {isa = PBXBuildFile; fileRef = C41BFF03CCA61B674001805E1E76FA32 /* NSManagedObject+MagicalFinders.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22BBC0BC897BDCB2F6E9C0DE8B556A1C /* MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 28436202D11184EE69AB17FB947721BF /* MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		23105226AD443FC310A53C35656D51EE /* IDPMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 13535B9B7D2E1C19AC4E979904A4F4A3 /* IDPMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24910EC8256D157285C432EFA091B7FF /* NSCalendarCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D4C22603A83EA2A733E0D93474D362C /* NSCalendarCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25476883E6ADB2D0BDD87263964A2BFB /* IDPCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CA2BCE022E22FE86BFA159C77A27C5 /* IDPCoreDataManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		25CBB8E83EEA4FC226F0D9CD022DD38C /* NSCalendar+DateComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = D895D081C1706EC41840E56FB8CAF0ED /* NSCalendar+DateComparison.m */; };
-		27014DA3BE8810EAEBBB384F3D1412AC /* NSDate+IDPExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AB6FCF7F8C3249D70DDDD8820DEEACB8 /* NSDate+IDPExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		278EB4CEB1BDFBEA46959707EF474439 /* CKCalendarViewModes.h in Headers */ = {isa = PBXBuildFile; fileRef = 685C204DD89D33CEEF7FDA93FB50488E /* CKCalendarViewModes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		290536AE9FD94F48918E9B7C39957054 /* NSCalendar+DateComparison.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E96C5776853A87D00CFDC07B9FFA76 /* NSCalendar+DateComparison.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2999BF37CD94634ABEFB1F78541301CD /* NSManagedObjectID+IDPExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 80FB930E85A7FFEE0F540325E3A89D33 /* NSManagedObjectID+IDPExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B8250435BB46234AF0AE76D58CA359E /* CKCalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 38142C34CDA14C5C2EB1506F256B97B4 /* CKCalendarEvent.m */; };
-		2C368003B1958B45987ABDBCFDE39AB0 /* UIView+Border.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D5D587849F153197BA81BB8DB19E0E /* UIView+Border.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D51050505E367D539E580B2289CFD9D /* CKCalendarViewControllerInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEC79C8A16DFAB4B7F10EBCD844BA2B /* CKCalendarViewControllerInternal.m */; };
-		30C48B3A4689326CE70AA4EFF8BAFFA7 /* IDPMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A1215444BEB8C68CB2E2EF1D1992C8 /* IDPMath.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3176676FA75D50B23AF2CA36C1A0D4DB /* NSManagedObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 62941BE4D15FE9586CF5A5204A439AB8 /* NSManagedObject+MagicalDataImport.m */; };
-		357EBC5ABE6ADF1E1C4361D885F91C40 /* NSDateComponents+IDPExtinsions.m in Sources */ = {isa = PBXBuildFile; fileRef = D5134395CD6471985BBD9B878AE3A5F7 /* NSDateComponents+IDPExtinsions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		37B6B096D77B6255934CEE0371FA5D2F /* NSBundle+IDPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DCAA981B34D5365A2D6FD28FB80ED0 /* NSBundle+IDPExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3956D7F2703F084391CC71497E754F16 /* MagicalRecordLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 70C50CF55AD766E95693CC9DDA8BFC9B /* MagicalRecordLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AC536B47EE5E2528DCE9219FF83A96E /* NSManagedObject+MagicalAggregation.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA5720AD901A3D31ABC6424A7EB831A /* NSManagedObject+MagicalAggregation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BBEF2BF9E331F2F228D84A08D3D4847 /* MagicalRecordInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 18366E08024B9B79EECA209E208D2D00 /* MagicalRecordInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D7EDAC6F8E782AB0B7822DA16EC1CC8 /* NSManagedObjectModel+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 05B354B8430F4DAF872901B658C1EA4D /* NSManagedObjectModel+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E812831E3B55C2779FDC3B535CEA483 /* UIColor+HexString.h in Headers */ = {isa = PBXBuildFile; fileRef = 2588D61A0FC68D96AD2CDF8382A0993A /* UIColor+HexString.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		41217CFC5AA28506DD3DDB7B5A40C3FB /* CKCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F74249570697A7440A2337EE64D9B2 /* CKCalendarView.m */; };
-		41F921212641C2C7D1AFBEE33EE82471 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 9919A6391D681814E9F023A807374E1E /* UIColor+HexString.m */; };
-		429C7265C2E36088BF5CB2B5AF48D692 /* NSFileManager+IDPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB2D45F31472A42B559BE94EEA54D0A /* NSFileManager+IDPExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		42BF41BB0D25090BED2668459ED9C7A1 /* MagicalRecordDeprecationMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 72A6FA5074CAB4138902ADC6BF87D74F /* MagicalRecordDeprecationMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46FFF8F1725F0DDCE87C63AEB6F63D8E /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8535146AB648974CDD86CA4803CFA5 /* NSAttributeDescription+MagicalDataImport.m */; };
-		48CEFB10B302004772CD7AA0E9E92BF4 /* UIView+AnimatedFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = A58ABA72B341F78C6EDFC560B7C1133E /* UIView+AnimatedFrame.m */; };
-		4AF61E59EABF06E02BAD1C1DC40D433D /* NSCalendar+Components.h in Headers */ = {isa = PBXBuildFile; fileRef = B960B8E57840CF97B8BCA86029110834 /* NSCalendar+Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		513F64698BA973F88102C54320428214 /* Pods-Akvamarin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876723C2E408332AF535807549B7EC3 /* Pods-Akvamarin-dummy.m */; };
-		54C37ADD27C984E53ED7FB89F033A5C6 /* NSCalendar+Ranges.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6E140021CEBC10B95C0CBEFE5C5D8B /* NSCalendar+Ranges.m */; };
-		54D1EE5A1410D283E89450A457DCA4F7 /* CKCalendarViewControllerInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 823AF2BE2CA96A3339A46569A293D311 /* CKCalendarViewControllerInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B24CD2EFD2D1A53632FDB140A7C93D0 /* NSManagedObjectContext+MagicalObserving.h in Headers */ = {isa = PBXBuildFile; fileRef = BC0A4B95CCAC1EBC08A34BFF2BD3AE50 /* NSManagedObjectContext+MagicalObserving.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5BF49D00B27EFC184F0B75AAC939988F /* NSObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E93A1D87B6C883A48964D46D11F322 /* NSObject+MagicalDataImport.m */; };
-		5C9C225BF6E19B3B4B95F72142DB6D56 /* NSManagedObjectID+IDPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 99510914A3FB933579E3513ACCCF08F2 /* NSManagedObjectID+IDPExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5DA7211DEF1AA7045B62C404E7D3C034 /* NSManagedObjectContext+MagicalChainSave.h in Headers */ = {isa = PBXBuildFile; fileRef = C4DA9DFF122C906D9E76113251380541 /* NSManagedObjectContext+MagicalChainSave.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5EF993BFFBAC8C8BAD115DBB754FFCA9 /* NSManagedObject+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8325EF28680AB359557D81B8F4F5BD /* NSManagedObject+MagicalRecord.m */; };
-		60A1C26648E1CAD0DC6F551F9F7C66CA /* NSFileManager+IDPExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = DA17C3346E327EA6182ADC72F7E18417 /* NSFileManager+IDPExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60A4D478BACB62FC704D9F0A52BF80DA /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = A867D4C9C9E549F43AD9B178140DA34E /* MagicalRecord+Setup.m */; };
-		6824F61CAA031BDEC001372DFFDDF224 /* NSManagedObject+IDPExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A019756EB64894BB05D82F8CE5144224 /* NSManagedObject+IDPExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A8F99D77FC6A63E35B6905EE534D079 /* MagicalRecordInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C867CE1FBE8F3D53CFD20B6851A70F4 /* MagicalRecordInternal.m */; };
-		6B66CA206E2A81A5611C033235367B41 /* NSRelationshipDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 9668F3A3AD2A6191EF5F170622624804 /* NSRelationshipDescription+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B9385324F1834AF1B44263C10CDB878 /* NSCalendar+Juncture.h in Headers */ = {isa = PBXBuildFile; fileRef = 168DE7BE8918F25C953907ED4DB66FBA /* NSCalendar+Juncture.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6BE8E9E651562F2BD7D2B075D50F604F /* NSCalendar+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = B3490FB9F3722FA2F607195839EA02D1 /* NSCalendar+Components.m */; };
-		6C43E5AD3776A44AEE5CA3F79148D5AE /* MagicalRecord+ShorthandMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CB9EDEDE1B1C4795BCE3D33989675D /* MagicalRecord+ShorthandMethods.m */; };
-		6C73D9F2640BE6359BBAA146D3F67ED6 /* UIView+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C5742DC1D99490ED7C651D86039225 /* UIView+Border.m */; };
-		6E028FAAE69F58D9BBD543AA95DFD97F /* CKCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D4FEE971C2D63EEE5CB74A09AE0311 /* CKCalendarHeaderView.m */; };
-		6E8E97A3B1F7D556FBD36DB362A3CEE0 /* IDPPropertyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FFD2C00944F53A3E5B00E499B1970F2 /* IDPPropertyMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6EFE3580D7F774F6A1716E51D6F21E91 /* NSArray+IDPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F5884989405015D2D8F7705B99726 /* NSArray+IDPExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		76815183602ECF3C0023B61D9C17C9F8 /* CGGeometry+IDPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 423E1A45B625C8A173A9CDA7881BB878 /* CGGeometry+IDPExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7AAB5BA5952BCE7179031D37AF464534 /* NSManagedObjectContext+MagicalChainSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E589A8D93EAFA8601D1727F91762EA9 /* NSManagedObjectContext+MagicalChainSave.m */; };
-		7D19E5C0F7C5DC14392891F756F3964E /* NSNumber+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A502B55266A94E4D514034F63C82803 /* NSNumber+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7DE727FE7D3496DC55B15236B8CBAC51 /* CommonKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 173CD7474DB248DE885126D716EECF87 /* CommonKit-dummy.m */; };
-		8038B6D5F6AA798A8D1D170FB92F2970 /* NSManagedObjectContext+MagicalSaves.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA214A18D1D004957F465CBD631C28D /* NSManagedObjectContext+MagicalSaves.m */; };
+		1DE5FE824666C8DC9B21ABB324846178 /* NSManagedObjectContext+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD89BF95A63B00F24398288DB51F2F6 /* NSManagedObjectContext+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E73B4523047751CC3853D4824CA1B2C /* CKCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B052D3CFDF0766A0323972AE2433EC /* CKCalendarViewController.m */; };
+		21C097BE3FE0C8F1E625610DB51310DB /* CKTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D3DC94F7B7EB113B0EFFC0648CAA7D /* CKTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22649FE5700984C024BD78437703F4BC /* NSManagedObject+MagicalFinders.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E7431F70FC8590DC1129C3E12C9934 /* NSManagedObject+MagicalFinders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22BBC0BC897BDCB2F6E9C0DE8B556A1C /* MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = C342008D10CF70B2199137D53DE79068 /* MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24910EC8256D157285C432EFA091B7FF /* NSCalendarCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 34768824343E0F55EDE0BA37FE23DCBB /* NSCalendarCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25CBB8E83EEA4FC226F0D9CD022DD38C /* NSCalendar+DateComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA9237CFB2BDF5FF02D654BC71418F4 /* NSCalendar+DateComparison.m */; };
+		278EB4CEB1BDFBEA46959707EF474439 /* CKCalendarViewModes.h in Headers */ = {isa = PBXBuildFile; fileRef = 83AE55AC82A1F93193137C649A300363 /* CKCalendarViewModes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		290536AE9FD94F48918E9B7C39957054 /* NSCalendar+DateComparison.h in Headers */ = {isa = PBXBuildFile; fileRef = 44B30475AC0A3C99B3F2781DBC8568B8 /* NSCalendar+DateComparison.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B8250435BB46234AF0AE76D58CA359E /* CKCalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9C59E99018268FB71F1D504417E733 /* CKCalendarEvent.m */; };
+		2C368003B1958B45987ABDBCFDE39AB0 /* UIView+Border.h in Headers */ = {isa = PBXBuildFile; fileRef = ECD07D5BA69060DEF83FE407B39B8A6E /* UIView+Border.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D51050505E367D539E580B2289CFD9D /* CKCalendarViewControllerInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC43ED8E3856BBFDF4BB38EC9A11085 /* CKCalendarViewControllerInternal.m */; };
+		3176676FA75D50B23AF2CA36C1A0D4DB /* NSManagedObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A1FE908F031F059E92F663CB15FD7B /* NSManagedObject+MagicalDataImport.m */; };
+		3956D7F2703F084391CC71497E754F16 /* MagicalRecordLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = A38A89155112A7191281F9D913529757 /* MagicalRecordLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AC536B47EE5E2528DCE9219FF83A96E /* NSManagedObject+MagicalAggregation.h in Headers */ = {isa = PBXBuildFile; fileRef = 83941277E250420D63821D1C4E11526E /* NSManagedObject+MagicalAggregation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BBEF2BF9E331F2F228D84A08D3D4847 /* MagicalRecordInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 691B06B8A0C6EA4A8EB2504C493F1297 /* MagicalRecordInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D7EDAC6F8E782AB0B7822DA16EC1CC8 /* NSManagedObjectModel+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 29B03166525E8076E03369006FE91438 /* NSManagedObjectModel+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E812831E3B55C2779FDC3B535CEA483 /* UIColor+HexString.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6E75A5B177F5270B4DAE030D8B4097 /* UIColor+HexString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41217CFC5AA28506DD3DDB7B5A40C3FB /* CKCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA19BCFC69CABBD76A934A2361C26765 /* CKCalendarView.m */; };
+		41F921212641C2C7D1AFBEE33EE82471 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1BD9AD77BDE346C78793AE3A4870E /* UIColor+HexString.m */; };
+		42BF41BB0D25090BED2668459ED9C7A1 /* MagicalRecordDeprecationMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = ACA7C2BB66EE43EF4D8A24723D6B7DC2 /* MagicalRecordDeprecationMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46FFF8F1725F0DDCE87C63AEB6F63D8E /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = B793531F3C82BDD8B3DADCE784FBFDE4 /* NSAttributeDescription+MagicalDataImport.m */; };
+		48CEFB10B302004772CD7AA0E9E92BF4 /* UIView+AnimatedFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 428F0BCCDCF75D485517303C05B557FF /* UIView+AnimatedFrame.m */; };
+		4AF61E59EABF06E02BAD1C1DC40D433D /* NSCalendar+Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DEBB707B5F4EB261EA87D5821E1B64E /* NSCalendar+Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54C37ADD27C984E53ED7FB89F033A5C6 /* NSCalendar+Ranges.m in Sources */ = {isa = PBXBuildFile; fileRef = 500245FBC54B24556BCE2E435A9B8BE4 /* NSCalendar+Ranges.m */; };
+		54D1EE5A1410D283E89450A457DCA4F7 /* CKCalendarViewControllerInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B62C4AB685CEC72276D99A84D7744D4 /* CKCalendarViewControllerInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54DD99B2B411B0CF34DDDB1866065F3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75448063EE23EB05E04723DCFDD32EC8 /* Foundation.framework */; };
+		5B24CD2EFD2D1A53632FDB140A7C93D0 /* NSManagedObjectContext+MagicalObserving.h in Headers */ = {isa = PBXBuildFile; fileRef = 5394A3159CED438362B887115EEF7A23 /* NSManagedObjectContext+MagicalObserving.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BF49D00B27EFC184F0B75AAC939988F /* NSObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A1527EBF4403BEB4EF39E8653D082D /* NSObject+MagicalDataImport.m */; };
+		5DA7211DEF1AA7045B62C404E7D3C034 /* NSManagedObjectContext+MagicalChainSave.h in Headers */ = {isa = PBXBuildFile; fileRef = 13136FED5B4EBB41EB7626F68280074F /* NSManagedObjectContext+MagicalChainSave.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EF993BFFBAC8C8BAD115DBB754FFCA9 /* NSManagedObject+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9C61792EEE29F5142289EA962C0B79 /* NSManagedObject+MagicalRecord.m */; };
+		60A4D478BACB62FC704D9F0A52BF80DA /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = E873BFC5EB50BDCA335C0ADCE571937B /* MagicalRecord+Setup.m */; };
+		6A8F99D77FC6A63E35B6905EE534D079 /* MagicalRecordInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = C34F91DA94A07B0258471CED4D73D5EA /* MagicalRecordInternal.m */; };
+		6B66CA206E2A81A5611C033235367B41 /* NSRelationshipDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = B075BC8C1C096726D53E063CC7C8D277 /* NSRelationshipDescription+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B9385324F1834AF1B44263C10CDB878 /* NSCalendar+Juncture.h in Headers */ = {isa = PBXBuildFile; fileRef = B996EC3F036FF1602F976FE7021B1810 /* NSCalendar+Juncture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BE8E9E651562F2BD7D2B075D50F604F /* NSCalendar+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 21500E9A1F10C3FC77110472204FF387 /* NSCalendar+Components.m */; };
+		6C43E5AD3776A44AEE5CA3F79148D5AE /* MagicalRecord+ShorthandMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 4157DF36E9053071E2E92152E95F9E14 /* MagicalRecord+ShorthandMethods.m */; };
+		6C73D9F2640BE6359BBAA146D3F67ED6 /* UIView+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B03508BF6C2D23BB5CDC2BDD248363 /* UIView+Border.m */; };
+		6E028FAAE69F58D9BBD543AA95DFD97F /* CKCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F14CF84D72165DD1E6BC84BBB24591 /* CKCalendarHeaderView.m */; };
+		7AAB5BA5952BCE7179031D37AF464534 /* NSManagedObjectContext+MagicalChainSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9013226B0456F53ECE440529F2B297 /* NSManagedObjectContext+MagicalChainSave.m */; };
+		7D19E5C0F7C5DC14392891F756F3964E /* NSNumber+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = AC5ECC345AEEED0309A259B79ECBF98F /* NSNumber+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8038B6D5F6AA798A8D1D170FB92F2970 /* NSManagedObjectContext+MagicalSaves.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE68CB5BFDD1CF67E3C11D4B8C333AA /* NSManagedObjectContext+MagicalSaves.m */; };
 		81BA4EBC3B3CF5A7E523581B60560CB9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9759B2B71634F9433E99EED52CAE5D8B /* QuartzCore.framework */; };
-		81BC515723C1087A5E8E908AAC65E4DA /* UIView+AnimatedFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 14CDFAAC07D4A5355F27B232BD4328C2 /* UIView+AnimatedFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82209CC1D6E8F63B01B56F76D04681C7 /* MagicalRecord+ErrorHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = 650B73EC93E429F0D6E2A2AC621FA946 /* MagicalRecord+ErrorHandling.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		832F516139B8B16D1C5353A0797BBCF3 /* NSCalendar+Juncture.m in Sources */ = {isa = PBXBuildFile; fileRef = 4089D0153EC411A4C7E5679A329ED4C0 /* NSCalendar+Juncture.m */; };
-		896395A3AC3BAD596F9677E81FB74012 /* NSManagedObjectContext+IDPExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = F99582F42B7CB93895C37C43607E49E4 /* NSManagedObjectContext+IDPExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8B40AA11E4391845A6D96A2BB81B8A02 /* NSObject+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E20BA9EC7F204783B27E20ED69F2DE /* NSObject+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D83475BD67175A60EFF24B4BDE2B711 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75448063EE23EB05E04723DCFDD32EC8 /* Foundation.framework */; };
-		8E1AFDF98B36768195840DC6654B29C7 /* NSBundle+IDPExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E45A92F769382D99E51764CC127BB60E /* NSBundle+IDPExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F06DB17EADC740001BFB0DC6BAEC96C /* NSDate+Components.h in Headers */ = {isa = PBXBuildFile; fileRef = EB36DAE0D2BB4A64F696EA4A0C79605E /* NSDate+Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F6DD65EFB711EA769B031BEB984AA7C /* NSManagedObjectContext+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5575AA9EF2A823B75A10D50C00EA43 /* NSManagedObjectContext+MagicalRecord.m */; };
-		9200871A4826C05C48C6D13EB2ADED04 /* NSManagedObjectContext+MagicalSaves.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E700845A0C7CAE0F04FB0CD848AFEB8 /* NSManagedObjectContext+MagicalSaves.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9272699F9A1EA2A7FDD14F4AECFBD1C9 /* MBPolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8CBF078D3820D2DFDF0917889E1DD1 /* MBPolygonView.m */; };
-		95E6236B7EE86AA2A5DA5EA823C7E1B0 /* NSManagedObjectContext+MagicalThreading.h in Headers */ = {isa = PBXBuildFile; fileRef = CEB537BA451B2FAEE722E275D9C9D0A0 /* NSManagedObjectContext+MagicalThreading.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98956B9E6B2D24D66139F47916E4C6AE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F769B5EE76BAD0B8C6820838221417 /* CoreData.framework */; };
-		9997F8B17016EE05CCDF786DFB07DADF /* NSDate+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 599B58AC4E96FD58D35DF898BB940D21 /* NSDate+Description.m */; };
-		A25D486D2612BDCFBF246888464A7BC4 /* CGGeometry+IDPExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 695B6C6F07E9A5D961DEEC111BD0397E /* CGGeometry+IDPExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A28F39C426A68114C8CA0B2212D3984B /* NSCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = F68ECEF6BB8A59FD29124E898BE1B176 /* NSCalendar+DateManipulation.m */; };
-		A6DF3C1939CD57E4FB9FF4294C85DF75 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 15421B4AB8F7655D6615A9D383552D70 /* NSEntityDescription+MagicalDataImport.m */; };
-		AA93B5B82A6CAA4FC5894FEF74CB2840 /* MagicalRecord+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = 110C7F36536EEB8D28AE911ACC7D50DE /* MagicalRecord+Actions.m */; };
-		AD204A16D73350A3160C585AF45DEEAC /* NSEntityDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = ED5F4F15A8F7F8F526CAF54DB91D1F3B /* NSEntityDescription+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE877982B0B068FED27AA1617141F97B /* NSCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F2E22F699B7898FF409D1E6513B74E9 /* NSCalendar+DateManipulation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B082DFBD27E80B0472DEDD3809AB67E3 /* MagicalRecord+ShorthandMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E67855A6F471C66EB749BD9FF71AEE2 /* MagicalRecord+ShorthandMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B17101D74D6B9C74D60CDA1EDC6EF790 /* IDPActiveRecordKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DCD59E9F74CA24BA0CC218D291969A9 /* IDPActiveRecordKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B30DE1D0FEFD0706CF5CBCCAC0151CF9 /* MagicalRecord+iCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = DB274446739F876B68A3C00E3ACDD1B1 /* MagicalRecord+iCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4B4306E548C2DA77363BB975D7DD63E /* MagicalRecord-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B87329A1D93EB604D5DA132EACABEFEA /* MagicalRecord-dummy.m */; };
-		B4CE8C3B67B30367827175FBDD2D3BBE /* CKCalendarEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B05D899BF28708959C0B5C1AC862664 /* CKCalendarEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4F4B2381183B7929C1C5772282AB0C7 /* CKCalendarHeaderColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 9771F34C9D63E3146FB8EEDA8FDA5F9D /* CKCalendarHeaderColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5E70701D63947AB72339C2A34B03A05 /* CalendarKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AB83FABF9C0CCB01C6C05745AE017833 /* CalendarKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6CDFE5CCD88F571353D32DB617CAAB0 /* NSManagedObjectModel+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 64145BC7A89597E32AE5CFD97411C6A9 /* NSManagedObjectModel+MagicalRecord.m */; };
-		B75F4F69B6C1929B9119183A471B34EC /* NSArray+IDPExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 103734B7FAC949541B8472467180EDED /* NSArray+IDPExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7DCA8BDDA2A031398E8531B1E118E82 /* NSObject+IDPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE1C2C346547440A27A76457436AB53 /* NSObject+IDPExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B80BB34B9EA393487C81034B2984B960 /* NSManagedObjectContext+MagicalThreading.m in Sources */ = {isa = PBXBuildFile; fileRef = DF792B7E1F1028048DF7BCC97862289F /* NSManagedObjectContext+MagicalThreading.m */; };
-		B83E92B12AA620CCF2803A8B017BFAAD /* CKCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C6CF2BCDC55A5D2656224DCAFDF8FB3 /* CKCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9D2227241286FE37FDB06ED2DFC5C39 /* MagicalRecord+Actions.h in Headers */ = {isa = PBXBuildFile; fileRef = 132646B34388400BEC173768AC1FDF7E /* MagicalRecord+Actions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA3CB9B48351FF4B8D8F9A411A6B62AA /* MagicalRecordXcode7CompatibilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E3810B6451765CEFD395E267CD265AEF /* MagicalRecordXcode7CompatibilityMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA862644C9A7922FD2C5192605CD2C3C /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6E6AE00096FBD50BA4253CA181F944 /* MagicalImportFunctions.m */; };
-		BAB16D640DC5984EDEEE3D322B9F8FD3 /* CKCalendarCellColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 88FC2E010DB1184F1F0855C77977924D /* CKCalendarCellColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC6448FAECEF4DFAECFB6B31042E4450 /* IDPCoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A1EF9D59F2F304B506D73900AA630470 /* IDPCoreDataManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C34200BF5AFCD06483209FAF777B67F2 /* NSDate+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD04010202BBD818E6D6313D08EC8AC /* NSDate+Components.m */; };
-		C49B4E239F2CCE600ADF1ECA051C2861 /* MBCalendarKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF251FE7485DA8DCE86F993C10ABE16 /* MBCalendarKit-dummy.m */; };
-		C7CEF2C2D111AFCAC635EAE523887192 /* NSDateComponents+AllComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D0A202E5D0A12863237E4CC9D4D1B37 /* NSDateComponents+AllComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C973CD8B5AA17952942474047CDC4B65 /* CKCalendarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 460C1807D2A2F34A69CF77A8FD9E28F5 /* CKCalendarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDCF753517EB214B8251A145397C458F /* NSString+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A44740A1086DD4AB726A1828B3EAAE3C /* NSString+MagicalDataImport.m */; };
-		D0357C6FF06530C194352BD10D39209B /* CKCalendarMonthCellStates.h in Headers */ = {isa = PBXBuildFile; fileRef = 673490A08A04B80187CE46C6688EC0DB /* CKCalendarMonthCellStates.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2231B0D93172DC7D2364FB16D6C9F76 /* NSDateComponents+AllComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB0B3A62C7ED7DCCB4A2BD061EFE809 /* NSDateComponents+AllComponents.m */; };
-		D34216A4D4017E67A641ED54E1A71B4B /* NSDate+IDPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 22589B7FB20F60CF8A52CDF19BE9785A /* NSDate+IDPExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D9CACFA4CD6E454A96D5F143004BE98C /* CKCalendarDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8458E7A026A9028619A03C566E8DD76A /* CKCalendarDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA4C755C769FEB4890ED397C5A98BCD9 /* NSDate+Description.h in Headers */ = {isa = PBXBuildFile; fileRef = 58A6115739AFCF628C5CFF2F0BC9AFE9 /* NSDate+Description.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBBD25CC062A2C393931FC17FAD92914 /* CKCalendarViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FAC871857DD7E3A8516ED597F0444C /* CKCalendarViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81BC515723C1087A5E8E908AAC65E4DA /* UIView+AnimatedFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 40BAD076366F528961A15B4A64008D0F /* UIView+AnimatedFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82209CC1D6E8F63B01B56F76D04681C7 /* MagicalRecord+ErrorHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB9B317102E9B7206F7F7DB172EFF75 /* MagicalRecord+ErrorHandling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		832F516139B8B16D1C5353A0797BBCF3 /* NSCalendar+Juncture.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ECCE1C07BA632AABCCA944058CF6B6 /* NSCalendar+Juncture.m */; };
+		8B40AA11E4391845A6D96A2BB81B8A02 /* NSObject+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 1878EE236B46B3E8242B353126071356 /* NSObject+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F06DB17EADC740001BFB0DC6BAEC96C /* NSDate+Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C0B70949C675C0DC89B99E756D7F93A /* NSDate+Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F6DD65EFB711EA769B031BEB984AA7C /* NSManagedObjectContext+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAAF9502819471866BAAB87E9B48638 /* NSManagedObjectContext+MagicalRecord.m */; };
+		9200871A4826C05C48C6D13EB2ADED04 /* NSManagedObjectContext+MagicalSaves.h in Headers */ = {isa = PBXBuildFile; fileRef = B1FE7E227F37A3C52212A46EC64C9120 /* NSManagedObjectContext+MagicalSaves.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9272699F9A1EA2A7FDD14F4AECFBD1C9 /* MBPolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D06050837AB82081A14698F4A1F052D /* MBPolygonView.m */; };
+		95E6236B7EE86AA2A5DA5EA823C7E1B0 /* NSManagedObjectContext+MagicalThreading.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F498D3BE2E496D3FC139FE57D3DF4A9 /* NSManagedObjectContext+MagicalThreading.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9997F8B17016EE05CCDF786DFB07DADF /* NSDate+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAFE78CA37F462B3B17430B4E2F20E4 /* NSDate+Description.m */; };
+		A28F39C426A68114C8CA0B2212D3984B /* NSCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03540AE6834F923D41E8F8725092EBC5 /* NSCalendar+DateManipulation.m */; };
+		A6DF3C1939CD57E4FB9FF4294C85DF75 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D235A17BA209297D30C973D9E390BC /* NSEntityDescription+MagicalDataImport.m */; };
+		AA93B5B82A6CAA4FC5894FEF74CB2840 /* MagicalRecord+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = 968ED37B608CD2B266A28FE11E4EDFB0 /* MagicalRecord+Actions.m */; };
+		AD204A16D73350A3160C585AF45DEEAC /* NSEntityDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F5FF1FEA37083EF2E5932CF260DA229 /* NSEntityDescription+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE877982B0B068FED27AA1617141F97B /* NSCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 795F92EF6E4FE66A9850F1B0843CB4FF /* NSCalendar+DateManipulation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B082DFBD27E80B0472DEDD3809AB67E3 /* MagicalRecord+ShorthandMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = BDEA7F1AAB39CB9C3D3A457987EC3983 /* MagicalRecord+ShorthandMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B30DE1D0FEFD0706CF5CBCCAC0151CF9 /* MagicalRecord+iCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = 16CFB85DFB2D92C8D140D1B504BE8E7C /* MagicalRecord+iCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4B4306E548C2DA77363BB975D7DD63E /* MagicalRecord-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6817943B9571040F443E57CC21FC8DE /* MagicalRecord-dummy.m */; };
+		B4CE8C3B67B30367827175FBDD2D3BBE /* CKCalendarEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 70A26C89A0629E0036CB012ECCBE1691 /* CKCalendarEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F4B2381183B7929C1C5772282AB0C7 /* CKCalendarHeaderColors.h in Headers */ = {isa = PBXBuildFile; fileRef = C06F145393EB95F86441AB71F451FBCD /* CKCalendarHeaderColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5E70701D63947AB72339C2A34B03A05 /* CalendarKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E507E7438A9F4B712014800E95037291 /* CalendarKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CDFE5CCD88F571353D32DB617CAAB0 /* NSManagedObjectModel+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = E362A2131CCE9A640F697380D598B49B /* NSManagedObjectModel+MagicalRecord.m */; };
+		B80BB34B9EA393487C81034B2984B960 /* NSManagedObjectContext+MagicalThreading.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC5158B153C8611564F0245CF20D73E /* NSManagedObjectContext+MagicalThreading.m */; };
+		B83E92B12AA620CCF2803A8B017BFAAD /* CKCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D57E37D5597DD65EDB6D335307F31F /* CKCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9D2227241286FE37FDB06ED2DFC5C39 /* MagicalRecord+Actions.h in Headers */ = {isa = PBXBuildFile; fileRef = D34C030A83233869E165518F1397EE8B /* MagicalRecord+Actions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA3CB9B48351FF4B8D8F9A411A6B62AA /* MagicalRecordXcode7CompatibilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E666DFD32F694BDD856D1619D6FD651 /* MagicalRecordXcode7CompatibilityMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA862644C9A7922FD2C5192605CD2C3C /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 171B317A2DC64BD9F6E9F71D9534AD7D /* MagicalImportFunctions.m */; };
+		BAB16D640DC5984EDEEE3D322B9F8FD3 /* CKCalendarCellColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E3311D990009B029F34ADB7C885D470 /* CKCalendarCellColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C34200BF5AFCD06483209FAF777B67F2 /* NSDate+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C6ABFA0EFCD4A25D72EFBD67580330 /* NSDate+Components.m */; };
+		C49B4E239F2CCE600ADF1ECA051C2861 /* MBCalendarKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 392B2826C21BEFF27D20A5332E7EF3FB /* MBCalendarKit-dummy.m */; };
+		C6C1609BDF7D69B22ACA741B7D3878B2 /* Pods-Akvamarin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876723C2E408332AF535807549B7EC3 /* Pods-Akvamarin-dummy.m */; };
+		C7CEF2C2D111AFCAC635EAE523887192 /* NSDateComponents+AllComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D91838E38C0065B4AE6F2E4F7496AC0 /* NSDateComponents+AllComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C973CD8B5AA17952942474047CDC4B65 /* CKCalendarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 55871D93674D043A9BA45C3AF58BBB8F /* CKCalendarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDCF753517EB214B8251A145397C458F /* NSString+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C1ADE30861AA3E14DF60EBD36472D0 /* NSString+MagicalDataImport.m */; };
+		D0357C6FF06530C194352BD10D39209B /* CKCalendarMonthCellStates.h in Headers */ = {isa = PBXBuildFile; fileRef = 067A02FCFCF68D7691855A6CB4A56A05 /* CKCalendarMonthCellStates.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2231B0D93172DC7D2364FB16D6C9F76 /* NSDateComponents+AllComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7A239CFEE02033B669616D2526244B /* NSDateComponents+AllComponents.m */; };
+		D9CACFA4CD6E454A96D5F143004BE98C /* CKCalendarDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B67C2999F48397DB6562A69BE75B5A8 /* CKCalendarDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA4C755C769FEB4890ED397C5A98BCD9 /* NSDate+Description.h in Headers */ = {isa = PBXBuildFile; fileRef = E95D31D0D0A4B5D1320C89EF3C9575E4 /* NSDate+Description.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBBD25CC062A2C393931FC17FAD92914 /* CKCalendarViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 95745144F5A86CDE7FE808BF50EE9370 /* CKCalendarViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBFD600EB2260F8112E1F4385563E93C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F769B5EE76BAD0B8C6820838221417 /* CoreData.framework */; };
-		DF43F95A8ABCF1C99D4941E9A7A61C22 /* CKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F448E3F4775E2CF405F207215B1ADA /* CKTableViewCell.m */; };
-		DF83273C3BF1AF6127F4ED2EFC18A79F /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEECB7E09A86F642B7B11081A22A1A7 /* NSString+Color.m */; };
-		E1AD36B4A1210D1C85A6B8A6FFB0182E /* CKCalendarDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CFB04E41E39A6C2D899C62E22ED2850 /* CKCalendarDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E374B7EB978B02D2F500E1F6AE0BB522 /* NSString+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = DC20928F152D4CF6EE29FDF302B603FD /* NSString+Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6735C3ECF2A8BC89048823B90620AFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75448063EE23EB05E04723DCFDD32EC8 /* Foundation.framework */; };
+		DF43F95A8ABCF1C99D4941E9A7A61C22 /* CKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EAA8F015BF92F1E33DB762ACAE264C /* CKTableViewCell.m */; };
+		DF83273C3BF1AF6127F4ED2EFC18A79F /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C73B55881544C84041EA0B5BFB98C3 /* NSString+Color.m */; };
+		E1AD36B4A1210D1C85A6B8A6FFB0182E /* CKCalendarDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E5556F38A571EACA43C67F146470F8A /* CKCalendarDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E374B7EB978B02D2F500E1F6AE0BB522 /* NSString+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C1D74D1E3FBDDD2570BA4B9DE90FBDC /* NSString+Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8C72F00324E31A8745FE292D511EF52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75448063EE23EB05E04723DCFDD32EC8 /* Foundation.framework */; };
-		E91B5288D1590BDC1C162DE242A62D28 /* NSManagedObject+IDPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3ED1DAE606F615EBA90DD178A18B24 /* NSManagedObject+IDPExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		E9C70AF6D3482C408314ACDF96B75C4E /* MagicalRecord+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E385EA4628C4C860085F03EE948518 /* MagicalRecord+Options.m */; };
-		EC13398E6A998A029F2A983429CDADD0 /* NSPersistentStore+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B5410721BEEBD468989027BD54D7507 /* NSPersistentStore+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC713D4028F12311E919AE329AAE39AF /* NSPersistentStoreCoordinator+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 720B67E1F48AF72514D3D7FB0F2BC821 /* NSPersistentStoreCoordinator+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC8F847EAC10D7ACE57F23E9A41C96AE /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = F162BECA5312DC452948ED85DBD473DC /* NSPersistentStoreCoordinator+MagicalRecord.m */; };
-		ED25E768526EEF0591318C2C1B07B202 /* NSNumber+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BFB19CAE02646064650673FB1B70C8 /* NSNumber+MagicalDataImport.m */; };
-		EDB039CBEA3771B867C749FD7EDCFFF3 /* NSDateComponents+IDPExtinsions.h in Headers */ = {isa = PBXBuildFile; fileRef = FF239FD4FDCF72574E12463DF54DDC34 /* NSDateComponents+IDPExtinsions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0728748EB0DD3F8BEC327BA8C5F0FA5 /* NSString+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CE4B7B7FA0504006C0E4AC62A3B9FA /* NSString+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3BC13A37C0E8A0B0AD1B981902E94D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75448063EE23EB05E04723DCFDD32EC8 /* Foundation.framework */; };
-		F5C83200E6C74F1AF1EA46D5EB48D5DD /* NSManagedObjectContext+IDPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFFCCC9DCC9CDC3BA1660F06633946E /* NSManagedObjectContext+IDPExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F712A8F691272E80E8FB927D67D90F75 /* NSManagedObject+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = D63BB5E405991922513E18BEF0CAC433 /* NSManagedObject+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7F9F5E80DC3BE3C3E07A38657E23D95 /* NSObject+IDPExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = F72E3CCD8FDBEE4510502AB935B21BB9 /* NSObject+IDPExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA2674093F773C305F6629F68175A1D7 /* NSPersistentStore+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 7483453C32D2585573FF6C4C9D5B2367 /* NSPersistentStore+MagicalRecord.m */; };
-		FB515756232019605E26CE5B45EC0DAA /* NSManagedObject+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 88AC2EFD09B8C7A5D6C75E897EEFE122 /* NSManagedObject+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FCDEAB120C5E7C35B7C68A679E7B377A /* ActiveRecordKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A229B3C218C4F7D1731F5D58D065E479 /* ActiveRecordKit-dummy.m */; };
-		FD7BC5C2601C62AE2B40F411E1724A74 /* CKCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D14E08847FD5A95AF37DB3335446D6D5 /* CKCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE7003D1571761DD0A64AFE503E42A43 /* NSAttributeDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = E1DE2FA8B0E79A39AA86CFFAAB82D7D1 /* NSAttributeDescription+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FEBFE4ABC53714F599CE8B28CD2A444D /* MagicalRecord+ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8301F0BA664AC66D9B5DBAD95D9E9C /* MagicalRecord+ErrorHandling.m */; };
-		FED592D88D5B0A4F564902B0BEA2A309 /* MagicalRecord+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1E2DCF3BEDF6E05E46642B7AD05F70 /* MagicalRecord+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FF1795A17AF8D855CC406D1552833C7A /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 989702688C2CFAFF6CF85367FA71AF6F /* NSRelationshipDescription+MagicalDataImport.m */; };
-		FF6D2CDA6691206405D88763E0156BEE /* NSManagedObject+MagicalRequests.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B73CF6F3BB2B01B0DE76DD96E0E88C1 /* NSManagedObject+MagicalRequests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9C70AF6D3482C408314ACDF96B75C4E /* MagicalRecord+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = 719F603D0CB716A2A242C0F5602864C4 /* MagicalRecord+Options.m */; };
+		EC13398E6A998A029F2A983429CDADD0 /* NSPersistentStore+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A835ED0F0CD9581379A5A0A580F36A0 /* NSPersistentStore+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC713D4028F12311E919AE329AAE39AF /* NSPersistentStoreCoordinator+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = E3102CB614147E87988D7004A0832718 /* NSPersistentStoreCoordinator+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC8F847EAC10D7ACE57F23E9A41C96AE /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 625C6E16A67F74955F78513CD40BE643 /* NSPersistentStoreCoordinator+MagicalRecord.m */; };
+		ED25E768526EEF0591318C2C1B07B202 /* NSNumber+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A991D04F95789B92F6E3FC88F67C9A /* NSNumber+MagicalDataImport.m */; };
+		F0728748EB0DD3F8BEC327BA8C5F0FA5 /* NSString+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 37014F11B164C65A5C032BE517F7F42E /* NSString+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F712A8F691272E80E8FB927D67D90F75 /* NSManagedObject+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = C477B6A554E80719EE6F11CEC4B39EA7 /* NSManagedObject+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA2674093F773C305F6629F68175A1D7 /* NSPersistentStore+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 033D189A30221154CDE29EE1A21FEAFB /* NSPersistentStore+MagicalRecord.m */; };
+		FB515756232019605E26CE5B45EC0DAA /* NSManagedObject+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = EB4E236B2681BCA9D3BF7836E2B0B159 /* NSManagedObject+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD7BC5C2601C62AE2B40F411E1724A74 /* CKCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A8459D5091009E5E6CC49E92D1E46ACF /* CKCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE7003D1571761DD0A64AFE503E42A43 /* NSAttributeDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = FF8CEC600625E38E882A30435FE5E30F /* NSAttributeDescription+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEBFE4ABC53714F599CE8B28CD2A444D /* MagicalRecord+ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = A8758121F8968C00AD8686E51C41FACA /* MagicalRecord+ErrorHandling.m */; };
+		FED592D88D5B0A4F564902B0BEA2A309 /* MagicalRecord+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = EB1577170F4B8B8363AA7EB83177CF95 /* MagicalRecord+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF1795A17AF8D855CC406D1552833C7A /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1116D0BF7273FD92992D81225258A7D5 /* NSRelationshipDescription+MagicalDataImport.m */; };
+		FF6D2CDA6691206405D88763E0156BEE /* NSManagedObject+MagicalRequests.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8FB64751EDBFA704FC8FA730E7D209 /* NSManagedObject+MagicalRequests.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		00318549BB79A76FC306675853D39DF8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 417EA9844EC286C5B1B8FCB029C00130;
-			remoteInfo = MagicalRecord;
-		};
-		434CEF70B7734F05944F4924DB11F636 /* PBXContainerItemProxy */ = {
+		1728C534351E787561533347A551AF9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A4EA69D368654A6BBD25A9964EF6A4B2;
 			remoteInfo = MBCalendarKit;
 		};
-		7603963E9C213B6323BCE211542F3B6C /* PBXContainerItemProxy */ = {
+		5AADABE8D5DFBEE5F83B81F057514FAA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1013EBFFA70C5801E4BB0B863F456E7C;
-			remoteInfo = CommonKit;
-		};
-		C40A8BA93DE996E629C2F05EFF877BFB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1013EBFFA70C5801E4BB0B863F456E7C;
-			remoteInfo = CommonKit;
-		};
-		F6AE1CD09F973B2652460F538C9230BA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 076C2EAC7EFDD32F9F8C650A8264DF42;
-			remoteInfo = ActiveRecordKit;
+			remoteGlobalIDString = 417EA9844EC286C5B1B8FCB029C00130;
+			remoteInfo = MagicalRecord;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03BFB19CAE02646064650673FB1B70C8 /* NSNumber+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.m"; sourceTree = "<group>"; };
-		047F5884989405015D2D8F7705B99726 /* NSArray+IDPExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+IDPExtensions.m"; path = "Module/NSArray+IDPExtensions.m"; sourceTree = "<group>"; };
-		05B354B8430F4DAF872901B658C1EA4D /* NSManagedObjectModel+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectModel+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.h"; sourceTree = "<group>"; };
-		07411694BA38422FF10AB349526F01A7 /* MagicalRecord+iCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+iCloud.m"; path = "MagicalRecord/Core/MagicalRecord+iCloud.m"; sourceTree = "<group>"; };
+		033D189A30221154CDE29EE1A21FEAFB /* NSPersistentStore+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStore+MagicalRecord.m"; path = "MagicalRecord/Categories/NSPersistentStore+MagicalRecord.m"; sourceTree = "<group>"; };
+		03540AE6834F923D41E8F8725092EBC5 /* NSCalendar+DateManipulation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+DateManipulation.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+DateManipulation.m"; sourceTree = "<group>"; };
+		067A02FCFCF68D7691855A6CB4A56A05 /* CKCalendarMonthCellStates.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarMonthCellStates.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarMonthCellStates.h; sourceTree = "<group>"; };
+		06A991D04F95789B92F6E3FC88F67C9A /* NSNumber+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.m"; sourceTree = "<group>"; };
 		09F79A8975AC08A31A8D77BC888D2D2B /* Pods-Akvamarin-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Akvamarin-frameworks.sh"; sourceTree = "<group>"; };
-		0BE1C2C346547440A27A76457436AB53 /* NSObject+IDPExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+IDPExtensions.m"; path = "Module/NSObject+IDPExtensions.m"; sourceTree = "<group>"; };
-		0EC8C2E63B47C0E3E7D9A18C480CCFBF /* CKCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarCell.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarCell.m; sourceTree = "<group>"; };
-		0FFD2C00944F53A3E5B00E499B1970F2 /* IDPPropertyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IDPPropertyMacros.h; path = Module/IDPPropertyMacros.h; sourceTree = "<group>"; };
-		103734B7FAC949541B8472467180EDED /* NSArray+IDPExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+IDPExtensions.h"; path = "Module/NSArray+IDPExtensions.h"; sourceTree = "<group>"; };
-		110C7F36536EEB8D28AE911ACC7D50DE /* MagicalRecord+Actions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Actions.m"; path = "MagicalRecord/Core/MagicalRecord+Actions.m"; sourceTree = "<group>"; };
-		130AFA6E249F0104BC3304643FDF2807 /* NSManagedObject+MagicalAggregation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalAggregation.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.m"; sourceTree = "<group>"; };
-		132646B34388400BEC173768AC1FDF7E /* MagicalRecord+Actions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Actions.h"; path = "MagicalRecord/Core/MagicalRecord+Actions.h"; sourceTree = "<group>"; };
-		13535B9B7D2E1C19AC4E979904A4F4A3 /* IDPMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IDPMath.h; path = Module/IDPMath.h; sourceTree = "<group>"; };
-		13A1215444BEB8C68CB2E2EF1D1992C8 /* IDPMath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IDPMath.m; path = Module/IDPMath.m; sourceTree = "<group>"; };
-		14CDFAAC07D4A5355F27B232BD4328C2 /* UIView+AnimatedFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AnimatedFrame.h"; path = "MBCalendarKit/CalendarKit/Categories/UIKit/UIView/UIView+AnimatedFrame.h"; sourceTree = "<group>"; };
-		15421B4AB8F7655D6615A9D383552D70 /* NSEntityDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSEntityDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
-		168DE7BE8918F25C953907ED4DB66FBA /* NSCalendar+Juncture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+Juncture.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Juncture.h"; sourceTree = "<group>"; };
-		16D5D587849F153197BA81BB8DB19E0E /* UIView+Border.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Border.h"; path = "MBCalendarKit/CalendarKit/Categories/UIKit/UIView/UIView+Border.h"; sourceTree = "<group>"; };
-		173CD7474DB248DE885126D716EECF87 /* CommonKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CommonKit-dummy.m"; sourceTree = "<group>"; };
-		18366E08024B9B79EECA209E208D2D00 /* MagicalRecordInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordInternal.h; path = MagicalRecord/Core/MagicalRecordInternal.h; sourceTree = "<group>"; };
-		1AF251FE7485DA8DCE86F993C10ABE16 /* MBCalendarKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBCalendarKit-dummy.m"; sourceTree = "<group>"; };
-		1B1E2DCF3BEDF6E05E46642B7AD05F70 /* MagicalRecord+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Setup.h"; path = "MagicalRecord/Core/MagicalRecord+Setup.h"; sourceTree = "<group>"; };
-		1C867CE1FBE8F3D53CFD20B6851A70F4 /* MagicalRecordInternal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MagicalRecordInternal.m; path = MagicalRecord/Core/MagicalRecordInternal.m; sourceTree = "<group>"; };
-		1DFFE3A1BFE773A44F38CCBD9BDD9D13 /* NSString+IDPExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+IDPExtensions.h"; path = "Module/NSString+IDPExtensions.h"; sourceTree = "<group>"; };
-		1E589A8D93EAFA8601D1727F91762EA9 /* NSManagedObjectContext+MagicalChainSave.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalChainSave.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalChainSave.m"; sourceTree = "<group>"; };
-		20E385EA4628C4C860085F03EE948518 /* MagicalRecord+Options.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Options.m"; path = "MagicalRecord/Core/MagicalRecord+Options.m"; sourceTree = "<group>"; };
-		22589B7FB20F60CF8A52CDF19BE9785A /* NSDate+IDPExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+IDPExtensions.m"; path = "Module/NSDate+IDPExtensions.m"; sourceTree = "<group>"; };
-		2588D61A0FC68D96AD2CDF8382A0993A /* UIColor+HexString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+HexString.h"; path = "MBCalendarKit/CalendarKit/Categories/UIKit/UIColor+HexString.h"; sourceTree = "<group>"; };
-		265E461B5367B663A89ED371F0A4DA9B /* IDPSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IDPSerialization.h; path = Module/IDPSerialization.h; sourceTree = "<group>"; };
-		28436202D11184EE69AB17FB947721BF /* MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecord.h; path = MagicalRecord/MagicalRecord.h; sourceTree = "<group>"; };
+		0B677B5B1ACB2AEC13B4AE2DF2B02FCA /* libMBCalendarKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMBCalendarKit.a; path = libMBCalendarKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1116D0BF7273FD92992D81225258A7D5 /* NSRelationshipDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSRelationshipDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
+		13136FED5B4EBB41EB7626F68280074F /* NSManagedObjectContext+MagicalChainSave.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalChainSave.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalChainSave.h"; sourceTree = "<group>"; };
+		16CFB85DFB2D92C8D140D1B504BE8E7C /* MagicalRecord+iCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+iCloud.h"; path = "MagicalRecord/Core/MagicalRecord+iCloud.h"; sourceTree = "<group>"; };
+		171B317A2DC64BD9F6E9F71D9534AD7D /* MagicalImportFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MagicalImportFunctions.m; path = MagicalRecord/Categories/DataImport/MagicalImportFunctions.m; sourceTree = "<group>"; };
+		1878EE236B46B3E8242B353126071356 /* NSObject+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.h"; sourceTree = "<group>"; };
+		188FC878B813DA158A5EB8BFD558DCEE /* libMagicalRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMagicalRecord.a; path = libMagicalRecord.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AC43ED8E3856BBFDF4BB38EC9A11085 /* CKCalendarViewControllerInternal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarViewControllerInternal.m; path = "MBCalendarKit/CalendarKit/View Controllers/CKCalendarViewControllerInternal.m"; sourceTree = "<group>"; };
+		1C1D74D1E3FBDDD2570BA4B9DE90FBDC /* NSString+Color.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Color.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSString+Color.h"; sourceTree = "<group>"; };
+		1C9013226B0456F53ECE440529F2B297 /* NSManagedObjectContext+MagicalChainSave.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalChainSave.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalChainSave.m"; sourceTree = "<group>"; };
+		1CD1BD9AD77BDE346C78793AE3A4870E /* UIColor+HexString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexString.m"; path = "MBCalendarKit/CalendarKit/Categories/UIKit/UIColor+HexString.m"; sourceTree = "<group>"; };
+		21500E9A1F10C3FC77110472204FF387 /* NSCalendar+Components.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+Components.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Components.m"; sourceTree = "<group>"; };
+		23F14CF84D72165DD1E6BC84BBB24591 /* CKCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarHeaderView.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarHeaderView.m; sourceTree = "<group>"; };
 		293548A262CD072FB6BD412EFBD6DE3C /* Pods-Akvamarin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Akvamarin.debug.xcconfig"; sourceTree = "<group>"; };
-		2C5575AA9EF2A823B75A10D50C00EA43 /* NSManagedObjectContext+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.m"; sourceTree = "<group>"; };
-		3092B010D5EE2B6C1BB89469A05F0DCC /* ActiveRecordKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActiveRecordKit-prefix.pch"; sourceTree = "<group>"; };
-		353BBF2FFD65C0BCB4071831E2EF16E1 /* libMBCalendarKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMBCalendarKit.a; path = libMBCalendarKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		35EA2E569157BB09955968F7FA02D73B /* MagicalImportFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalImportFunctions.h; path = MagicalRecord/Categories/DataImport/MagicalImportFunctions.h; sourceTree = "<group>"; };
-		36CB9EDEDE1B1C4795BCE3D33989675D /* MagicalRecord+ShorthandMethods.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+ShorthandMethods.m"; path = "MagicalRecord/Core/MagicalRecord+ShorthandMethods.m"; sourceTree = "<group>"; };
-		36D4FEE971C2D63EEE5CB74A09AE0311 /* CKCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarHeaderView.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarHeaderView.m; sourceTree = "<group>"; };
-		38142C34CDA14C5C2EB1506F256B97B4 /* CKCalendarEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarEvent.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarEvent.m; sourceTree = "<group>"; };
-		3A93CDDAF7E5B559F0D243949C76BF5E /* MBCalendarKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCalendarKit-prefix.pch"; sourceTree = "<group>"; };
-		3B73CF6F3BB2B01B0DE76DD96E0E88C1 /* NSManagedObject+MagicalRequests.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalRequests.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.h"; sourceTree = "<group>"; };
-		3E67855A6F471C66EB749BD9FF71AEE2 /* MagicalRecord+ShorthandMethods.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+ShorthandMethods.h"; path = "MagicalRecord/Core/MagicalRecord+ShorthandMethods.h"; sourceTree = "<group>"; };
-		3E8301F0BA664AC66D9B5DBAD95D9E9C /* MagicalRecord+ErrorHandling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+ErrorHandling.m"; path = "MagicalRecord/Core/MagicalRecord+ErrorHandling.m"; sourceTree = "<group>"; };
-		3EEECB7E09A86F642B7B11081A22A1A7 /* NSString+Color.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Color.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSString+Color.m"; sourceTree = "<group>"; };
-		406BF626746F806A67866BDE8800DDF1 /* CommonKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CommonKit.xcconfig; sourceTree = "<group>"; };
-		4089D0153EC411A4C7E5679A329ED4C0 /* NSCalendar+Juncture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+Juncture.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Juncture.m"; sourceTree = "<group>"; };
-		423E1A45B625C8A173A9CDA7881BB878 /* CGGeometry+IDPExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CGGeometry+IDPExtensions.m"; path = "Module/CGGeometry+IDPExtensions.m"; sourceTree = "<group>"; };
-		44E7097F3FBC261346903179D9FC74B5 /* MBCalendarKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBCalendarKit.xcconfig; sourceTree = "<group>"; };
-		460C1807D2A2F34A69CF77A8FD9E28F5 /* CKCalendarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarView.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarView.h; sourceTree = "<group>"; };
+		29B03166525E8076E03369006FE91438 /* NSManagedObjectModel+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectModel+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.h"; sourceTree = "<group>"; };
+		2A9FDF38B312A6087AE80B0DEA02E4BD /* MBPolygonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBPolygonView.h; path = MBCalendarKit/CalendarKit/Core/MBPolygonView.h; sourceTree = "<group>"; };
+		2AE68CB5BFDD1CF67E3C11D4B8C333AA /* NSManagedObjectContext+MagicalSaves.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalSaves.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.m"; sourceTree = "<group>"; };
+		2D91838E38C0065B4AE6F2E4F7496AC0 /* NSDateComponents+AllComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDateComponents+AllComponents.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDateComponents+AllComponents.h"; sourceTree = "<group>"; };
+		2E3311D990009B029F34ADB7C885D470 /* CKCalendarCellColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarCellColors.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarCellColors.h; sourceTree = "<group>"; };
+		2E6BE8F7E52E7426CC6E1EA73E9383BC /* NSCalendar+Ranges.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+Ranges.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Ranges.h"; sourceTree = "<group>"; };
+		2F5FF1FEA37083EF2E5932CF260DA229 /* NSEntityDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSEntityDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
+		34768824343E0F55EDE0BA37FE23DCBB /* NSCalendarCategories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSCalendarCategories.h; path = MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendarCategories.h; sourceTree = "<group>"; };
+		37014F11B164C65A5C032BE517F7F42E /* NSString+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.h"; sourceTree = "<group>"; };
+		392B2826C21BEFF27D20A5332E7EF3FB /* MBCalendarKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBCalendarKit-dummy.m"; sourceTree = "<group>"; };
+		3E5556F38A571EACA43C67F146470F8A /* CKCalendarDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarDelegate.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarDelegate.h; sourceTree = "<group>"; };
+		3F7A239CFEE02033B669616D2526244B /* NSDateComponents+AllComponents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDateComponents+AllComponents.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDateComponents+AllComponents.m"; sourceTree = "<group>"; };
+		40BAD076366F528961A15B4A64008D0F /* UIView+AnimatedFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AnimatedFrame.h"; path = "MBCalendarKit/CalendarKit/Categories/UIKit/UIView/UIView+AnimatedFrame.h"; sourceTree = "<group>"; };
+		4157DF36E9053071E2E92152E95F9E14 /* MagicalRecord+ShorthandMethods.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+ShorthandMethods.m"; path = "MagicalRecord/Core/MagicalRecord+ShorthandMethods.m"; sourceTree = "<group>"; };
+		428F0BCCDCF75D485517303C05B557FF /* UIView+AnimatedFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnimatedFrame.m"; path = "MBCalendarKit/CalendarKit/Categories/UIKit/UIView/UIView+AnimatedFrame.m"; sourceTree = "<group>"; };
+		44B30475AC0A3C99B3F2781DBC8568B8 /* NSCalendar+DateComparison.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+DateComparison.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+DateComparison.h"; sourceTree = "<group>"; };
+		47ECCE1C07BA632AABCCA944058CF6B6 /* NSCalendar+Juncture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+Juncture.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Juncture.m"; sourceTree = "<group>"; };
+		4870ABB58695947174A9B3ABC81FF70F /* NSManagedObject+MagicalFinders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalFinders.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.m"; sourceTree = "<group>"; };
 		4876723C2E408332AF535807549B7EC3 /* Pods-Akvamarin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Akvamarin-dummy.m"; sourceTree = "<group>"; };
 		48F815026C33385BFBD4013182DB16F4 /* Pods-Akvamarin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Akvamarin-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4F2E22F699B7898FF409D1E6513B74E9 /* NSCalendar+DateManipulation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+DateManipulation.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+DateManipulation.h"; sourceTree = "<group>"; };
-		51DCAA981B34D5365A2D6FD28FB80ED0 /* NSBundle+IDPExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+IDPExtensions.m"; path = "Module/NSBundle+IDPExtensions.m"; sourceTree = "<group>"; };
-		54FAC871857DD7E3A8516ED597F0444C /* CKCalendarViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarViewController.h; path = "MBCalendarKit/CalendarKit/View Controllers/CKCalendarViewController.h"; sourceTree = "<group>"; };
-		58A6115739AFCF628C5CFF2F0BC9AFE9 /* NSDate+Description.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Description.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDate/NSDate+Description.h"; sourceTree = "<group>"; };
-		599B58AC4E96FD58D35DF898BB940D21 /* NSDate+Description.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Description.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDate/NSDate+Description.m"; sourceTree = "<group>"; };
-		5A502B55266A94E4D514034F63C82803 /* NSNumber+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.h"; sourceTree = "<group>"; };
-		5B3ED1DAE606F615EBA90DD178A18B24 /* NSManagedObject+IDPExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+IDPExtensions.m"; path = "Module/NSManagedObject+IDPExtensions.m"; sourceTree = "<group>"; };
-		62941BE4D15FE9586CF5A5204A439AB8 /* NSManagedObject+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalDataImport.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.m"; sourceTree = "<group>"; };
-		64145BC7A89597E32AE5CFD97411C6A9 /* NSManagedObjectModel+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectModel+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.m"; sourceTree = "<group>"; };
-		650B73EC93E429F0D6E2A2AC621FA946 /* MagicalRecord+ErrorHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+ErrorHandling.h"; path = "MagicalRecord/Core/MagicalRecord+ErrorHandling.h"; sourceTree = "<group>"; };
+		4A835ED0F0CD9581379A5A0A580F36A0 /* NSPersistentStore+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStore+MagicalRecord.h"; path = "MagicalRecord/Categories/NSPersistentStore+MagicalRecord.h"; sourceTree = "<group>"; };
+		4D5859AA6FCB2CE4CB713B1C57844C18 /* MBCalendarKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCalendarKit-prefix.pch"; sourceTree = "<group>"; };
+		4F1F08766C8076DD4BC4B6F442384588 /* MBCalendarKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBCalendarKit.xcconfig; sourceTree = "<group>"; };
+		500245FBC54B24556BCE2E435A9B8BE4 /* NSCalendar+Ranges.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+Ranges.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Ranges.m"; sourceTree = "<group>"; };
+		5394A3159CED438362B887115EEF7A23 /* NSManagedObjectContext+MagicalObserving.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalObserving.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.h"; sourceTree = "<group>"; };
+		53B052D3CFDF0766A0323972AE2433EC /* CKCalendarViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarViewController.m; path = "MBCalendarKit/CalendarKit/View Controllers/CKCalendarViewController.m"; sourceTree = "<group>"; };
+		55871D93674D043A9BA45C3AF58BBB8F /* CKCalendarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarView.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarView.h; sourceTree = "<group>"; };
+		625C6E16A67F74955F78513CD40BE643 /* NSPersistentStoreCoordinator+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStoreCoordinator+MagicalRecord.m"; path = "MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.m"; sourceTree = "<group>"; };
+		62D235A17BA209297D30C973D9E390BC /* NSEntityDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSEntityDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
+		63C6ABFA0EFCD4A25D72EFBD67580330 /* NSDate+Components.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Components.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDate/NSDate+Components.m"; sourceTree = "<group>"; };
 		6608CDCC3F793DFF6C41F7DBE9484B23 /* Pods-Akvamarin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Akvamarin-acknowledgements.plist"; sourceTree = "<group>"; };
-		670F6C9979C5F27CB7D6E2C99878D6B8 /* NSManagedObject+MagicalFinders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalFinders.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.m"; sourceTree = "<group>"; };
-		673490A08A04B80187CE46C6688EC0DB /* CKCalendarMonthCellStates.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarMonthCellStates.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarMonthCellStates.h; sourceTree = "<group>"; };
-		685C204DD89D33CEEF7FDA93FB50488E /* CKCalendarViewModes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarViewModes.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarViewModes.h; sourceTree = "<group>"; };
-		695B6C6F07E9A5D961DEEC111BD0397E /* CGGeometry+IDPExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CGGeometry+IDPExtensions.h"; path = "Module/CGGeometry+IDPExtensions.h"; sourceTree = "<group>"; };
-		6C6CF2BCDC55A5D2656224DCAFDF8FB3 /* CKCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarHeaderView.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarHeaderView.h; sourceTree = "<group>"; };
-		6CFB04E41E39A6C2D899C62E22ED2850 /* CKCalendarDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarDelegate.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarDelegate.h; sourceTree = "<group>"; };
-		6E6E140021CEBC10B95C0CBEFE5C5D8B /* NSCalendar+Ranges.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+Ranges.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Ranges.m"; sourceTree = "<group>"; };
-		6F2ABBC4AA3352E6761E7D86091013BD /* NSManagedObjectContext+MagicalObserving.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalObserving.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.m"; sourceTree = "<group>"; };
-		70BDFEEF86382D26BFFDD2D66EC33792 /* NSManagedObjectContext+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.h"; sourceTree = "<group>"; };
-		70C50CF55AD766E95693CC9DDA8BFC9B /* MagicalRecordLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordLogging.h; path = MagicalRecord/Core/MagicalRecordLogging.h; sourceTree = "<group>"; };
-		720B67E1F48AF72514D3D7FB0F2BC821 /* NSPersistentStoreCoordinator+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStoreCoordinator+MagicalRecord.h"; path = "MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.h"; sourceTree = "<group>"; };
-		72A6FA5074CAB4138902ADC6BF87D74F /* MagicalRecordDeprecationMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordDeprecationMacros.h; path = MagicalRecord/Core/MagicalRecordDeprecationMacros.h; sourceTree = "<group>"; };
-		7483453C32D2585573FF6C4C9D5B2367 /* NSPersistentStore+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStore+MagicalRecord.m"; path = "MagicalRecord/Categories/NSPersistentStore+MagicalRecord.m"; sourceTree = "<group>"; };
+		691B06B8A0C6EA4A8EB2504C493F1297 /* MagicalRecordInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordInternal.h; path = MagicalRecord/Core/MagicalRecordInternal.h; sourceTree = "<group>"; };
+		6C5571D223F501C81350332581174B3B /* libPods-Akvamarin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Akvamarin.a"; path = "libPods-Akvamarin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB9B317102E9B7206F7F7DB172EFF75 /* MagicalRecord+ErrorHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+ErrorHandling.h"; path = "MagicalRecord/Core/MagicalRecord+ErrorHandling.h"; sourceTree = "<group>"; };
+		6D06050837AB82081A14698F4A1F052D /* MBPolygonView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBPolygonView.m; path = MBCalendarKit/CalendarKit/Core/MBPolygonView.m; sourceTree = "<group>"; };
+		6E6E75A5B177F5270B4DAE030D8B4097 /* UIColor+HexString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+HexString.h"; path = "MBCalendarKit/CalendarKit/Categories/UIKit/UIColor+HexString.h"; sourceTree = "<group>"; };
+		70A26C89A0629E0036CB012ECCBE1691 /* CKCalendarEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarEvent.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarEvent.h; sourceTree = "<group>"; };
+		719F603D0CB716A2A242C0F5602864C4 /* MagicalRecord+Options.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Options.m"; path = "MagicalRecord/Core/MagicalRecord+Options.m"; sourceTree = "<group>"; };
+		74B03508BF6C2D23BB5CDC2BDD248363 /* UIView+Border.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Border.m"; path = "MBCalendarKit/CalendarKit/Categories/UIKit/UIView/UIView+Border.m"; sourceTree = "<group>"; };
 		75448063EE23EB05E04723DCFDD32EC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		773786421980B6B50BD6859B44198011 /* MagicalRecord.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MagicalRecord.xcconfig; sourceTree = "<group>"; };
-		7B05D899BF28708959C0B5C1AC862664 /* CKCalendarEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarEvent.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarEvent.h; sourceTree = "<group>"; };
-		7BA6BC7534DF23468ECAC7173E24383F /* NSString+IDPExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+IDPExtensions.m"; path = "Module/NSString+IDPExtensions.m"; sourceTree = "<group>"; };
-		7D3FBD7BDD7E22EAADABC6BA497B77D1 /* IDPCommonKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IDPCommonKit.h; path = Module/IDPCommonKit.h; sourceTree = "<group>"; };
-		7E700845A0C7CAE0F04FB0CD848AFEB8 /* NSManagedObjectContext+MagicalSaves.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalSaves.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.h"; sourceTree = "<group>"; };
-		80904FFCC0E3B10FD03AA8DF0675EB68 /* MagicalRecord-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord-prefix.pch"; sourceTree = "<group>"; };
-		80C5742DC1D99490ED7C651D86039225 /* UIView+Border.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Border.m"; path = "MBCalendarKit/CalendarKit/Categories/UIKit/UIView/UIView+Border.m"; sourceTree = "<group>"; };
-		80FB930E85A7FFEE0F540325E3A89D33 /* NSManagedObjectID+IDPExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectID+IDPExtensions.h"; path = "Module/NSManagedObjectID+IDPExtensions.h"; sourceTree = "<group>"; };
-		823AF2BE2CA96A3339A46569A293D311 /* CKCalendarViewControllerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarViewControllerInternal.h; path = "MBCalendarKit/CalendarKit/View Controllers/CKCalendarViewControllerInternal.h"; sourceTree = "<group>"; };
-		8458E7A026A9028619A03C566E8DD76A /* CKCalendarDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarDataSource.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarDataSource.h; sourceTree = "<group>"; };
-		88AC2EFD09B8C7A5D6C75E897EEFE122 /* NSManagedObject+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.h"; sourceTree = "<group>"; };
-		88FC2E010DB1184F1F0855C77977924D /* CKCalendarCellColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarCellColors.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarCellColors.h; sourceTree = "<group>"; };
-		89C7223AA80EBE3C64CE76B5DEB92057 /* MBPolygonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBPolygonView.h; path = MBCalendarKit/CalendarKit/Core/MBPolygonView.h; sourceTree = "<group>"; };
-		8B5410721BEEBD468989027BD54D7507 /* NSPersistentStore+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStore+MagicalRecord.h"; path = "MagicalRecord/Categories/NSPersistentStore+MagicalRecord.h"; sourceTree = "<group>"; };
-		8D4C22603A83EA2A733E0D93474D362C /* NSCalendarCategories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSCalendarCategories.h; path = MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendarCategories.h; sourceTree = "<group>"; };
-		8DCD59E9F74CA24BA0CC218D291969A9 /* IDPActiveRecordKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IDPActiveRecordKit.h; path = Module/IDPActiveRecordKit.h; sourceTree = "<group>"; };
-		8E7DFEF6CF9FCF327EE7C0E8CF6C1457 /* libCommonKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCommonKit.a; path = libCommonKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		795F92EF6E4FE66A9850F1B0843CB4FF /* NSCalendar+DateManipulation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+DateManipulation.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+DateManipulation.h"; sourceTree = "<group>"; };
+		7A6A8BE07AE18AD56E279256A42BE19D /* NSManagedObject+MagicalAggregation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalAggregation.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.m"; sourceTree = "<group>"; };
+		7AAFE78CA37F462B3B17430B4E2F20E4 /* NSDate+Description.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Description.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDate/NSDate+Description.m"; sourceTree = "<group>"; };
+		7C9C59E99018268FB71F1D504417E733 /* CKCalendarEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarEvent.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarEvent.m; sourceTree = "<group>"; };
+		7DEBB707B5F4EB261EA87D5821E1B64E /* NSCalendar+Components.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+Components.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Components.h"; sourceTree = "<group>"; };
+		7E666DFD32F694BDD856D1619D6FD651 /* MagicalRecordXcode7CompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordXcode7CompatibilityMacros.h; path = MagicalRecord/Core/MagicalRecordXcode7CompatibilityMacros.h; sourceTree = "<group>"; };
+		7F9C61792EEE29F5142289EA962C0B79 /* NSManagedObject+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.m"; sourceTree = "<group>"; };
+		83941277E250420D63821D1C4E11526E /* NSManagedObject+MagicalAggregation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalAggregation.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.h"; sourceTree = "<group>"; };
+		83AE55AC82A1F93193137C649A300363 /* CKCalendarViewModes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarViewModes.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarViewModes.h; sourceTree = "<group>"; };
+		8B67C2999F48397DB6562A69BE75B5A8 /* CKCalendarDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarDataSource.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarDataSource.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9668F3A3AD2A6191EF5F170622624804 /* NSRelationshipDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSRelationshipDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
+		95745144F5A86CDE7FE808BF50EE9370 /* CKCalendarViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarViewController.h; path = "MBCalendarKit/CalendarKit/View Controllers/CKCalendarViewController.h"; sourceTree = "<group>"; };
+		95E56EEB22626615D7801E3355116107 /* MagicalRecord+Options.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Options.h"; path = "MagicalRecord/Core/MagicalRecord+Options.h"; sourceTree = "<group>"; };
+		968ED37B608CD2B266A28FE11E4EDFB0 /* MagicalRecord+Actions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Actions.m"; path = "MagicalRecord/Core/MagicalRecord+Actions.m"; sourceTree = "<group>"; };
+		970E74988F492E47DD3B0FA065B9E96C /* MagicalRecord-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord-prefix.pch"; sourceTree = "<group>"; };
 		9759B2B71634F9433E99EED52CAE5D8B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		9771F34C9D63E3146FB8EEDA8FDA5F9D /* CKCalendarHeaderColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarHeaderColors.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarHeaderColors.h; sourceTree = "<group>"; };
-		989702688C2CFAFF6CF85367FA71AF6F /* NSRelationshipDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSRelationshipDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
-		9919A6391D681814E9F023A807374E1E /* UIColor+HexString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexString.m"; path = "MBCalendarKit/CalendarKit/Categories/UIKit/UIColor+HexString.m"; sourceTree = "<group>"; };
-		99510914A3FB933579E3513ACCCF08F2 /* NSManagedObjectID+IDPExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectID+IDPExtensions.m"; path = "Module/NSManagedObjectID+IDPExtensions.m"; sourceTree = "<group>"; };
-		99CE4B7B7FA0504006C0E4AC62A3B9FA /* NSString+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.h"; sourceTree = "<group>"; };
-		9B6E6AE00096FBD50BA4253CA181F944 /* MagicalImportFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MagicalImportFunctions.m; path = MagicalRecord/Categories/DataImport/MagicalImportFunctions.m; sourceTree = "<group>"; };
-		9D0A202E5D0A12863237E4CC9D4D1B37 /* NSDateComponents+AllComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDateComponents+AllComponents.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDateComponents+AllComponents.h"; sourceTree = "<group>"; };
+		9B62C4AB685CEC72276D99A84D7744D4 /* CKCalendarViewControllerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarViewControllerInternal.h; path = "MBCalendarKit/CalendarKit/View Controllers/CKCalendarViewControllerInternal.h"; sourceTree = "<group>"; };
+		9C0B70949C675C0DC89B99E756D7F93A /* NSDate+Components.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Components.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDate/NSDate+Components.h"; sourceTree = "<group>"; };
 		9DC0BB3463B7EA65444142D86E4459DE /* Pods-Akvamarin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Akvamarin.release.xcconfig"; sourceTree = "<group>"; };
-		A019756EB64894BB05D82F8CE5144224 /* NSManagedObject+IDPExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+IDPExtensions.h"; path = "Module/NSManagedObject+IDPExtensions.h"; sourceTree = "<group>"; };
-		A1EF9D59F2F304B506D73900AA630470 /* IDPCoreDataManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IDPCoreDataManager.h; path = Module/IDPCoreDataManager.h; sourceTree = "<group>"; };
-		A229B3C218C4F7D1731F5D58D065E479 /* ActiveRecordKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ActiveRecordKit-dummy.m"; sourceTree = "<group>"; };
-		A44740A1086DD4AB726A1828B3EAAE3C /* NSString+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.m"; sourceTree = "<group>"; };
-		A58ABA72B341F78C6EDFC560B7C1133E /* UIView+AnimatedFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnimatedFrame.m"; path = "MBCalendarKit/CalendarKit/Categories/UIKit/UIView/UIView+AnimatedFrame.m"; sourceTree = "<group>"; };
-		A6CA2BCE022E22FE86BFA159C77A27C5 /* IDPCoreDataManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IDPCoreDataManager.m; path = Module/IDPCoreDataManager.m; sourceTree = "<group>"; };
-		A867D4C9C9E549F43AD9B178140DA34E /* MagicalRecord+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Setup.m"; path = "MagicalRecord/Core/MagicalRecord+Setup.m"; sourceTree = "<group>"; };
-		AB6FCF7F8C3249D70DDDD8820DEEACB8 /* NSDate+IDPExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+IDPExtensions.h"; path = "Module/NSDate+IDPExtensions.h"; sourceTree = "<group>"; };
-		AB83FABF9C0CCB01C6C05745AE017833 /* CalendarKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CalendarKit.h; path = MBCalendarKit/CalendarKit/CalendarKit.h; sourceTree = "<group>"; };
-		ABA5720AD901A3D31ABC6424A7EB831A /* NSManagedObject+MagicalAggregation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalAggregation.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.h"; sourceTree = "<group>"; };
-		AF85DBA0436A8B37E69FC93E4E3DAA69 /* CommonKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CommonKit-prefix.pch"; sourceTree = "<group>"; };
-		B30F4DA81A078B0BCA20AA069C4C1720 /* CKCalendarViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarViewController.m; path = "MBCalendarKit/CalendarKit/View Controllers/CKCalendarViewController.m"; sourceTree = "<group>"; };
-		B3490FB9F3722FA2F607195839EA02D1 /* NSCalendar+Components.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+Components.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Components.m"; sourceTree = "<group>"; };
-		B3F448E3F4775E2CF405F207215B1ADA /* CKTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKTableViewCell.m; path = MBCalendarKit/CalendarKit/Core/CKTableViewCell.m; sourceTree = "<group>"; };
-		B3F74249570697A7440A2337EE64D9B2 /* CKCalendarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarView.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarView.m; sourceTree = "<group>"; };
-		B87329A1D93EB604D5DA132EACABEFEA /* MagicalRecord-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord-dummy.m"; sourceTree = "<group>"; };
-		B92AAB3F78F38E8EFF9CEF5CF5AF7C7D /* CKTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKTableViewCell.h; path = MBCalendarKit/CalendarKit/Core/CKTableViewCell.h; sourceTree = "<group>"; };
-		B960B8E57840CF97B8BCA86029110834 /* NSCalendar+Components.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+Components.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Components.h"; sourceTree = "<group>"; };
-		B9CC73DDB7A3BEA4258A408473C16FFA /* libPods-Akvamarin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Akvamarin.a"; path = "libPods-Akvamarin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC0A4B95CCAC1EBC08A34BFF2BD3AE50 /* NSManagedObjectContext+MagicalObserving.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalObserving.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.h"; sourceTree = "<group>"; };
-		BD8535146AB648974CDD86CA4803CFA5 /* NSAttributeDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributeDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
+		9F498D3BE2E496D3FC139FE57D3DF4A9 /* NSManagedObjectContext+MagicalThreading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalThreading.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.h"; sourceTree = "<group>"; };
+		A38A89155112A7191281F9D913529757 /* MagicalRecordLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordLogging.h; path = MagicalRecord/Core/MagicalRecordLogging.h; sourceTree = "<group>"; };
+		A48EB0C55AF3329297A326FBCC796770 /* NSManagedObject+MagicalRequests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalRequests.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.m"; sourceTree = "<group>"; };
+		A7FE242522E65A347CB837A913288870 /* MagicalRecord.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MagicalRecord.xcconfig; sourceTree = "<group>"; };
+		A8459D5091009E5E6CC49E92D1E46ACF /* CKCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarCell.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarCell.h; sourceTree = "<group>"; };
+		A8758121F8968C00AD8686E51C41FACA /* MagicalRecord+ErrorHandling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+ErrorHandling.m"; path = "MagicalRecord/Core/MagicalRecord+ErrorHandling.m"; sourceTree = "<group>"; };
+		AAD89BF95A63B00F24398288DB51F2F6 /* NSManagedObjectContext+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.h"; sourceTree = "<group>"; };
+		AC5ECC345AEEED0309A259B79ECBF98F /* NSNumber+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.h"; sourceTree = "<group>"; };
+		ACA7C2BB66EE43EF4D8A24723D6B7DC2 /* MagicalRecordDeprecationMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordDeprecationMacros.h; path = MagicalRecord/Core/MagicalRecordDeprecationMacros.h; sourceTree = "<group>"; };
+		AF62A8EC7E09AE6DCDFF147425DF705A /* NSManagedObjectContext+MagicalObserving.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalObserving.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.m"; sourceTree = "<group>"; };
+		B075BC8C1C096726D53E063CC7C8D277 /* NSRelationshipDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSRelationshipDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
+		B1FE7E227F37A3C52212A46EC64C9120 /* NSManagedObjectContext+MagicalSaves.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalSaves.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.h"; sourceTree = "<group>"; };
+		B2A1527EBF4403BEB4EF39E8653D082D /* NSObject+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.m"; sourceTree = "<group>"; };
+		B793531F3C82BDD8B3DADCE784FBFDE4 /* NSAttributeDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributeDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
+		B996EC3F036FF1602F976FE7021B1810 /* NSCalendar+Juncture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+Juncture.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Juncture.h"; sourceTree = "<group>"; };
+		BDEA7F1AAB39CB9C3D3A457987EC3983 /* MagicalRecord+ShorthandMethods.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+ShorthandMethods.h"; path = "MagicalRecord/Core/MagicalRecord+ShorthandMethods.h"; sourceTree = "<group>"; };
+		C06F145393EB95F86441AB71F451FBCD /* CKCalendarHeaderColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarHeaderColors.h; path = MBCalendarKit/CalendarKit/Headers/CKCalendarHeaderColors.h; sourceTree = "<group>"; };
 		C319765179087D86A745E1BD23A29E03 /* Pods-Akvamarin-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Akvamarin-resources.sh"; sourceTree = "<group>"; };
-		C41BFF03CCA61B674001805E1E76FA32 /* NSManagedObject+MagicalFinders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalFinders.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.h"; sourceTree = "<group>"; };
-		C4DA9DFF122C906D9E76113251380541 /* NSManagedObjectContext+MagicalChainSave.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalChainSave.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalChainSave.h"; sourceTree = "<group>"; };
-		C9E20BA9EC7F204783B27E20ED69F2DE /* NSObject+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.h"; sourceTree = "<group>"; };
-		CAD04010202BBD818E6D6313D08EC8AC /* NSDate+Components.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Components.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDate/NSDate+Components.m"; sourceTree = "<group>"; };
-		CBEC79C8A16DFAB4B7F10EBCD844BA2B /* CKCalendarViewControllerInternal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarViewControllerInternal.m; path = "MBCalendarKit/CalendarKit/View Controllers/CKCalendarViewControllerInternal.m"; sourceTree = "<group>"; };
-		CBFFCCC9DCC9CDC3BA1660F06633946E /* NSManagedObjectContext+IDPExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+IDPExtensions.m"; path = "Module/NSManagedObjectContext+IDPExtensions.m"; sourceTree = "<group>"; };
-		CEB537BA451B2FAEE722E275D9C9D0A0 /* NSManagedObjectContext+MagicalThreading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalThreading.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.h"; sourceTree = "<group>"; };
-		CFB2D45F31472A42B559BE94EEA54D0A /* NSFileManager+IDPExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+IDPExtensions.m"; path = "Module/NSFileManager+IDPExtensions.m"; sourceTree = "<group>"; };
-		D14E08847FD5A95AF37DB3335446D6D5 /* CKCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarCell.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarCell.h; sourceTree = "<group>"; };
-		D170B96EE1F290C0F875A9A98CB764D9 /* ActiveRecordKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ActiveRecordKit.xcconfig; sourceTree = "<group>"; };
-		D28B3FFEB39A38CA45254D085D5A09B1 /* libActiveRecordKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libActiveRecordKit.a; path = libActiveRecordKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5134395CD6471985BBD9B878AE3A5F7 /* NSDateComponents+IDPExtinsions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDateComponents+IDPExtinsions.m"; path = "Module/NSDateComponents+IDPExtinsions.m"; sourceTree = "<group>"; };
-		D63BB5E405991922513E18BEF0CAC433 /* NSManagedObject+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalDataImport.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.h"; sourceTree = "<group>"; };
-		D895D081C1706EC41840E56FB8CAF0ED /* NSCalendar+DateComparison.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+DateComparison.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+DateComparison.m"; sourceTree = "<group>"; };
-		DA17C3346E327EA6182ADC72F7E18417 /* NSFileManager+IDPExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+IDPExtensions.h"; path = "Module/NSFileManager+IDPExtensions.h"; sourceTree = "<group>"; };
-		DA8CBF078D3820D2DFDF0917889E1DD1 /* MBPolygonView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBPolygonView.m; path = MBCalendarKit/CalendarKit/Core/MBPolygonView.m; sourceTree = "<group>"; };
-		DB274446739F876B68A3C00E3ACDD1B1 /* MagicalRecord+iCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+iCloud.h"; path = "MagicalRecord/Core/MagicalRecord+iCloud.h"; sourceTree = "<group>"; };
-		DC20928F152D4CF6EE29FDF302B603FD /* NSString+Color.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Color.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSString+Color.h"; sourceTree = "<group>"; };
-		DDA214A18D1D004957F465CBD631C28D /* NSManagedObjectContext+MagicalSaves.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalSaves.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.m"; sourceTree = "<group>"; };
-		DF792B7E1F1028048DF7BCC97862289F /* NSManagedObjectContext+MagicalThreading.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalThreading.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.m"; sourceTree = "<group>"; };
-		E0E96C5776853A87D00CFDC07B9FFA76 /* NSCalendar+DateComparison.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+DateComparison.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+DateComparison.h"; sourceTree = "<group>"; };
-		E1DE2FA8B0E79A39AA86CFFAAB82D7D1 /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributeDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
-		E3810B6451765CEFD395E267CD265AEF /* MagicalRecordXcode7CompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordXcode7CompatibilityMacros.h; path = MagicalRecord/Core/MagicalRecordXcode7CompatibilityMacros.h; sourceTree = "<group>"; };
-		E45A92F769382D99E51764CC127BB60E /* NSBundle+IDPExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+IDPExtensions.h"; path = "Module/NSBundle+IDPExtensions.h"; sourceTree = "<group>"; };
-		EB36DAE0D2BB4A64F696EA4A0C79605E /* NSDate+Components.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Components.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDate/NSDate+Components.h"; sourceTree = "<group>"; };
-		ECEFC718D8B024A10FE2DB31E4BCEBCD /* NSManagedObject+MagicalRequests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalRequests.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.m"; sourceTree = "<group>"; };
-		ED3826F6502DC5F19C46A929B004A01B /* NSCalendar+Ranges.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+Ranges.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+Ranges.h"; sourceTree = "<group>"; };
-		ED5F4F15A8F7F8F526CAF54DB91D1F3B /* NSEntityDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSEntityDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
-		EF5115C30C7AAA51BEF6742B3662A5AA /* libMagicalRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMagicalRecord.a; path = libMagicalRecord.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F162BECA5312DC452948ED85DBD473DC /* NSPersistentStoreCoordinator+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStoreCoordinator+MagicalRecord.m"; path = "MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.m"; sourceTree = "<group>"; };
-		F5E93A1D87B6C883A48964D46D11F322 /* NSObject+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.m"; sourceTree = "<group>"; };
+		C342008D10CF70B2199137D53DE79068 /* MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecord.h; path = MagicalRecord/MagicalRecord.h; sourceTree = "<group>"; };
+		C34F91DA94A07B0258471CED4D73D5EA /* MagicalRecordInternal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MagicalRecordInternal.m; path = MagicalRecord/Core/MagicalRecordInternal.m; sourceTree = "<group>"; };
+		C3D3DC94F7B7EB113B0EFFC0648CAA7D /* CKTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKTableViewCell.h; path = MBCalendarKit/CalendarKit/Core/CKTableViewCell.h; sourceTree = "<group>"; };
+		C477B6A554E80719EE6F11CEC4B39EA7 /* NSManagedObject+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalDataImport.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.h"; sourceTree = "<group>"; };
+		C6817943B9571040F443E57CC21FC8DE /* MagicalRecord-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord-dummy.m"; sourceTree = "<group>"; };
+		D34C030A83233869E165518F1397EE8B /* MagicalRecord+Actions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Actions.h"; path = "MagicalRecord/Core/MagicalRecord+Actions.h"; sourceTree = "<group>"; };
+		D4E7431F70FC8590DC1129C3E12C9934 /* NSManagedObject+MagicalFinders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalFinders.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.h"; sourceTree = "<group>"; };
+		DE80305B9358E4436E0E76494522005A /* MagicalRecord+iCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+iCloud.m"; path = "MagicalRecord/Core/MagicalRecord+iCloud.m"; sourceTree = "<group>"; };
+		DFAAF9502819471866BAAB87E9B48638 /* NSManagedObjectContext+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.m"; sourceTree = "<group>"; };
+		E1A1FE908F031F059E92F663CB15FD7B /* NSManagedObject+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalDataImport.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.m"; sourceTree = "<group>"; };
+		E1C73B55881544C84041EA0B5BFB98C3 /* NSString+Color.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Color.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSString+Color.m"; sourceTree = "<group>"; };
+		E3102CB614147E87988D7004A0832718 /* NSPersistentStoreCoordinator+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStoreCoordinator+MagicalRecord.h"; path = "MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.h"; sourceTree = "<group>"; };
+		E362A2131CCE9A640F697380D598B49B /* NSManagedObjectModel+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectModel+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.m"; sourceTree = "<group>"; };
+		E507E7438A9F4B712014800E95037291 /* CalendarKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CalendarKit.h; path = MBCalendarKit/CalendarKit/CalendarKit.h; sourceTree = "<group>"; };
+		E5D57E37D5597DD65EDB6D335307F31F /* CKCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKCalendarHeaderView.h; path = MBCalendarKit/CalendarKit/Core/CKCalendarHeaderView.h; sourceTree = "<group>"; };
+		E5EAA8F015BF92F1E33DB762ACAE264C /* CKTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKTableViewCell.m; path = MBCalendarKit/CalendarKit/Core/CKTableViewCell.m; sourceTree = "<group>"; };
+		E6C1ADE30861AA3E14DF60EBD36472D0 /* NSString+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.m"; sourceTree = "<group>"; };
+		E873BFC5EB50BDCA335C0ADCE571937B /* MagicalRecord+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Setup.m"; path = "MagicalRecord/Core/MagicalRecord+Setup.m"; sourceTree = "<group>"; };
+		E94FEC0DF4A3B4DC1397957694A464DD /* MagicalImportFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalImportFunctions.h; path = MagicalRecord/Categories/DataImport/MagicalImportFunctions.h; sourceTree = "<group>"; };
+		E95D31D0D0A4B5D1320C89EF3C9575E4 /* NSDate+Description.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Description.h"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDate/NSDate+Description.h"; sourceTree = "<group>"; };
+		EA8FB64751EDBFA704FC8FA730E7D209 /* NSManagedObject+MagicalRequests.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalRequests.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.h"; sourceTree = "<group>"; };
+		EB1577170F4B8B8363AA7EB83177CF95 /* MagicalRecord+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Setup.h"; path = "MagicalRecord/Core/MagicalRecord+Setup.h"; sourceTree = "<group>"; };
+		EB4E236B2681BCA9D3BF7836E2B0B159 /* NSManagedObject+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.h"; sourceTree = "<group>"; };
+		ECD07D5BA69060DEF83FE407B39B8A6E /* UIView+Border.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Border.h"; path = "MBCalendarKit/CalendarKit/Categories/UIKit/UIView/UIView+Border.h"; sourceTree = "<group>"; };
 		F5F769B5EE76BAD0B8C6820838221417 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
-		F68ECEF6BB8A59FD29124E898BE1B176 /* NSCalendar+DateManipulation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+DateManipulation.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+DateManipulation.m"; sourceTree = "<group>"; };
-		F72E3CCD8FDBEE4510502AB935B21BB9 /* NSObject+IDPExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+IDPExtensions.h"; path = "Module/NSObject+IDPExtensions.h"; sourceTree = "<group>"; };
-		F99582F42B7CB93895C37C43607E49E4 /* NSManagedObjectContext+IDPExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+IDPExtensions.h"; path = "Module/NSManagedObjectContext+IDPExtensions.h"; sourceTree = "<group>"; };
-		FBB0B3A62C7ED7DCCB4A2BD061EFE809 /* NSDateComponents+AllComponents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDateComponents+AllComponents.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSDateComponents+AllComponents.m"; sourceTree = "<group>"; };
-		FC8325EF28680AB359557D81B8F4F5BD /* NSManagedObject+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.m"; sourceTree = "<group>"; };
-		FF239FD4FDCF72574E12463DF54DDC34 /* NSDateComponents+IDPExtinsions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDateComponents+IDPExtinsions.h"; path = "Module/NSDateComponents+IDPExtinsions.h"; sourceTree = "<group>"; };
-		FFC166B2B28C5DA5A790DE224D3E0FA2 /* MagicalRecord+Options.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Options.h"; path = "MagicalRecord/Core/MagicalRecord+Options.h"; sourceTree = "<group>"; };
+		FA19BCFC69CABBD76A934A2361C26765 /* CKCalendarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarView.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarView.m; sourceTree = "<group>"; };
+		FAC5158B153C8611564F0245CF20D73E /* NSManagedObjectContext+MagicalThreading.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalThreading.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.m"; sourceTree = "<group>"; };
+		FB32FF97B2AC1FC6CF873F22D0E0AB62 /* CKCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKCalendarCell.m; path = MBCalendarKit/CalendarKit/Core/CKCalendarCell.m; sourceTree = "<group>"; };
+		FCA9237CFB2BDF5FF02D654BC71418F4 /* NSCalendar+DateComparison.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+DateComparison.m"; path = "MBCalendarKit/CalendarKit/Categories/Foundation/NSCalendar/NSCalendar+DateComparison.m"; sourceTree = "<group>"; };
+		FF8CEC600625E38E882A30435FE5E30F /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributeDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,23 +279,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B17BCAA35D0BAF8ABB6BDC8E778946B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E6735C3ECF2A8BC89048823B90620AFC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		94C3589AB57D009EAC6D8747C6730C1F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				98956B9E6B2D24D66139F47916E4C6AE /* CoreData.framework in Frameworks */,
-				8D83475BD67175A60EFF24B4BDE2B711 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A48122A00BDA4626BEE5C21B9D4A6B95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -399,47 +288,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4C24EEC152A7602D7B59603E07F784A /* Frameworks */ = {
+		E9CC0129EC9AC92D3A98296AE1B2AFBC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3BC13A37C0E8A0B0AD1B981902E94D9 /* Foundation.framework in Frameworks */,
+				54DD99B2B411B0CF34DDDB1866065F3A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C78F991F3C868E024B206907481752E /* CommonKit */ = {
-			isa = PBXGroup;
-			children = (
-				695B6C6F07E9A5D961DEEC111BD0397E /* CGGeometry+IDPExtensions.h */,
-				423E1A45B625C8A173A9CDA7881BB878 /* CGGeometry+IDPExtensions.m */,
-				7D3FBD7BDD7E22EAADABC6BA497B77D1 /* IDPCommonKit.h */,
-				13535B9B7D2E1C19AC4E979904A4F4A3 /* IDPMath.h */,
-				13A1215444BEB8C68CB2E2EF1D1992C8 /* IDPMath.m */,
-				0FFD2C00944F53A3E5B00E499B1970F2 /* IDPPropertyMacros.h */,
-				265E461B5367B663A89ED371F0A4DA9B /* IDPSerialization.h */,
-				103734B7FAC949541B8472467180EDED /* NSArray+IDPExtensions.h */,
-				047F5884989405015D2D8F7705B99726 /* NSArray+IDPExtensions.m */,
-				E45A92F769382D99E51764CC127BB60E /* NSBundle+IDPExtensions.h */,
-				51DCAA981B34D5365A2D6FD28FB80ED0 /* NSBundle+IDPExtensions.m */,
-				AB6FCF7F8C3249D70DDDD8820DEEACB8 /* NSDate+IDPExtensions.h */,
-				22589B7FB20F60CF8A52CDF19BE9785A /* NSDate+IDPExtensions.m */,
-				FF239FD4FDCF72574E12463DF54DDC34 /* NSDateComponents+IDPExtinsions.h */,
-				D5134395CD6471985BBD9B878AE3A5F7 /* NSDateComponents+IDPExtinsions.m */,
-				DA17C3346E327EA6182ADC72F7E18417 /* NSFileManager+IDPExtensions.h */,
-				CFB2D45F31472A42B559BE94EEA54D0A /* NSFileManager+IDPExtensions.m */,
-				F72E3CCD8FDBEE4510502AB935B21BB9 /* NSObject+IDPExtensions.h */,
-				0BE1C2C346547440A27A76457436AB53 /* NSObject+IDPExtensions.m */,
-				1DFFE3A1BFE773A44F38CCBD9BDD9D13 /* NSString+IDPExtensions.h */,
-				7BA6BC7534DF23468ECAC7173E24383F /* NSString+IDPExtensions.m */,
-				C40DA2F6C709C05C6D1785D67116A64F /* Support Files */,
-			);
-			name = CommonKit;
-			path = CommonKit;
-			sourceTree = "<group>";
-		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,89 +307,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		15087CAE41A7B3BFC50DF46102ED5797 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				35EA2E569157BB09955968F7FA02D73B /* MagicalImportFunctions.h */,
-				9B6E6AE00096FBD50BA4253CA181F944 /* MagicalImportFunctions.m */,
-				28436202D11184EE69AB17FB947721BF /* MagicalRecord.h */,
-				132646B34388400BEC173768AC1FDF7E /* MagicalRecord+Actions.h */,
-				110C7F36536EEB8D28AE911ACC7D50DE /* MagicalRecord+Actions.m */,
-				650B73EC93E429F0D6E2A2AC621FA946 /* MagicalRecord+ErrorHandling.h */,
-				3E8301F0BA664AC66D9B5DBAD95D9E9C /* MagicalRecord+ErrorHandling.m */,
-				DB274446739F876B68A3C00E3ACDD1B1 /* MagicalRecord+iCloud.h */,
-				07411694BA38422FF10AB349526F01A7 /* MagicalRecord+iCloud.m */,
-				FFC166B2B28C5DA5A790DE224D3E0FA2 /* MagicalRecord+Options.h */,
-				20E385EA4628C4C860085F03EE948518 /* MagicalRecord+Options.m */,
-				1B1E2DCF3BEDF6E05E46642B7AD05F70 /* MagicalRecord+Setup.h */,
-				A867D4C9C9E549F43AD9B178140DA34E /* MagicalRecord+Setup.m */,
-				3E67855A6F471C66EB749BD9FF71AEE2 /* MagicalRecord+ShorthandMethods.h */,
-				36CB9EDEDE1B1C4795BCE3D33989675D /* MagicalRecord+ShorthandMethods.m */,
-				72A6FA5074CAB4138902ADC6BF87D74F /* MagicalRecordDeprecationMacros.h */,
-				18366E08024B9B79EECA209E208D2D00 /* MagicalRecordInternal.h */,
-				1C867CE1FBE8F3D53CFD20B6851A70F4 /* MagicalRecordInternal.m */,
-				70C50CF55AD766E95693CC9DDA8BFC9B /* MagicalRecordLogging.h */,
-				E3810B6451765CEFD395E267CD265AEF /* MagicalRecordXcode7CompatibilityMacros.h */,
-				E1DE2FA8B0E79A39AA86CFFAAB82D7D1 /* NSAttributeDescription+MagicalDataImport.h */,
-				BD8535146AB648974CDD86CA4803CFA5 /* NSAttributeDescription+MagicalDataImport.m */,
-				ED5F4F15A8F7F8F526CAF54DB91D1F3B /* NSEntityDescription+MagicalDataImport.h */,
-				15421B4AB8F7655D6615A9D383552D70 /* NSEntityDescription+MagicalDataImport.m */,
-				ABA5720AD901A3D31ABC6424A7EB831A /* NSManagedObject+MagicalAggregation.h */,
-				130AFA6E249F0104BC3304643FDF2807 /* NSManagedObject+MagicalAggregation.m */,
-				D63BB5E405991922513E18BEF0CAC433 /* NSManagedObject+MagicalDataImport.h */,
-				62941BE4D15FE9586CF5A5204A439AB8 /* NSManagedObject+MagicalDataImport.m */,
-				C41BFF03CCA61B674001805E1E76FA32 /* NSManagedObject+MagicalFinders.h */,
-				670F6C9979C5F27CB7D6E2C99878D6B8 /* NSManagedObject+MagicalFinders.m */,
-				88AC2EFD09B8C7A5D6C75E897EEFE122 /* NSManagedObject+MagicalRecord.h */,
-				FC8325EF28680AB359557D81B8F4F5BD /* NSManagedObject+MagicalRecord.m */,
-				3B73CF6F3BB2B01B0DE76DD96E0E88C1 /* NSManagedObject+MagicalRequests.h */,
-				ECEFC718D8B024A10FE2DB31E4BCEBCD /* NSManagedObject+MagicalRequests.m */,
-				C4DA9DFF122C906D9E76113251380541 /* NSManagedObjectContext+MagicalChainSave.h */,
-				1E589A8D93EAFA8601D1727F91762EA9 /* NSManagedObjectContext+MagicalChainSave.m */,
-				BC0A4B95CCAC1EBC08A34BFF2BD3AE50 /* NSManagedObjectContext+MagicalObserving.h */,
-				6F2ABBC4AA3352E6761E7D86091013BD /* NSManagedObjectContext+MagicalObserving.m */,
-				70BDFEEF86382D26BFFDD2D66EC33792 /* NSManagedObjectContext+MagicalRecord.h */,
-				2C5575AA9EF2A823B75A10D50C00EA43 /* NSManagedObjectContext+MagicalRecord.m */,
-				7E700845A0C7CAE0F04FB0CD848AFEB8 /* NSManagedObjectContext+MagicalSaves.h */,
-				DDA214A18D1D004957F465CBD631C28D /* NSManagedObjectContext+MagicalSaves.m */,
-				CEB537BA451B2FAEE722E275D9C9D0A0 /* NSManagedObjectContext+MagicalThreading.h */,
-				DF792B7E1F1028048DF7BCC97862289F /* NSManagedObjectContext+MagicalThreading.m */,
-				05B354B8430F4DAF872901B658C1EA4D /* NSManagedObjectModel+MagicalRecord.h */,
-				64145BC7A89597E32AE5CFD97411C6A9 /* NSManagedObjectModel+MagicalRecord.m */,
-				5A502B55266A94E4D514034F63C82803 /* NSNumber+MagicalDataImport.h */,
-				03BFB19CAE02646064650673FB1B70C8 /* NSNumber+MagicalDataImport.m */,
-				C9E20BA9EC7F204783B27E20ED69F2DE /* NSObject+MagicalDataImport.h */,
-				F5E93A1D87B6C883A48964D46D11F322 /* NSObject+MagicalDataImport.m */,
-				8B5410721BEEBD468989027BD54D7507 /* NSPersistentStore+MagicalRecord.h */,
-				7483453C32D2585573FF6C4C9D5B2367 /* NSPersistentStore+MagicalRecord.m */,
-				720B67E1F48AF72514D3D7FB0F2BC821 /* NSPersistentStoreCoordinator+MagicalRecord.h */,
-				F162BECA5312DC452948ED85DBD473DC /* NSPersistentStoreCoordinator+MagicalRecord.m */,
-				9668F3A3AD2A6191EF5F170622624804 /* NSRelationshipDescription+MagicalDataImport.h */,
-				989702688C2CFAFF6CF85367FA71AF6F /* NSRelationshipDescription+MagicalDataImport.m */,
-				99CE4B7B7FA0504006C0E4AC62A3B9FA /* NSString+MagicalDataImport.h */,
-				A44740A1086DD4AB726A1828B3EAAE3C /* NSString+MagicalDataImport.m */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
 		15209AB77BEC8D917BACE16089E1F3FB /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				BE8FC1190A48AF57FF39D36C4CDD1C95 /* Pods-Akvamarin */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		32A9F52C27DB0F2DCF8C0D37C13396CD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D28B3FFEB39A38CA45254D085D5A09B1 /* libActiveRecordKit.a */,
-				8E7DFEF6CF9FCF327EE7C0E8CF6C1457 /* libCommonKit.a */,
-				EF5115C30C7AAA51BEF6742B3662A5AA /* libMagicalRecord.a */,
-				353BBF2FFD65C0BCB4071831E2EF16E1 /* libMBCalendarKit.a */,
-				B9CC73DDB7A3BEA4258A408473C16FFA /* libPods-Akvamarin.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		3EDF97CE193B3B2B55DDEAD2FC85734A /* iOS */ = {
@@ -543,15 +325,80 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6CCF665DD4E5081F2C4F2C8C55A79C9A /* Support Files */ = {
+		43DE183C202EA4F47D864A530CCFAB2B /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				44E7097F3FBC261346903179D9FC74B5 /* MBCalendarKit.xcconfig */,
-				1AF251FE7485DA8DCE86F993C10ABE16 /* MBCalendarKit-dummy.m */,
-				3A93CDDAF7E5B559F0D243949C76BF5E /* MBCalendarKit-prefix.pch */,
+				E94FEC0DF4A3B4DC1397957694A464DD /* MagicalImportFunctions.h */,
+				171B317A2DC64BD9F6E9F71D9534AD7D /* MagicalImportFunctions.m */,
+				C342008D10CF70B2199137D53DE79068 /* MagicalRecord.h */,
+				D34C030A83233869E165518F1397EE8B /* MagicalRecord+Actions.h */,
+				968ED37B608CD2B266A28FE11E4EDFB0 /* MagicalRecord+Actions.m */,
+				6CB9B317102E9B7206F7F7DB172EFF75 /* MagicalRecord+ErrorHandling.h */,
+				A8758121F8968C00AD8686E51C41FACA /* MagicalRecord+ErrorHandling.m */,
+				16CFB85DFB2D92C8D140D1B504BE8E7C /* MagicalRecord+iCloud.h */,
+				DE80305B9358E4436E0E76494522005A /* MagicalRecord+iCloud.m */,
+				95E56EEB22626615D7801E3355116107 /* MagicalRecord+Options.h */,
+				719F603D0CB716A2A242C0F5602864C4 /* MagicalRecord+Options.m */,
+				EB1577170F4B8B8363AA7EB83177CF95 /* MagicalRecord+Setup.h */,
+				E873BFC5EB50BDCA335C0ADCE571937B /* MagicalRecord+Setup.m */,
+				BDEA7F1AAB39CB9C3D3A457987EC3983 /* MagicalRecord+ShorthandMethods.h */,
+				4157DF36E9053071E2E92152E95F9E14 /* MagicalRecord+ShorthandMethods.m */,
+				ACA7C2BB66EE43EF4D8A24723D6B7DC2 /* MagicalRecordDeprecationMacros.h */,
+				691B06B8A0C6EA4A8EB2504C493F1297 /* MagicalRecordInternal.h */,
+				C34F91DA94A07B0258471CED4D73D5EA /* MagicalRecordInternal.m */,
+				A38A89155112A7191281F9D913529757 /* MagicalRecordLogging.h */,
+				7E666DFD32F694BDD856D1619D6FD651 /* MagicalRecordXcode7CompatibilityMacros.h */,
+				FF8CEC600625E38E882A30435FE5E30F /* NSAttributeDescription+MagicalDataImport.h */,
+				B793531F3C82BDD8B3DADCE784FBFDE4 /* NSAttributeDescription+MagicalDataImport.m */,
+				2F5FF1FEA37083EF2E5932CF260DA229 /* NSEntityDescription+MagicalDataImport.h */,
+				62D235A17BA209297D30C973D9E390BC /* NSEntityDescription+MagicalDataImport.m */,
+				83941277E250420D63821D1C4E11526E /* NSManagedObject+MagicalAggregation.h */,
+				7A6A8BE07AE18AD56E279256A42BE19D /* NSManagedObject+MagicalAggregation.m */,
+				C477B6A554E80719EE6F11CEC4B39EA7 /* NSManagedObject+MagicalDataImport.h */,
+				E1A1FE908F031F059E92F663CB15FD7B /* NSManagedObject+MagicalDataImport.m */,
+				D4E7431F70FC8590DC1129C3E12C9934 /* NSManagedObject+MagicalFinders.h */,
+				4870ABB58695947174A9B3ABC81FF70F /* NSManagedObject+MagicalFinders.m */,
+				EB4E236B2681BCA9D3BF7836E2B0B159 /* NSManagedObject+MagicalRecord.h */,
+				7F9C61792EEE29F5142289EA962C0B79 /* NSManagedObject+MagicalRecord.m */,
+				EA8FB64751EDBFA704FC8FA730E7D209 /* NSManagedObject+MagicalRequests.h */,
+				A48EB0C55AF3329297A326FBCC796770 /* NSManagedObject+MagicalRequests.m */,
+				13136FED5B4EBB41EB7626F68280074F /* NSManagedObjectContext+MagicalChainSave.h */,
+				1C9013226B0456F53ECE440529F2B297 /* NSManagedObjectContext+MagicalChainSave.m */,
+				5394A3159CED438362B887115EEF7A23 /* NSManagedObjectContext+MagicalObserving.h */,
+				AF62A8EC7E09AE6DCDFF147425DF705A /* NSManagedObjectContext+MagicalObserving.m */,
+				AAD89BF95A63B00F24398288DB51F2F6 /* NSManagedObjectContext+MagicalRecord.h */,
+				DFAAF9502819471866BAAB87E9B48638 /* NSManagedObjectContext+MagicalRecord.m */,
+				B1FE7E227F37A3C52212A46EC64C9120 /* NSManagedObjectContext+MagicalSaves.h */,
+				2AE68CB5BFDD1CF67E3C11D4B8C333AA /* NSManagedObjectContext+MagicalSaves.m */,
+				9F498D3BE2E496D3FC139FE57D3DF4A9 /* NSManagedObjectContext+MagicalThreading.h */,
+				FAC5158B153C8611564F0245CF20D73E /* NSManagedObjectContext+MagicalThreading.m */,
+				29B03166525E8076E03369006FE91438 /* NSManagedObjectModel+MagicalRecord.h */,
+				E362A2131CCE9A640F697380D598B49B /* NSManagedObjectModel+MagicalRecord.m */,
+				AC5ECC345AEEED0309A259B79ECBF98F /* NSNumber+MagicalDataImport.h */,
+				06A991D04F95789B92F6E3FC88F67C9A /* NSNumber+MagicalDataImport.m */,
+				1878EE236B46B3E8242B353126071356 /* NSObject+MagicalDataImport.h */,
+				B2A1527EBF4403BEB4EF39E8653D082D /* NSObject+MagicalDataImport.m */,
+				4A835ED0F0CD9581379A5A0A580F36A0 /* NSPersistentStore+MagicalRecord.h */,
+				033D189A30221154CDE29EE1A21FEAFB /* NSPersistentStore+MagicalRecord.m */,
+				E3102CB614147E87988D7004A0832718 /* NSPersistentStoreCoordinator+MagicalRecord.h */,
+				625C6E16A67F74955F78513CD40BE643 /* NSPersistentStoreCoordinator+MagicalRecord.m */,
+				B075BC8C1C096726D53E063CC7C8D277 /* NSRelationshipDescription+MagicalDataImport.h */,
+				1116D0BF7273FD92992D81225258A7D5 /* NSRelationshipDescription+MagicalDataImport.m */,
+				37014F11B164C65A5C032BE517F7F42E /* NSString+MagicalDataImport.h */,
+				E6C1ADE30861AA3E14DF60EBD36472D0 /* NSString+MagicalDataImport.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		674663BE475A238BCEF010897D8E1EC7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7FE242522E65A347CB837A913288870 /* MagicalRecord.xcconfig */,
+				C6817943B9571040F443E57CC21FC8DE /* MagicalRecord-dummy.m */,
+				970E74988F492E47DD3B0FA065B9E96C /* MagicalRecord-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MBCalendarKit";
+			path = "../Target Support Files/MagicalRecord";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -559,28 +406,77 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				E9B4391A8B11D68FF12CA7AEE366F984 /* Pods */,
-				32A9F52C27DB0F2DCF8C0D37C13396CD /* Products */,
+				E23B6C79470713FF846FB8B57FB7AFB7 /* Pods */,
+				917D30E6E3B86C899A1BD7C1D13ED100 /* Products */,
 				15209AB77BEC8D917BACE16089E1F3FB /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A75BF8FDDC9E24F8335D66C18DCFB59B /* ActiveRecordKit */ = {
+		7DFBBE023E95EF93F5F00DEC1277798F /* MBCalendarKit */ = {
 			isa = PBXGroup;
 			children = (
-				8DCD59E9F74CA24BA0CC218D291969A9 /* IDPActiveRecordKit.h */,
-				A1EF9D59F2F304B506D73900AA630470 /* IDPCoreDataManager.h */,
-				A6CA2BCE022E22FE86BFA159C77A27C5 /* IDPCoreDataManager.m */,
-				A019756EB64894BB05D82F8CE5144224 /* NSManagedObject+IDPExtensions.h */,
-				5B3ED1DAE606F615EBA90DD178A18B24 /* NSManagedObject+IDPExtensions.m */,
-				F99582F42B7CB93895C37C43607E49E4 /* NSManagedObjectContext+IDPExtensions.h */,
-				CBFFCCC9DCC9CDC3BA1660F06633946E /* NSManagedObjectContext+IDPExtensions.m */,
-				80FB930E85A7FFEE0F540325E3A89D33 /* NSManagedObjectID+IDPExtensions.h */,
-				99510914A3FB933579E3513ACCCF08F2 /* NSManagedObjectID+IDPExtensions.m */,
-				EFE93E4B591E2B11EA20C68058256560 /* Support Files */,
+				E507E7438A9F4B712014800E95037291 /* CalendarKit.h */,
+				A8459D5091009E5E6CC49E92D1E46ACF /* CKCalendarCell.h */,
+				FB32FF97B2AC1FC6CF873F22D0E0AB62 /* CKCalendarCell.m */,
+				2E3311D990009B029F34ADB7C885D470 /* CKCalendarCellColors.h */,
+				8B67C2999F48397DB6562A69BE75B5A8 /* CKCalendarDataSource.h */,
+				3E5556F38A571EACA43C67F146470F8A /* CKCalendarDelegate.h */,
+				70A26C89A0629E0036CB012ECCBE1691 /* CKCalendarEvent.h */,
+				7C9C59E99018268FB71F1D504417E733 /* CKCalendarEvent.m */,
+				C06F145393EB95F86441AB71F451FBCD /* CKCalendarHeaderColors.h */,
+				E5D57E37D5597DD65EDB6D335307F31F /* CKCalendarHeaderView.h */,
+				23F14CF84D72165DD1E6BC84BBB24591 /* CKCalendarHeaderView.m */,
+				067A02FCFCF68D7691855A6CB4A56A05 /* CKCalendarMonthCellStates.h */,
+				55871D93674D043A9BA45C3AF58BBB8F /* CKCalendarView.h */,
+				FA19BCFC69CABBD76A934A2361C26765 /* CKCalendarView.m */,
+				95745144F5A86CDE7FE808BF50EE9370 /* CKCalendarViewController.h */,
+				53B052D3CFDF0766A0323972AE2433EC /* CKCalendarViewController.m */,
+				9B62C4AB685CEC72276D99A84D7744D4 /* CKCalendarViewControllerInternal.h */,
+				1AC43ED8E3856BBFDF4BB38EC9A11085 /* CKCalendarViewControllerInternal.m */,
+				83AE55AC82A1F93193137C649A300363 /* CKCalendarViewModes.h */,
+				C3D3DC94F7B7EB113B0EFFC0648CAA7D /* CKTableViewCell.h */,
+				E5EAA8F015BF92F1E33DB762ACAE264C /* CKTableViewCell.m */,
+				2A9FDF38B312A6087AE80B0DEA02E4BD /* MBPolygonView.h */,
+				6D06050837AB82081A14698F4A1F052D /* MBPolygonView.m */,
+				7DEBB707B5F4EB261EA87D5821E1B64E /* NSCalendar+Components.h */,
+				21500E9A1F10C3FC77110472204FF387 /* NSCalendar+Components.m */,
+				44B30475AC0A3C99B3F2781DBC8568B8 /* NSCalendar+DateComparison.h */,
+				FCA9237CFB2BDF5FF02D654BC71418F4 /* NSCalendar+DateComparison.m */,
+				795F92EF6E4FE66A9850F1B0843CB4FF /* NSCalendar+DateManipulation.h */,
+				03540AE6834F923D41E8F8725092EBC5 /* NSCalendar+DateManipulation.m */,
+				B996EC3F036FF1602F976FE7021B1810 /* NSCalendar+Juncture.h */,
+				47ECCE1C07BA632AABCCA944058CF6B6 /* NSCalendar+Juncture.m */,
+				2E6BE8F7E52E7426CC6E1EA73E9383BC /* NSCalendar+Ranges.h */,
+				500245FBC54B24556BCE2E435A9B8BE4 /* NSCalendar+Ranges.m */,
+				34768824343E0F55EDE0BA37FE23DCBB /* NSCalendarCategories.h */,
+				9C0B70949C675C0DC89B99E756D7F93A /* NSDate+Components.h */,
+				63C6ABFA0EFCD4A25D72EFBD67580330 /* NSDate+Components.m */,
+				E95D31D0D0A4B5D1320C89EF3C9575E4 /* NSDate+Description.h */,
+				7AAFE78CA37F462B3B17430B4E2F20E4 /* NSDate+Description.m */,
+				2D91838E38C0065B4AE6F2E4F7496AC0 /* NSDateComponents+AllComponents.h */,
+				3F7A239CFEE02033B669616D2526244B /* NSDateComponents+AllComponents.m */,
+				1C1D74D1E3FBDDD2570BA4B9DE90FBDC /* NSString+Color.h */,
+				E1C73B55881544C84041EA0B5BFB98C3 /* NSString+Color.m */,
+				6E6E75A5B177F5270B4DAE030D8B4097 /* UIColor+HexString.h */,
+				1CD1BD9AD77BDE346C78793AE3A4870E /* UIColor+HexString.m */,
+				40BAD076366F528961A15B4A64008D0F /* UIView+AnimatedFrame.h */,
+				428F0BCCDCF75D485517303C05B557FF /* UIView+AnimatedFrame.m */,
+				ECD07D5BA69060DEF83FE407B39B8A6E /* UIView+Border.h */,
+				74B03508BF6C2D23BB5CDC2BDD248363 /* UIView+Border.m */,
+				D060F57D1ECDDC555C08BDB6542DD731 /* Support Files */,
 			);
-			name = ActiveRecordKit;
-			path = ActiveRecordKit;
+			name = MBCalendarKit;
+			path = MBCalendarKit;
+			sourceTree = "<group>";
+		};
+		917D30E6E3B86C899A1BD7C1D13ED100 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				188FC878B813DA158A5EB8BFD558DCEE /* libMagicalRecord.a */,
+				0B677B5B1ACB2AEC13B4AE2DF2B02FCA /* libMBCalendarKit.a */,
+				6C5571D223F501C81350332581174B3B /* libPods-Akvamarin.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BE8FC1190A48AF57FF39D36C4CDD1C95 /* Pods-Akvamarin */ = {
@@ -598,151 +494,39 @@
 			path = "Target Support Files/Pods-Akvamarin";
 			sourceTree = "<group>";
 		};
-		C40DA2F6C709C05C6D1785D67116A64F /* Support Files */ = {
+		D060F57D1ECDDC555C08BDB6542DD731 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				406BF626746F806A67866BDE8800DDF1 /* CommonKit.xcconfig */,
-				173CD7474DB248DE885126D716EECF87 /* CommonKit-dummy.m */,
-				AF85DBA0436A8B37E69FC93E4E3DAA69 /* CommonKit-prefix.pch */,
+				4F1F08766C8076DD4BC4B6F442384588 /* MBCalendarKit.xcconfig */,
+				392B2826C21BEFF27D20A5332E7EF3FB /* MBCalendarKit-dummy.m */,
+				4D5859AA6FCB2CE4CB713B1C57844C18 /* MBCalendarKit-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/CommonKit";
+			path = "../Target Support Files/MBCalendarKit";
 			sourceTree = "<group>";
 		};
-		C7EACCC77236DAF511F4E205DBC55499 /* Support Files */ = {
+		E23B6C79470713FF846FB8B57FB7AFB7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				773786421980B6B50BD6859B44198011 /* MagicalRecord.xcconfig */,
-				B87329A1D93EB604D5DA132EACABEFEA /* MagicalRecord-dummy.m */,
-				80904FFCC0E3B10FD03AA8DF0675EB68 /* MagicalRecord-prefix.pch */,
+				EA94C245D943E4E62B40AD4EB5AAF94A /* MagicalRecord */,
+				7DFBBE023E95EF93F5F00DEC1277798F /* MBCalendarKit */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MagicalRecord";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		CBD6779AB5C891487C6316509750AEAD /* MagicalRecord */ = {
+		EA94C245D943E4E62B40AD4EB5AAF94A /* MagicalRecord */ = {
 			isa = PBXGroup;
 			children = (
-				15087CAE41A7B3BFC50DF46102ED5797 /* Core */,
-				C7EACCC77236DAF511F4E205DBC55499 /* Support Files */,
+				43DE183C202EA4F47D864A530CCFAB2B /* Core */,
+				674663BE475A238BCEF010897D8E1EC7 /* Support Files */,
 			);
 			name = MagicalRecord;
 			path = MagicalRecord;
 			sourceTree = "<group>";
 		};
-		DF26763B72D01408D5C514F18765470C /* MBCalendarKit */ = {
-			isa = PBXGroup;
-			children = (
-				AB83FABF9C0CCB01C6C05745AE017833 /* CalendarKit.h */,
-				D14E08847FD5A95AF37DB3335446D6D5 /* CKCalendarCell.h */,
-				0EC8C2E63B47C0E3E7D9A18C480CCFBF /* CKCalendarCell.m */,
-				88FC2E010DB1184F1F0855C77977924D /* CKCalendarCellColors.h */,
-				8458E7A026A9028619A03C566E8DD76A /* CKCalendarDataSource.h */,
-				6CFB04E41E39A6C2D899C62E22ED2850 /* CKCalendarDelegate.h */,
-				7B05D899BF28708959C0B5C1AC862664 /* CKCalendarEvent.h */,
-				38142C34CDA14C5C2EB1506F256B97B4 /* CKCalendarEvent.m */,
-				9771F34C9D63E3146FB8EEDA8FDA5F9D /* CKCalendarHeaderColors.h */,
-				6C6CF2BCDC55A5D2656224DCAFDF8FB3 /* CKCalendarHeaderView.h */,
-				36D4FEE971C2D63EEE5CB74A09AE0311 /* CKCalendarHeaderView.m */,
-				673490A08A04B80187CE46C6688EC0DB /* CKCalendarMonthCellStates.h */,
-				460C1807D2A2F34A69CF77A8FD9E28F5 /* CKCalendarView.h */,
-				B3F74249570697A7440A2337EE64D9B2 /* CKCalendarView.m */,
-				54FAC871857DD7E3A8516ED597F0444C /* CKCalendarViewController.h */,
-				B30F4DA81A078B0BCA20AA069C4C1720 /* CKCalendarViewController.m */,
-				823AF2BE2CA96A3339A46569A293D311 /* CKCalendarViewControllerInternal.h */,
-				CBEC79C8A16DFAB4B7F10EBCD844BA2B /* CKCalendarViewControllerInternal.m */,
-				685C204DD89D33CEEF7FDA93FB50488E /* CKCalendarViewModes.h */,
-				B92AAB3F78F38E8EFF9CEF5CF5AF7C7D /* CKTableViewCell.h */,
-				B3F448E3F4775E2CF405F207215B1ADA /* CKTableViewCell.m */,
-				89C7223AA80EBE3C64CE76B5DEB92057 /* MBPolygonView.h */,
-				DA8CBF078D3820D2DFDF0917889E1DD1 /* MBPolygonView.m */,
-				B960B8E57840CF97B8BCA86029110834 /* NSCalendar+Components.h */,
-				B3490FB9F3722FA2F607195839EA02D1 /* NSCalendar+Components.m */,
-				E0E96C5776853A87D00CFDC07B9FFA76 /* NSCalendar+DateComparison.h */,
-				D895D081C1706EC41840E56FB8CAF0ED /* NSCalendar+DateComparison.m */,
-				4F2E22F699B7898FF409D1E6513B74E9 /* NSCalendar+DateManipulation.h */,
-				F68ECEF6BB8A59FD29124E898BE1B176 /* NSCalendar+DateManipulation.m */,
-				168DE7BE8918F25C953907ED4DB66FBA /* NSCalendar+Juncture.h */,
-				4089D0153EC411A4C7E5679A329ED4C0 /* NSCalendar+Juncture.m */,
-				ED3826F6502DC5F19C46A929B004A01B /* NSCalendar+Ranges.h */,
-				6E6E140021CEBC10B95C0CBEFE5C5D8B /* NSCalendar+Ranges.m */,
-				8D4C22603A83EA2A733E0D93474D362C /* NSCalendarCategories.h */,
-				EB36DAE0D2BB4A64F696EA4A0C79605E /* NSDate+Components.h */,
-				CAD04010202BBD818E6D6313D08EC8AC /* NSDate+Components.m */,
-				58A6115739AFCF628C5CFF2F0BC9AFE9 /* NSDate+Description.h */,
-				599B58AC4E96FD58D35DF898BB940D21 /* NSDate+Description.m */,
-				9D0A202E5D0A12863237E4CC9D4D1B37 /* NSDateComponents+AllComponents.h */,
-				FBB0B3A62C7ED7DCCB4A2BD061EFE809 /* NSDateComponents+AllComponents.m */,
-				DC20928F152D4CF6EE29FDF302B603FD /* NSString+Color.h */,
-				3EEECB7E09A86F642B7B11081A22A1A7 /* NSString+Color.m */,
-				2588D61A0FC68D96AD2CDF8382A0993A /* UIColor+HexString.h */,
-				9919A6391D681814E9F023A807374E1E /* UIColor+HexString.m */,
-				14CDFAAC07D4A5355F27B232BD4328C2 /* UIView+AnimatedFrame.h */,
-				A58ABA72B341F78C6EDFC560B7C1133E /* UIView+AnimatedFrame.m */,
-				16D5D587849F153197BA81BB8DB19E0E /* UIView+Border.h */,
-				80C5742DC1D99490ED7C651D86039225 /* UIView+Border.m */,
-				6CCF665DD4E5081F2C4F2C8C55A79C9A /* Support Files */,
-			);
-			name = MBCalendarKit;
-			path = MBCalendarKit;
-			sourceTree = "<group>";
-		};
-		E9B4391A8B11D68FF12CA7AEE366F984 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A75BF8FDDC9E24F8335D66C18DCFB59B /* ActiveRecordKit */,
-				0C78F991F3C868E024B206907481752E /* CommonKit */,
-				CBD6779AB5C891487C6316509750AEAD /* MagicalRecord */,
-				DF26763B72D01408D5C514F18765470C /* MBCalendarKit */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		EFE93E4B591E2B11EA20C68058256560 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D170B96EE1F290C0F875A9A98CB764D9 /* ActiveRecordKit.xcconfig */,
-				A229B3C218C4F7D1731F5D58D065E479 /* ActiveRecordKit-dummy.m */,
-				3092B010D5EE2B6C1BB89469A05F0DCC /* ActiveRecordKit-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ActiveRecordKit";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2871F77B64B35BF96D382B386B07941A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B17101D74D6B9C74D60CDA1EDC6EF790 /* IDPActiveRecordKit.h in Headers */,
-				BC6448FAECEF4DFAECFB6B31042E4450 /* IDPCoreDataManager.h in Headers */,
-				6824F61CAA031BDEC001372DFFDDF224 /* NSManagedObject+IDPExtensions.h in Headers */,
-				896395A3AC3BAD596F9677E81FB74012 /* NSManagedObjectContext+IDPExtensions.h in Headers */,
-				2999BF37CD94634ABEFB1F78541301CD /* NSManagedObjectID+IDPExtensions.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B5550BEC4E5CAA842E7E7F415F88522B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A25D486D2612BDCFBF246888464A7BC4 /* CGGeometry+IDPExtensions.h in Headers */,
-				1270845BEB11944C29C4288A16745D95 /* IDPCommonKit.h in Headers */,
-				23105226AD443FC310A53C35656D51EE /* IDPMath.h in Headers */,
-				6E8E97A3B1F7D556FBD36DB362A3CEE0 /* IDPPropertyMacros.h in Headers */,
-				0E8D09827EE70619FA672E83CF643287 /* IDPSerialization.h in Headers */,
-				B75F4F69B6C1929B9119183A471B34EC /* NSArray+IDPExtensions.h in Headers */,
-				8E1AFDF98B36768195840DC6654B29C7 /* NSBundle+IDPExtensions.h in Headers */,
-				27014DA3BE8810EAEBBB384F3D1412AC /* NSDate+IDPExtensions.h in Headers */,
-				EDB039CBEA3771B867C749FD7EDCFFF3 /* NSDateComponents+IDPExtinsions.h in Headers */,
-				60A1C26648E1CAD0DC6F551F9F7C66CA /* NSFileManager+IDPExtensions.h in Headers */,
-				F7F9F5E80DC3BE3C3E07A38657E23D95 /* NSObject+IDPExtensions.h in Headers */,
-				133BA9ECA849AF1521451AEE97F0559B /* NSString+IDPExtensions.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CAFED17BDC60D8C7760C48789A4BB3E9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -819,61 +603,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		076C2EAC7EFDD32F9F8C650A8264DF42 /* ActiveRecordKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AF63614D92EF45E0230F2B69286B253F /* Build configuration list for PBXNativeTarget "ActiveRecordKit" */;
-			buildPhases = (
-				5D6D0BCB7A476B60B702FF37E8AB7317 /* Sources */,
-				94C3589AB57D009EAC6D8747C6730C1F /* Frameworks */,
-				2871F77B64B35BF96D382B386B07941A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				20FEC78C2BE29BE2BEB90E519A876B6D /* PBXTargetDependency */,
-			);
-			name = ActiveRecordKit;
-			productName = ActiveRecordKit;
-			productReference = D28B3FFEB39A38CA45254D085D5A09B1 /* libActiveRecordKit.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		1013EBFFA70C5801E4BB0B863F456E7C /* CommonKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DB5D9B594E3FCB2BC41BD497EB6B90BF /* Build configuration list for PBXNativeTarget "CommonKit" */;
-			buildPhases = (
-				C26D9481086C8112D29BB91A8F2CF717 /* Sources */,
-				4B17BCAA35D0BAF8ABB6BDC8E778946B /* Frameworks */,
-				B5550BEC4E5CAA842E7E7F415F88522B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CommonKit;
-			productName = CommonKit;
-			productReference = 8E7DFEF6CF9FCF327EE7C0E8CF6C1457 /* libCommonKit.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		26A97DB8E4B398757CD825F2A05BB6B3 /* Pods-Akvamarin */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 42EB7794D4E85650BCFB5DA1C45BAF46 /* Build configuration list for PBXNativeTarget "Pods-Akvamarin" */;
-			buildPhases = (
-				2D5FB2C5740867120942E345B41D8555 /* Sources */,
-				D4C24EEC152A7602D7B59603E07F784A /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A4472C82102F5276FDA9E09545BC141B /* PBXTargetDependency */,
-				A9845718CB65BAE37A79D6C42584EB5C /* PBXTargetDependency */,
-				60153F8F0FF35168F2CE60FB3EA358D2 /* PBXTargetDependency */,
-				00B455586959901CE479C8E310450416 /* PBXTargetDependency */,
-			);
-			name = "Pods-Akvamarin";
-			productName = "Pods-Akvamarin";
-			productReference = B9CC73DDB7A3BEA4258A408473C16FFA /* libPods-Akvamarin.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		417EA9844EC286C5B1B8FCB029C00130 /* MagicalRecord */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB93549D0CC382AF5EA34B2B8D92F0EA /* Build configuration list for PBXNativeTarget "MagicalRecord" */;
@@ -888,7 +617,25 @@
 			);
 			name = MagicalRecord;
 			productName = MagicalRecord;
-			productReference = EF5115C30C7AAA51BEF6742B3662A5AA /* libMagicalRecord.a */;
+			productReference = 188FC878B813DA158A5EB8BFD558DCEE /* libMagicalRecord.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4C6B4771319350CC7EE51EB02EF013C4 /* Pods-Akvamarin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48470E2C74AF39A7EDD1FED1F17C5E0C /* Build configuration list for PBXNativeTarget "Pods-Akvamarin" */;
+			buildPhases = (
+				509658991C5156ACCF49D3D16BA3D599 /* Sources */,
+				E9CC0129EC9AC92D3A98296AE1B2AFBC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9575FB9501DF3BD7AF72933C86F780F0 /* PBXTargetDependency */,
+				5DC6499CAACDC2996E3B1FE635B489CD /* PBXTargetDependency */,
+			);
+			name = "Pods-Akvamarin";
+			productName = "Pods-Akvamarin";
+			productReference = 6C5571D223F501C81350332581174B3B /* libPods-Akvamarin.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A4EA69D368654A6BBD25A9964EF6A4B2 /* MBCalendarKit */ = {
@@ -905,7 +652,7 @@
 			);
 			name = MBCalendarKit;
 			productName = MBCalendarKit;
-			productReference = 353BBF2FFD65C0BCB4071831E2EF16E1 /* libMBCalendarKit.a */;
+			productReference = 0B677B5B1ACB2AEC13B4AE2DF2B02FCA /* libMBCalendarKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -925,15 +672,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 32A9F52C27DB0F2DCF8C0D37C13396CD /* Products */;
+			productRefGroup = 917D30E6E3B86C899A1BD7C1D13ED100 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				076C2EAC7EFDD32F9F8C650A8264DF42 /* ActiveRecordKit */,
-				1013EBFFA70C5801E4BB0B863F456E7C /* CommonKit */,
 				417EA9844EC286C5B1B8FCB029C00130 /* MagicalRecord */,
 				A4EA69D368654A6BBD25A9964EF6A4B2 /* MBCalendarKit */,
-				26A97DB8E4B398757CD825F2A05BB6B3 /* Pods-Akvamarin */,
+				4C6B4771319350CC7EE51EB02EF013C4 /* Pods-Akvamarin */,
 			);
 		};
 /* End PBXProject section */
@@ -974,23 +719,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D5FB2C5740867120942E345B41D8555 /* Sources */ = {
+		509658991C5156ACCF49D3D16BA3D599 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				513F64698BA973F88102C54320428214 /* Pods-Akvamarin-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5D6D0BCB7A476B60B702FF37E8AB7317 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FCDEAB120C5E7C35B7C68A679E7B377A /* ActiveRecordKit-dummy.m in Sources */,
-				25476883E6ADB2D0BDD87263964A2BFB /* IDPCoreDataManager.m in Sources */,
-				E91B5288D1590BDC1C162DE242A62D28 /* NSManagedObject+IDPExtensions.m in Sources */,
-				F5C83200E6C74F1AF1EA46D5EB48D5DD /* NSManagedObjectContext+IDPExtensions.m in Sources */,
-				5C9C225BF6E19B3B4B95F72142DB6D56 /* NSManagedObjectID+IDPExtensions.m in Sources */,
+				C6C1609BDF7D69B22ACA741B7D3878B2 /* Pods-Akvamarin-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1022,55 +755,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C26D9481086C8112D29BB91A8F2CF717 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				76815183602ECF3C0023B61D9C17C9F8 /* CGGeometry+IDPExtensions.m in Sources */,
-				7DE727FE7D3496DC55B15236B8CBAC51 /* CommonKit-dummy.m in Sources */,
-				30C48B3A4689326CE70AA4EFF8BAFFA7 /* IDPMath.m in Sources */,
-				6EFE3580D7F774F6A1716E51D6F21E91 /* NSArray+IDPExtensions.m in Sources */,
-				37B6B096D77B6255934CEE0371FA5D2F /* NSBundle+IDPExtensions.m in Sources */,
-				D34216A4D4017E67A641ED54E1A71B4B /* NSDate+IDPExtensions.m in Sources */,
-				357EBC5ABE6ADF1E1C4361D885F91C40 /* NSDateComponents+IDPExtinsions.m in Sources */,
-				429C7265C2E36088BF5CB2B5AF48D692 /* NSFileManager+IDPExtensions.m in Sources */,
-				B7DCA8BDDA2A031398E8531B1E118E82 /* NSObject+IDPExtensions.m in Sources */,
-				08ED648F2CFDF94BC2B57C4029A63B29 /* NSString+IDPExtensions.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00B455586959901CE479C8E310450416 /* PBXTargetDependency */ = {
+		5DC6499CAACDC2996E3B1FE635B489CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MagicalRecord;
 			target = 417EA9844EC286C5B1B8FCB029C00130 /* MagicalRecord */;
-			targetProxy = 00318549BB79A76FC306675853D39DF8 /* PBXContainerItemProxy */;
+			targetProxy = 5AADABE8D5DFBEE5F83B81F057514FAA /* PBXContainerItemProxy */;
 		};
-		20FEC78C2BE29BE2BEB90E519A876B6D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CommonKit;
-			target = 1013EBFFA70C5801E4BB0B863F456E7C /* CommonKit */;
-			targetProxy = C40A8BA93DE996E629C2F05EFF877BFB /* PBXContainerItemProxy */;
-		};
-		60153F8F0FF35168F2CE60FB3EA358D2 /* PBXTargetDependency */ = {
+		9575FB9501DF3BD7AF72933C86F780F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBCalendarKit;
 			target = A4EA69D368654A6BBD25A9964EF6A4B2 /* MBCalendarKit */;
-			targetProxy = 434CEF70B7734F05944F4924DB11F636 /* PBXContainerItemProxy */;
-		};
-		A4472C82102F5276FDA9E09545BC141B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ActiveRecordKit;
-			target = 076C2EAC7EFDD32F9F8C650A8264DF42 /* ActiveRecordKit */;
-			targetProxy = F6AE1CD09F973B2652460F538C9230BA /* PBXContainerItemProxy */;
-		};
-		A9845718CB65BAE37A79D6C42584EB5C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CommonKit;
-			target = 1013EBFFA70C5801E4BB0B863F456E7C /* CommonKit */;
-			targetProxy = 7603963E9C213B6323BCE211542F3B6C /* PBXContainerItemProxy */;
+			targetProxy = 1728C534351E787561533347A551AF9B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1119,32 +817,9 @@
 			};
 			name = Debug;
 		};
-		59437E6F7274081FF1750A86C69DD587 /* Release */ = {
+		3AB0C14C42E134A85CB2CC987B2A7F63 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 406BF626746F806A67866BDE8800DDF1 /* CommonKit.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CommonKit/CommonKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		6C38F4748ED83B07AA2D8991EE2F6E85 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D170B96EE1F290C0F875A9A98CB764D9 /* ActiveRecordKit.xcconfig */;
+			baseConfigurationReference = 293548A262CD072FB6BD412EFBD6DE3C /* Pods-Akvamarin.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1152,14 +827,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ActiveRecordKit/ActiveRecordKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -1207,7 +882,7 @@
 		};
 		930034FBCA16D68BFF7F0FE02E9871C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44E7097F3FBC261346903179D9FC74B5 /* MBCalendarKit.xcconfig */;
+			baseConfigurationReference = 4F1F08766C8076DD4BC4B6F442384588 /* MBCalendarKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1230,7 +905,7 @@
 		};
 		99B46F80CF70CCA1BE206DDA7F3C8ACA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 773786421980B6B50BD6859B44198011 /* MagicalRecord.xcconfig */;
+			baseConfigurationReference = A7FE242522E65A347CB837A913288870 /* MagicalRecord.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1253,7 +928,7 @@
 		};
 		AAB79EBF328D78F2CFF31DAB7DAEBAC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 773786421980B6B50BD6859B44198011 /* MagicalRecord.xcconfig */;
+			baseConfigurationReference = A7FE242522E65A347CB837A913288870 /* MagicalRecord.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1274,7 +949,7 @@
 			};
 			name = Debug;
 		};
-		C1712674040CC773CFAFA0D11FEEF61D /* Release */ = {
+		C6A2866263582C3AA0F55A6EA3E89019 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9DC0BB3463B7EA65444142D86E4459DE /* Pods-Akvamarin.release.xcconfig */;
 			buildSettings = {
@@ -1297,78 +972,9 @@
 			};
 			name = Release;
 		};
-		C90B1FCAA2A7A53749232CB1B80333A2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 293548A262CD072FB6BD412EFBD6DE3C /* Pods-Akvamarin.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		CB700C545AA5CD869470CA901136A0E5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D170B96EE1F290C0F875A9A98CB764D9 /* ActiveRecordKit.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ActiveRecordKit/ActiveRecordKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D47293453D026C6F1B275C030CB915E2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 406BF626746F806A67866BDE8800DDF1 /* CommonKit.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CommonKit/CommonKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 		E5D37698503B5A144565481AB85A6506 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44E7097F3FBC261346903179D9FC74B5 /* MBCalendarKit.xcconfig */;
+			baseConfigurationReference = 4F1F08766C8076DD4BC4B6F442384588 /* MBCalendarKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1401,20 +1007,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42EB7794D4E85650BCFB5DA1C45BAF46 /* Build configuration list for PBXNativeTarget "Pods-Akvamarin" */ = {
+		48470E2C74AF39A7EDD1FED1F17C5E0C /* Build configuration list for PBXNativeTarget "Pods-Akvamarin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C90B1FCAA2A7A53749232CB1B80333A2 /* Debug */,
-				C1712674040CC773CFAFA0D11FEEF61D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AF63614D92EF45E0230F2B69286B253F /* Build configuration list for PBXNativeTarget "ActiveRecordKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6C38F4748ED83B07AA2D8991EE2F6E85 /* Debug */,
-				CB700C545AA5CD869470CA901136A0E5 /* Release */,
+				3AB0C14C42E134A85CB2CC987B2A7F63 /* Debug */,
+				C6A2866263582C3AA0F55A6EA3E89019 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1424,15 +1021,6 @@
 			buildConfigurations = (
 				AAB79EBF328D78F2CFF31DAB7DAEBAC1 /* Debug */,
 				99B46F80CF70CCA1BE206DDA7F3C8ACA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DB5D9B594E3FCB2BC41BD497EB6B90BF /* Build configuration list for PBXNativeTarget "CommonKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D47293453D026C6F1B275C030CB915E2 /* Debug */,
-				59437E6F7274081FF1750A86C69DD587 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

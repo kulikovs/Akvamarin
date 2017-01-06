@@ -7,12 +7,12 @@
 //
 
 #import <CoreData/CoreData.h>
-#import "IDPActiveRecordKit.h"
 
 @interface KSManagedObject : NSManagedObject
 @property (nonatomic, copy) NSString   *ID;
 
 + (instancetype)objectWithID:(NSString *)ID;
-+ (instancetype)findObjectWithID:(NSString *)ID;
++ (instancetype)objectWithID:(NSString *)ID context:(NSManagedObjectContext *)context;
+
 
 @end

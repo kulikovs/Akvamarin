@@ -5,6 +5,7 @@
 //  Created by KulikovS on 31.07.16.
 //  Copyright © 2016 KulikovS. All rights reserved.
 //
+#import <MagicalRecord/MagicalRecord.h>
 
 #import "KSPhotoZoneViewController.h"
 #import "KSPhotoZoneView.h"
@@ -45,7 +46,7 @@ KSRootViewAndReturnNilMacro(KSPhotoZoneView);
 #pragma mark Private Methods
 
 - (void)contextDidLoad {
-    self.photoZones = [KSPhotoZone fetchEntityWithSortDescriptors:nil predicate:nil prefetchPaths:nil];
+    self.photoZones = [KSPhotoZone MR_findAll];
     KSPhotoZoneView *rootView = self.rootView;
     [rootView.tableView reloadData];
     [rootView removeLoadingViewAnimated:YES];
