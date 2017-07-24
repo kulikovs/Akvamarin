@@ -10,7 +10,7 @@
 #import "KSContactsView.h"
 
 static NSString * const kKSContactsBarTitle         = @"Контакты";
-static NSString * const kKSCallPhoneNumberString    = @"tel://0681598557";
+static NSString * const kKSCallPhoneNumberString    = @"tel://+380668788757";
 static NSString * const kKSSiteURLString            = @"http://akvamarin.ks.ua";
 static NSString * const kKSVkontakteURLString       = @"http://vk.com/akvamarin_ks";
 

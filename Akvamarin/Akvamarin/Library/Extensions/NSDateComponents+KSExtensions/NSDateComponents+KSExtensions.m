@@ -12,7 +12,7 @@
 
 + (NSDateComponents *)componentsWithDate:(NSDate *)date {
     NSCalendar *calendar = [NSCalendar currentCalendar];
-   
+    
     return [calendar components:(NSCalendarUnitYear| NSCalendarUnitMonth | NSCalendarUnitDay |
                                  NSCalendarUnitHour | NSCalendarUnitMinute)
                        fromDate:date];
