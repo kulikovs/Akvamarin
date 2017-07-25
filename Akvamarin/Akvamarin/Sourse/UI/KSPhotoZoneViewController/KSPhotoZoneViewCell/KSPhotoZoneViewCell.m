@@ -14,6 +14,14 @@
 @implementation KSPhotoZoneViewCell
 
 #pragma mark -
+#pragma mark LifeCycle
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    [self.photoZoneName setHidden:YES];
+}
+
+#pragma mark -
 #pragma mark Public Methods
 
 - (void)fillWithModel:(KSPhotoZone *)photoZone {
