@@ -20,7 +20,9 @@ static NSString * const kKSApplicationHeaderKey  = @"application/json";
 
 //requests for calendar
 static NSString * const kKSMaxResult             = @"2500";
-static NSString * const kKSCalendarId            = @"q962o107vv3t9t3pfmkrkuj6is@group.calendar.google.com";
+//old calendar
+//static NSString * const kKSCalendarId            = @"q962o107vv3t9t3pfmkrkuj6is@group.calendar.google.com";
+static NSString * const kKSCalendarId            = @"akvamarin.photostudio@gmail.com";
 static NSString * const kKSApiKey                = @"AIzaSyDtYcy1F9oeUXwjREGM5YnlndEGn0d_luM";
 static NSString * const kKSCalendarUrlFormat     = @"https://www.googleapis.com/calendar/v3/calendars/%@/events?maxResults=%@&timeMin=%ld-01-01T10:00:00Z&key=%@&fields=items(id,start,end,summary,status)";
 
