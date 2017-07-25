@@ -17,7 +17,6 @@
 #import "KSCalendarConstants.h"
 #import "NSCalendar+Ranges.h"
 
-
 @interface AppDelegate ()
 
 @end
