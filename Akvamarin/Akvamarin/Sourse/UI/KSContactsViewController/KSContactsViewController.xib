@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -53,13 +53,13 @@
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPF-FI-Ki4">
-                    <rect key="frame" x="19" y="446" width="240" height="30"/>
+                    <rect key="frame" x="19" y="446" width="240" height="26.5"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="cPF-FI-Ki4" secondAttribute="height" multiplier="8:1" id="fVU-o4-eSB"/>
+                        <constraint firstAttribute="width" secondItem="cPF-FI-Ki4" secondAttribute="height" multiplier="9:1" id="fVU-o4-eSB"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" title="www.vk.com/akvamarin_ks" image="facebook_circle_color">
+                    <state key="normal" title="www.facebook.com/akvamarinphoto" image="facebook_circle_color">
                         <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>

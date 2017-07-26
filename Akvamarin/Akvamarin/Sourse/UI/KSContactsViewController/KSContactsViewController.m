@@ -12,7 +12,7 @@
 static NSString * const kKSContactsBarTitle         = @"Контакты";
 static NSString * const kKSCallPhoneNumberString    = @"tel://+380668788757";
 static NSString * const kKSSiteURLString            = @"http://akvamarin.ks.ua";
-static NSString * const kKSVkontakteURLString       = @"http://vk.com/akvamarin_ks";
+static NSString * const kKSFacebookURLString       = @"http://facebook.com/akvamarinphoto";
 
 @interface KSContactsViewController ()
 @property (nonatomic, readonly) KSContactsView *rootView;
@@ -53,7 +53,7 @@ KSRootViewAndReturnNilMacro(KSContactsView);
 }
 
 - (IBAction)onClickOpenVKButton:(id)sender {
-    [self applicationWithURLString:kKSVkontakteURLString];
+    [self applicationWithURLString:kKSFacebookURLString];
 }
 
 @end
