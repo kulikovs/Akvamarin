@@ -30,4 +30,8 @@ KSRootViewAndReturnNilMacro(KSPriceView);
     return kKSPriceBarTitle;
 }
 
+- (void)viewDidLayoutSubviews {
+    [self.rootView.priceTextView setContentOffset:CGPointZero animated:NO];
+}
+
 @end

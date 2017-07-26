@@ -9,5 +9,6 @@
 #import "KSView.h"
 
 @interface KSPriceView : KSView
+@property (nonatomic, strong) IBOutlet UITextView *priceTextView;
 
 @end
