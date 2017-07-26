@@ -59,7 +59,7 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" title="www.vk.com/akvamarin_ks" image="vk">
+                    <state key="normal" title="www.vk.com/akvamarin_ks" image="facebook_circle_color">
                         <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
@@ -161,9 +161,9 @@
     </objects>
     <resources>
         <image name="call" width="30" height="30"/>
+        <image name="facebook_circle_color" width="32" height="32"/>
         <image name="location_" width="30" height="30"/>
         <image name="map" width="313" height="262"/>
-        <image name="vk" width="30" height="30"/>
         <image name="web" width="30" height="30"/>
     </resources>
 </document>
