@@ -6,12 +6,17 @@ PODS:
 
 DEPENDENCIES:
   - MagicalRecord
-  - MBCalendarKit (~> 3.0.4)
+  - MBCalendarKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MagicalRecord
+    - MBCalendarKit
 
 SPEC CHECKSUMS:
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   MBCalendarKit: 2a3a60f902162a03bb4957966a4b795af998211f
 
-PODFILE CHECKSUM: 1d2d3f8bd4fc950eaef4d5fd09eb0e706208d647
+PODFILE CHECKSUM: 485108c9f4759f6cd35bf27821db112616970d8d
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.5.3
