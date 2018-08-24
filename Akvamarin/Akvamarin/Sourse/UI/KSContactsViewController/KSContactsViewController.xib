@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,72 +19,90 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="KSContactsView">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="pIq-Io-RRd">
-                    <rect key="frame" x="0.0" y="64" width="320" height="266.5"/>
+                    <rect key="frame" x="0.0" y="64" width="375" height="312.5"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="pIq-Io-RRd" secondAttribute="height" multiplier="125:104" id="GsN-cc-Fkh"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sna-Uw-o9X">
-                    <rect key="frame" x="19" y="370.5" width="240" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="Sna-Uw-o9X" secondAttribute="height" multiplier="8:1" id="oRh-AM-I3S"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                    <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" title="38-066-878-87-57" image="call">
-                        <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="onClickCallPhoneButton:" destination="-1" eventType="touchUpInside" id="iOF-Yi-MNe"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6T8-h2-2Y5">
-                    <rect key="frame" x="19" y="333.5" width="240" height="29"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="6T8-h2-2Y5" secondAttribute="height" multiplier="240:29" id="Vo1-bu-UwY"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" title=" Украина, Херсон" image="location_">
-                        <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPF-FI-Ki4">
-                    <rect key="frame" x="19" y="446.5" width="272" height="32"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="272" id="BAv-SU-W17"/>
-                        <constraint firstAttribute="height" constant="32" id="neM-I0-azm"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" title="facebook.com/akvamarin" image="facebook_circle_color">
-                        <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="onClickOpenVKButton:" destination="-1" eventType="touchUpInside" id="Lpn-pN-B3m"/>
-                    </connections>
-                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="zej-Or-ibY">
+                    <rect key="frame" x="16" y="384.5" width="343" height="181"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6T8-h2-2Y5">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="29" id="71K-rD-fpp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title=" Украина, Херсон" image="location_">
+                                <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sna-Uw-o9X">
+                            <rect key="frame" x="0.0" y="49" width="343" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="np1-4d-1tC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="38-066-878-87-57" image="call">
+                                <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickCallPhoneButton:" destination="-1" eventType="touchUpInside" id="iOF-Yi-MNe"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wH2-c5-dz6">
+                            <rect key="frame" x="0.0" y="99" width="343" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="sC8-SZ-dKq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="akvamarin.ks.ua" image="web">
+                                <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickOpenSiteButton:" destination="-1" eventType="touchUpInside" id="9DJ-vR-2c2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPF-FI-Ki4">
+                            <rect key="frame" x="0.0" y="149" width="343" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="1zP-em-J3B"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="facebook.com/akvamarin" image="facebook_circle_color">
+                                <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickOpenVKButton:" destination="-1" eventType="touchUpInside" id="Lpn-pN-B3m"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzb-2h-4Xc">
-                    <rect key="frame" x="0.0" y="479" width="320" height="89"/>
+                    <rect key="frame" x="0.0" y="573.5" width="375" height="93.5"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Студия работает ежедневно" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jfw-DY-T2i">
-                            <rect key="frame" x="8" y="21" width="301" height="26"/>
+                            <rect key="frame" x="8" y="21" width="356" height="30.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" с 9-00 до 20-00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNd-Re-4vh">
-                            <rect key="frame" x="8" y="41" width="301" height="26"/>
+                            <rect key="frame" x="8" y="41" width="356" height="30.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ТОЛЬКО ПО ПРЕДВАРИТЕЛЬНОЙ ЗАПИСИ!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZ3-Aw-Rhz">
-                            <rect key="frame" x="15" y="68" width="297" height="21"/>
+                            <rect key="frame" x="15" y="72.5" width="352" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="8T9-2s-kyO"/>
                             </constraints>
@@ -93,7 +111,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="РЕЖИМ РАБОТЫ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlR-Lx-Opd">
-                            <rect key="frame" x="77" y="4" width="163" height="21"/>
+                            <rect key="frame" x="77" y="4" width="218" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="Sqi-LW-eNW"/>
                             </constraints>
@@ -121,40 +139,19 @@
                         <constraint firstItem="WlR-Lx-Opd" firstAttribute="leading" secondItem="uzb-2h-4Xc" secondAttribute="leading" constant="77" id="zCr-Uc-eIm"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wH2-c5-dz6">
-                    <rect key="frame" x="19" y="408.5" width="240" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="wH2-c5-dz6" secondAttribute="height" multiplier="8:1" id="2ik-4d-KN0"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" title="akvamarin.ks.ua" image="web">
-                        <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="onClickOpenSiteButton:" destination="-1" eventType="touchUpInside" id="9DJ-vR-2c2"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="j0l-ci-w9r" firstAttribute="trailing" secondItem="zej-Or-ibY" secondAttribute="trailing" constant="16" id="4yl-Ya-k12"/>
+                <constraint firstItem="zej-Or-ibY" firstAttribute="leading" secondItem="j0l-ci-w9r" secondAttribute="leading" constant="16" id="7WP-lk-chb"/>
                 <constraint firstItem="pIq-Io-RRd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="ASb-rx-hbV"/>
-                <constraint firstItem="wH2-c5-dz6" firstAttribute="top" secondItem="Sna-Uw-o9X" secondAttribute="bottom" constant="8" symbolic="YES" id="FjL-6a-7Xd"/>
-                <constraint firstItem="Sna-Uw-o9X" firstAttribute="trailing" secondItem="wH2-c5-dz6" secondAttribute="trailing" id="GTM-pr-UNa"/>
                 <constraint firstItem="pIq-Io-RRd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JFc-CR-YtM"/>
-                <constraint firstItem="cPF-FI-Ki4" firstAttribute="top" secondItem="wH2-c5-dz6" secondAttribute="bottom" constant="8" symbolic="YES" id="OLB-Nt-Rf4"/>
-                <constraint firstAttribute="trailing" secondItem="6T8-h2-2Y5" secondAttribute="trailing" constant="61" id="OzH-4Y-hrI"/>
-                <constraint firstItem="Sna-Uw-o9X" firstAttribute="top" secondItem="6T8-h2-2Y5" secondAttribute="bottom" constant="8" symbolic="YES" id="PGy-z8-e2Z"/>
-                <constraint firstItem="Sna-Uw-o9X" firstAttribute="leading" secondItem="wH2-c5-dz6" secondAttribute="leading" id="PZx-Rc-RqZ"/>
-                <constraint firstItem="6T8-h2-2Y5" firstAttribute="leading" secondItem="Sna-Uw-o9X" secondAttribute="leading" id="Wia-qC-Tu1"/>
-                <constraint firstItem="6T8-h2-2Y5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="gZ9-0F-T2o"/>
+                <constraint firstItem="uzb-2h-4Xc" firstAttribute="top" secondItem="zej-Or-ibY" secondAttribute="bottom" constant="8" id="ddb-g9-t3q"/>
                 <constraint firstItem="pIq-Io-RRd" firstAttribute="trailing" secondItem="uzb-2h-4Xc" secondAttribute="trailing" id="iXx-TU-mTo"/>
-                <constraint firstItem="wH2-c5-dz6" firstAttribute="leading" secondItem="cPF-FI-Ki4" secondAttribute="leading" id="jR8-Y0-MMZ"/>
                 <constraint firstItem="pIq-Io-RRd" firstAttribute="leading" secondItem="uzb-2h-4Xc" secondAttribute="leading" id="oG7-wS-AUg"/>
-                <constraint firstItem="6T8-h2-2Y5" firstAttribute="trailing" secondItem="Sna-Uw-o9X" secondAttribute="trailing" id="pgG-D2-wEn"/>
+                <constraint firstItem="zej-Or-ibY" firstAttribute="top" secondItem="pIq-Io-RRd" secondAttribute="bottom" constant="8" id="oRe-Hf-jLx"/>
                 <constraint firstItem="uzb-2h-4Xc" firstAttribute="bottom" secondItem="j0l-ci-w9r" secondAttribute="bottom" id="uGQ-uR-EMu"/>
                 <constraint firstAttribute="trailing" secondItem="pIq-Io-RRd" secondAttribute="trailing" id="wrI-EX-I5W"/>
-                <constraint firstItem="6T8-h2-2Y5" firstAttribute="top" secondItem="pIq-Io-RRd" secondAttribute="bottom" constant="3" id="ywF-0c-HCq"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
             <viewLayoutGuide key="safeArea" id="j0l-ci-w9r"/>

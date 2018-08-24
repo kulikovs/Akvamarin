@@ -1,11 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KSStartViewController">
@@ -28,7 +31,7 @@
                     </constraints>
                     <inset key="titleEdgeInsets" minX="-100" minY="135" maxX="0.0" maxY="0.0"/>
                     <state key="normal" title="Стоимость" image="mani">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <state key="selected" image="mani_action"/>
                     <connections>
@@ -40,7 +43,7 @@
                     <constraints>
                         <constraint firstAttribute="width" secondItem="1Wm-SC-rBL" secondAttribute="height" multiplier="1:1" id="g5z-AS-ycO"/>
                     </constraints>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <inset key="titleEdgeInsets" minX="-90" minY="135" maxX="0.0" maxY="0.0"/>
                     <state key="normal" title="Аренда" image="arenda"/>
                     <state key="selected" image="arenda_action"/>
@@ -54,7 +57,7 @@
                         <constraint firstAttribute="width" secondItem="KSz-bm-95i" secondAttribute="height" multiplier="1:1" id="aiE-yp-Ugo"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <inset key="titleEdgeInsets" minX="-100" minY="135" maxX="0.0" maxY="0.0"/>
                     <state key="normal" title="Фотозоны" image="fotozona"/>
                     <state key="selected" image="fotozona_action"/>
@@ -69,7 +72,7 @@
                     </constraints>
                     <inset key="titleEdgeInsets" minX="-90" minY="135" maxX="0.0" maxY="0.0"/>
                     <state key="normal" title="Контакты" image="contact">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <state key="selected" image="contact_action"/>
                     <connections>
@@ -99,7 +102,6 @@
                 <constraint firstItem="KSz-bm-95i" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="wOu-oG-16f"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>
     <resources>
